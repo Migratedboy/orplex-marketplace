@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "slug": "tool-budget",
+  "name": "tool-budget",
+  "description": "Deliberate tool use: every call has a purpose, redundant probes are batched, exploratory churn is visible and self-limited.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "notify": [
+      "search_code",
+      "list_files"
+    ]
+  },
+  "skills": [
+    {
+      "name": "tool-budget",
+      "path": "skills/tool-budget.md"
+    }
+  ]
+}

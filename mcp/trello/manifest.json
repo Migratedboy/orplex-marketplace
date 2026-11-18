@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "trello",
+  "name": "Trello",
+  "description": "Read and manage Trello boards, lists, and cards.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-trello"
+    ],
+    "env": [
+      {
+        "name": "TRELLO_API_KEY",
+        "label": "API key",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "TRELLO_TOKEN",
+        "label": "Token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

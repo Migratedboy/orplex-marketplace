@@ -1,0 +1,3527 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-18T17:42:38.416Z",
+  "minAppVersion": "0.1.0",
+  "counts": {
+    "skill": 101,
+    "mcp": 100,
+    "plugin": 40
+  },
+  "items": [
+    {
+      "id": "airtable",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/airtable",
+      "sha256": "2e596c28921725ac95a11e102624da1bd246db40e6bbf3bba9faf0f200d52473",
+      "size": 624,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Create, read, and update records in Airtable bases.",
+      "title": "Airtable"
+    },
+    {
+      "id": "anthropic",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/anthropic",
+      "sha256": "a35deddb45985c359f376fb66a74ab473a47bef4bf6405e255144da2923d4522",
+      "size": 612,
+      "tags": [
+        "ai"
+      ],
+      "auth": "token",
+      "description": "Drive Claude Code (read/edit files, run tools) over MCP from the agent.",
+      "title": "Anthropic (Claude Code)"
+    },
+    {
+      "id": "apify",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/apify",
+      "sha256": "823068c6fe8c7c9535f017583e966d5c13aa5af86364129cc8462dffed3e82a8",
+      "size": 474,
+      "tags": [
+        "data"
+      ],
+      "auth": "token",
+      "description": "Run Apify actors (web scrapers) and fetch their results.",
+      "title": "Apify"
+    },
+    {
+      "id": "arxiv",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/arxiv",
+      "sha256": "07b341539dffdfa2a63a2eb8e432eb03355c47bf08bff4e9192d6011d4bf0da9",
+      "size": 297,
+      "tags": [
+        "data"
+      ],
+      "auth": "none",
+      "description": "Search and fetch research papers.",
+      "title": "arXiv"
+    },
+    {
+      "id": "asana",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/asana",
+      "sha256": "fb0635ed77b301fcd415ddf1803146f2ecd5127371035a4e98ec003fe57398ea",
+      "size": 613,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Manage Asana tasks, projects, and teams.",
+      "title": "Asana"
+    },
+    {
+      "id": "aws",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/aws",
+      "sha256": "e3f1fba14da0c926c792e4e74fb9eb1b40a8f29435a78b5e4b2a9dcc7d014790",
+      "size": 829,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "token",
+      "description": "Query and operate AWS resources (S3, EC2, Lambda, CloudWatch…) with your credentials.",
+      "title": "AWS"
+    },
+    {
+      "id": "bigquery",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/bigquery",
+      "sha256": "5464a382852f00d4dc8e787f5ea6c90c07604e7be9d08076598ec3fc84ccbc95",
+      "size": 667,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Run SQL over BigQuery datasets with a service account.",
+      "title": "Google BigQuery"
+    },
+    {
+      "id": "bitbucket",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/bitbucket",
+      "sha256": "16af62b23706f6807bc99ba54fea0b4013e924725fab2257f0bc0a57f115a5e2",
+      "size": 632,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "token",
+      "description": "Manage Bitbucket repos and pull requests.",
+      "title": "Bitbucket"
+    },
+    {
+      "id": "blender",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/blender",
+      "sha256": "67b81703b7f1244cc0bca77cef4030fdf73ca213c989077cb95f0bf7874ff594",
+      "size": 327,
+      "tags": [
+        "design"
+      ],
+      "auth": "none",
+      "description": "Create and manipulate 3D scenes in a running Blender instance.",
+      "title": "Blender"
+    },
+    {
+      "id": "brave-search",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/brave-search",
+      "sha256": "756af18106c507bece4e4fd7f0afd77a2fe0d3f673c34544573cab70618fb03a",
+      "size": 539,
+      "tags": [
+        "search"
+      ],
+      "auth": "token",
+      "description": "Web and local search via the Brave Search API.",
+      "title": "Brave Search"
+    },
+    {
+      "id": "browserbase",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/browserbase",
+      "sha256": "935a5dd16f2b9e2f309c847704db368aa8ccd305da670323d5adb2617455be88",
+      "size": 623,
+      "tags": [
+        "data"
+      ],
+      "auth": "token",
+      "description": "Run headless browser sessions in the cloud for scraping.",
+      "title": "Browserbase"
+    },
+    {
+      "id": "canva",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/canva",
+      "sha256": "491f2805c2fe3623a770d29437bd81500e05942b724c9c403301e10fd2a14514",
+      "size": 464,
+      "tags": [
+        "design"
+      ],
+      "auth": "oauth",
+      "description": "Create and edit Canva designs programmatically.",
+      "title": "Canva"
+    },
+    {
+      "id": "circleci",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/circleci",
+      "sha256": "e93ad2555ad36e2d409bd6f565a3ab006f024d152bfa96fb0727af8c762547b4",
+      "size": 489,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "oauth",
+      "description": "Watch pipelines, rerun jobs, and download artifacts.",
+      "title": "CircleCI"
+    },
+    {
+      "id": "clickhouse",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/clickhouse",
+      "sha256": "e3556a84d470c9a5b0c701628f16d0dcb0676157954baf4f29474c42f3e2ccbc",
+      "size": 696,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Run SQL and inspect tables on ClickHouse.",
+      "title": "ClickHouse"
+    },
+    {
+      "id": "cloudflare",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/cloudflare",
+      "sha256": "0d751d00abf335df696344d220471c8af31b527dbb211f8a1f5f63708d4ac80f",
+      "size": 583,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "oauth",
+      "description": "Manage Workers, KV, R2, DNS, and analytics across your CF account.",
+      "title": "Cloudflare"
+    },
+    {
+      "id": "confluence",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/confluence",
+      "sha256": "adafc60fb0aa11400d1df5f5f89cc94114796d1d7c96502b6662dbaf1a8b3294",
+      "size": 773,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "token",
+      "description": "Search and edit Confluence spaces and pages.",
+      "title": "Confluence"
+    },
+    {
+      "id": "context7",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/context7",
+      "sha256": "3d99b2eee5b488868e8c72e06c4a32b695f717801aea6b606a88093e1101f2bb",
+      "size": 513,
+      "tags": [
+        "search"
+      ],
+      "auth": "oauth",
+      "description": "Up-to-date documentation for thousands of libraries, injected at prompt time.",
+      "title": "Context7 (library docs)"
+    },
+    {
+      "id": "datadog",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/datadog",
+      "sha256": "0b01befbc0329d6d14ba5aedc2e03aa95ee6f002a1e48094bda2ef3d58d0712c",
+      "size": 626,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "token",
+      "description": "Query monitors, metrics, and logs from Datadog.",
+      "title": "Datadog"
+    },
+    {
+      "id": "deepwiki",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/deepwiki",
+      "sha256": "b4d83fcae871c785b2faa34c5f36df6ca402f01f0e1a64a76904b44e3846e3f6",
+      "size": 506,
+      "tags": [
+        "search"
+      ],
+      "auth": "oauth",
+      "description": "Ask questions about any public GitHub repo and get cited answers.",
+      "title": "DeepWiki (repo docs)"
+    },
+    {
+      "id": "discord",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/discord",
+      "sha256": "ba5c9a6e9c8c45c929ce8bbae2bca77b9c09018bbac895a67e2571d4a83d39b7",
+      "size": 598,
+      "tags": [
+        "comms"
+      ],
+      "auth": "token",
+      "description": "Read channels and send messages to a Discord server.",
+      "title": "Discord"
+    },
+    {
+      "id": "dropbox",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/dropbox",
+      "sha256": "e8aa14e5ba1499435c9a202b3694f924613ce61bbbc15bfb812817f032427201",
+      "size": 462,
+      "tags": [
+        "files"
+      ],
+      "auth": "token",
+      "description": "Browse and fetch files from Dropbox.",
+      "title": "Dropbox"
+    },
+    {
+      "id": "duckdb",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/duckdb",
+      "sha256": "531ac0f14de0d6ff60252e54921b71879143ae70248a0cc0f3da39f1f7b29758",
+      "size": 343,
+      "tags": [
+        "database"
+      ],
+      "auth": "none",
+      "description": "Query local files (Parquet/CSV/JSON) with DuckDB SQL.",
+      "title": "DuckDB"
+    },
+    {
+      "id": "duckduckgo",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/duckduckgo",
+      "sha256": "4d5876c049726c852ed39b0f485e50ba53b2e5703ee0e80fbc9200948cb20372",
+      "size": 341,
+      "tags": [
+        "search"
+      ],
+      "auth": "none",
+      "description": "Free web search with no API key required.",
+      "title": "DuckDuckGo"
+    },
+    {
+      "id": "elevenlabs",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/elevenlabs",
+      "sha256": "b3ee1df81b9800c7b8383095bd33b14735693e9a08be73b203600e560c17f028",
+      "size": 792,
+      "tags": [
+        "ai"
+      ],
+      "auth": "oauth",
+      "description": "Text-to-speech and voice cloning.",
+      "title": "ElevenLabs"
+    },
+    {
+      "id": "everything",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/everything",
+      "sha256": "53d350170d686c54149221a6edbb6b924549d88f79104487c846cc51c137225d",
+      "size": 413,
+      "tags": [
+        "ai"
+      ],
+      "auth": "none",
+      "description": "Reference MCP server exercising every protocol capability — useful to verify the pipeline.",
+      "title": "Everything (test server)"
+    },
+    {
+      "id": "exa",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/exa",
+      "sha256": "5cc7f69d4ad0288a15edba97a8dc4b22502fe6a95378857989c98655ee3293c8",
+      "size": 462,
+      "tags": [
+        "search"
+      ],
+      "auth": "token",
+      "description": "Neural/semantic web search and similar-page search.",
+      "title": "Exa"
+    },
+    {
+      "id": "excel",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/excel",
+      "sha256": "b46fcb173977b0552f5422ba747ec2fcffcb6d49b8dd20d5b4ad31a44ca0abe5",
+      "size": 336,
+      "tags": [
+        "files"
+      ],
+      "auth": "none",
+      "description": "Read and write Excel workbooks and CSV data.",
+      "title": "Excel / spreadsheets"
+    },
+    {
+      "id": "fetch",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/fetch",
+      "sha256": "c620b82d2ec045c8e61c141cab55e2a014ccb2a3c8517aaadbeb5d4fa6f66d17",
+      "size": 346,
+      "tags": [
+        "web"
+      ],
+      "auth": "none",
+      "description": "Fetch a URL and return clean readable text/markdown.",
+      "title": "Fetch (web pages)"
+    },
+    {
+      "id": "figma",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/figma",
+      "sha256": "123bb5bd7796dfc88365c1cf57cfd4ffaeea7cdaea46546e50487863c2016975",
+      "size": 569,
+      "tags": [
+        "design"
+      ],
+      "auth": "oauth",
+      "description": "Read designs, components, and dev-mode metadata from Figma files.",
+      "title": "Figma"
+    },
+    {
+      "id": "filesystem",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/filesystem",
+      "sha256": "fae9f9d0fdf5d8c54d052f8ac85402b12f718975192ece1fa188eab1a56fc517",
+      "size": 426,
+      "tags": [
+        "files"
+      ],
+      "auth": "none",
+      "description": "Read/write files inside a folder you choose.",
+      "title": "Filesystem (sandboxed folder)"
+    },
+    {
+      "id": "firebase",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/firebase",
+      "sha256": "c65ca5b4f6c18ce3522c3cf03e190441fa0d3d16cf2190e288d8cb4c59a060d6",
+      "size": 605,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Manage Firestore documents, auth users, and Firebase project resources.",
+      "title": "Firebase"
+    },
+    {
+      "id": "firecrawl",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/firecrawl",
+      "sha256": "9d010f566722427543a239eb3e1e03eb8820c44324da6b9a8afe2f6435e6d320",
+      "size": 509,
+      "tags": [
+        "data"
+      ],
+      "auth": "token",
+      "description": "Scrape, crawl, and extract structured data from websites.",
+      "title": "Firecrawl"
+    },
+    {
+      "id": "flyio",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/flyio",
+      "sha256": "f20e3435a89904c9e0c8c54ecdf06e855ad2e663313f9664bd8ac1d89127307c",
+      "size": 468,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "token",
+      "description": "Manage Fly machines and apps.",
+      "title": "Fly.io"
+    },
+    {
+      "id": "framer",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/framer",
+      "sha256": "67f2eb3ce8ed1ec6201f746e1d10455e3f03e33055b03702710dbdb8bfb2f879",
+      "size": 462,
+      "tags": [
+        "design"
+      ],
+      "auth": "oauth",
+      "description": "Manage Framer projects and publish sites.",
+      "title": "Framer"
+    },
+    {
+      "id": "gcp",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/gcp",
+      "sha256": "a548161b3a09d2d94c6c57f9b01e9d26d778a88837854711f9130a2c2e5119e3",
+      "size": 493,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "token",
+      "description": "Operate GCP: storage, bigquery, logging, cloud run.",
+      "title": "Google Cloud"
+    },
+    {
+      "id": "git",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/git",
+      "sha256": "df059bef8035cb4d49cc3e81d03bada2d6232379c5f080e0e61ad81e49b6bc06",
+      "size": 373,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "none",
+      "description": "Read and operate on a local git repository: diff, log, commit, branch.",
+      "title": "Git (local)"
+    },
+    {
+      "id": "github",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/github",
+      "sha256": "f854bc305ed8a842798795ee10dfdf9578956611af663df9ba5715218422f2b2",
+      "size": 525,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "oauth",
+      "description": "Repos, issues, PRs, actions, code search — act on GitHub from chat.",
+      "title": "GitHub"
+    },
+    {
+      "id": "gitlab",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/gitlab",
+      "sha256": "88b5dd1126b6915005b2672e5cc5e3205cb4e2976346710a93a3eb62f780579d",
+      "size": 743,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "oauth",
+      "description": "Manage GitLab projects, MRs, pipelines, and issues.",
+      "title": "GitLab"
+    },
+    {
+      "id": "gmail",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/gmail",
+      "sha256": "7828352f4b92b8044e2669ff9d53edb5c714c491d511accee7d85dd959d6dd26",
+      "size": 479,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Draft, search, and send email.",
+      "title": "Gmail"
+    },
+    {
+      "id": "google-calendar",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-calendar",
+      "sha256": "0f1e9c88c0459c6b8ee12f2d7a284e9d82cb0016edaaf30d5c224e3d6e8cc305",
+      "size": 356,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "none",
+      "description": "List events, create meetings, check availability.",
+      "title": "Google Calendar"
+    },
+    {
+      "id": "google-calendar-remote",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-calendar-remote",
+      "sha256": "17b4e81b370e9da59106acad21916925b1e6d402de2b47bfe0c56fbb5efcf216",
+      "size": 547,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "List events and manage meetings via Google's hosted MCP.",
+      "title": "Google Calendar (remote)"
+    },
+    {
+      "id": "google-docs-remote",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-docs-remote",
+      "sha256": "54234421fbee5df90f3f491c429387c9425b41ce3b321817228cce39c1be36bc",
+      "size": 525,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Read and edit Google Docs via Google's hosted MCP.",
+      "title": "Google Docs (remote)"
+    },
+    {
+      "id": "google-drive",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-drive",
+      "sha256": "1bfa184268334a33bea3415832fd3a8efd91459027800d80258e0dea0c27820b",
+      "size": 659,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "token",
+      "description": "Search and read files from Google Drive.",
+      "title": "Google Drive"
+    },
+    {
+      "id": "google-drive-remote",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-drive-remote",
+      "sha256": "9ff8e3aaa3a2ca61824c9785b0cbf8f99992ffad1e35785dc93666a60b91f153",
+      "size": 543,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Search and read files from Google Drive via Google's hosted MCP.",
+      "title": "Google Drive (remote)"
+    },
+    {
+      "id": "google-maps",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-maps",
+      "sha256": "e5e3b17793ad6eb64c151dd53cf8be3839a15ec4c451d18008c0b2a2fda9edc3",
+      "size": 486,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "token",
+      "description": "Geocoding, directions, and place lookups.",
+      "title": "Google Maps"
+    },
+    {
+      "id": "google-sheets",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-sheets",
+      "sha256": "c6807f05ae39ef6908a185d5b71a6733bf15940407d00efcb88eeed7dfc5a0ba",
+      "size": 504,
+      "tags": [
+        "files"
+      ],
+      "auth": "token",
+      "description": "Read and write spreadsheets.",
+      "title": "Google Sheets"
+    },
+    {
+      "id": "google-sheets-remote",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-sheets-remote",
+      "sha256": "679905790ad45ebe347759d113080819af029de3ca55562145d93d5c953e7a16",
+      "size": 536,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Read and write Google Sheets via Google's hosted MCP.",
+      "title": "Google Sheets (remote)"
+    },
+    {
+      "id": "google-slides-remote",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/google-slides-remote",
+      "sha256": "d12c8820f734c694473c1d4a319869e88716fd3fe380119a9c4bff8f2785d741",
+      "size": 535,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Read and edit Google Slides via Google's hosted MCP.",
+      "title": "Google Slides (remote)"
+    },
+    {
+      "id": "grafana",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/grafana",
+      "sha256": "9d308e2773a2190b8d9f901e4813bbdaa8fc366abf48405780dcd8b70a44ff51",
+      "size": 661,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "token",
+      "description": "Query dashboards and datasources; investigate incidents.",
+      "title": "Grafana"
+    },
+    {
+      "id": "huggingface",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/huggingface",
+      "sha256": "73602f786c7d05cab350e72fc86ca722e61f4b6b62d37b46cba0e3ca9908d60b",
+      "size": 479,
+      "tags": [
+        "ai"
+      ],
+      "auth": "oauth",
+      "description": "Search models/datasets/spaces and run HF inference.",
+      "title": "Hugging Face"
+    },
+    {
+      "id": "jira",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/jira",
+      "sha256": "8b02b4eaf2bf5a2eca9b70911879f161a17e1519ee279a0af8f557a78a263d6c",
+      "size": 738,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "oauth",
+      "description": "Search and update Jira issues, sprints, and boards.",
+      "title": "Jira"
+    },
+    {
+      "id": "kubernetes",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/kubernetes",
+      "sha256": "5b03fb616f5b034527b0b9d9b83a6b1a65e1a7acd2fb65d1e93dc583b7601a3d",
+      "size": 362,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "none",
+      "description": "Inspect pods, deployments, and logs in your kubectl-connected cluster.",
+      "title": "Kubernetes"
+    },
+    {
+      "id": "markdown-notes",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/markdown-notes",
+      "sha256": "6f9a3b6fb4ab5075405d64b97e36424902ed9e40b6977fa797e8168c57916f49",
+      "size": 425,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "none",
+      "description": "Give the agent structured access to a folder of markdown notes.",
+      "title": "Markdown notes (filesystem)"
+    },
+    {
+      "id": "memory",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/memory",
+      "sha256": "28f89ea9d522d62c278d86251ba9646f28c34f5c2012412495733b011c99a3e7",
+      "size": 385,
+      "tags": [
+        "ai"
+      ],
+      "auth": "none",
+      "description": "Knowledge-graph memory the agent can read/write across runs.",
+      "title": "Persistent memory"
+    },
+    {
+      "id": "mongodb",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/mongodb",
+      "sha256": "d20750e6fe1d5d743f40d9e3493b52d424e526175e11bd8d39cdcdd8b6b8c53d",
+      "size": 522,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Query collections and inspect documents in a MongoDB deployment.",
+      "title": "MongoDB"
+    },
+    {
+      "id": "mysql",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/mysql",
+      "sha256": "11c0682a94fae4d088582d670a4ae68c231345d264673b641cd3863fdc8f4e5c",
+      "size": 777,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Schema inspection and read-only queries for MySQL.",
+      "title": "MySQL"
+    },
+    {
+      "id": "neon",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/neon",
+      "sha256": "963ea41461f9804297c4aa7a869908b1a933056f72c7e1caeb0a2457237f77bf",
+      "size": 550,
+      "tags": [
+        "database"
+      ],
+      "auth": "oauth",
+      "description": "Manage Neon projects, branches, and run SQL on serverless Postgres.",
+      "title": "Neon Postgres"
+    },
+    {
+      "id": "netlify",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/netlify",
+      "sha256": "0e47f487e7c6d9af084650cbd7b4eda8d53540c4a8b9f39371c9b7d4e40cb280",
+      "size": 480,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "token",
+      "description": "Create sites, deploy builds, and read deploy logs.",
+      "title": "Netlify"
+    },
+    {
+      "id": "notion",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/notion",
+      "sha256": "1c58b2d93684ff718a9bcefab3ce7ab43fbfa1e110e75130d6ea33084f62bdd1",
+      "size": 649,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Search, read, and write Notion pages, databases, and blocks.",
+      "title": "Notion"
+    },
+    {
+      "id": "nx",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/nx",
+      "sha256": "7716af7a66f890c80a3407aa0d1be3b401b6714f16b41812d4bd872b47bdef1f",
+      "size": 335,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "none",
+      "description": "Understand and operate Nx workspaces: generators, tasks, graph.",
+      "title": "Nx console"
+    },
+    {
+      "id": "obsidian",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/obsidian",
+      "sha256": "bb37c094e94dc46ec862d3c98acd3d004935b6162f1a6cfefbf2b658f30fc7ad",
+      "size": 509,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "token",
+      "description": "Read and edit notes in your Obsidian vault (Local REST API plugin).",
+      "title": "Obsidian"
+    },
+    {
+      "id": "one-drive",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/one-drive",
+      "sha256": "a5f391ccb4cbf83044ba06cb43f0cdfc7739b6a237947f5d8dbbde09d7729a71",
+      "size": 671,
+      "tags": [
+        "files"
+      ],
+      "auth": "oauth",
+      "description": "Search and read files from Microsoft 365.",
+      "title": "OneDrive / SharePoint"
+    },
+    {
+      "id": "openai",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/openai",
+      "sha256": "81d9c3ed207ba1e9c26900229d4291674655490e80fd4283ca4dc0a62a7d0963",
+      "size": 482,
+      "tags": [
+        "ai"
+      ],
+      "auth": "token",
+      "description": "Call OpenAI models and APIs as a tool from the agent.",
+      "title": "OpenAI"
+    },
+    {
+      "id": "paypal",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/paypal",
+      "sha256": "54d6ec40412967b447420eae7e14ece15e12e8bf975ea60754be00fa399bef4a",
+      "size": 464,
+      "tags": [
+        "payments"
+      ],
+      "auth": "oauth",
+      "description": "Create and inspect invoices and payments.",
+      "title": "PayPal"
+    },
+    {
+      "id": "penpot",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/penpot",
+      "sha256": "40a6aafffdba9e03c931d57cbee26805e3f52f1d5baf40d91e79fa650814b0c3",
+      "size": 769,
+      "tags": [
+        "design"
+      ],
+      "auth": "token",
+      "description": "Interact with Penpot design files (open-source Figma alt).",
+      "title": "Penpot"
+    },
+    {
+      "id": "perplexity",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/perplexity",
+      "sha256": "70c709496aa5115172918e36c44ccadcf95a16efbf475d82208b227f76f6011f",
+      "size": 491,
+      "tags": [
+        "search"
+      ],
+      "auth": "token",
+      "description": "Ask Perplexity's models for cited web answers.",
+      "title": "Perplexity"
+    },
+    {
+      "id": "playwright",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/playwright",
+      "sha256": "2f2260a71220ccf27d03ad4e69594aa86ebea200cc410aa58dd1fe79de5032fd",
+      "size": 385,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "none",
+      "description": "Drive a real browser: navigate, click, screenshot, evaluate.",
+      "title": "Playwright (browser)"
+    },
+    {
+      "id": "postgres",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/postgres",
+      "sha256": "ec6e6de40e07b437b4a01ce4d79fa03e0f58e41b4a602a10b6ce7424a9741a76",
+      "size": 560,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Inspect schemas and run read-only SQL against a Postgres database.",
+      "title": "PostgreSQL (read-only)"
+    },
+    {
+      "id": "postgres-full",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/postgres-full",
+      "sha256": "655a89673160b1ab8cd611fc4bd66b14647c5663232236052c80bca25a31098d",
+      "size": 518,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Read AND write Postgres: SQL execution, schema health, index tuning.",
+      "title": "PostgreSQL (full access)"
+    },
+    {
+      "id": "prisma",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/prisma",
+      "sha256": "64465db8773febc07cd9792d99a044fbbf675e50fd729eecfed6f068ab2382d8",
+      "size": 550,
+      "tags": [
+        "database"
+      ],
+      "auth": "oauth",
+      "description": "Query and manage a Prisma Postgres instance.",
+      "title": "Prisma Postgres"
+    },
+    {
+      "id": "prometheus",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/prometheus",
+      "sha256": "b4e6c20524cade74497cdc3d2af53d3b1327298b63bd6198ca1437967e6ad154",
+      "size": 463,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "token",
+      "description": "Run PromQL queries against your metrics.",
+      "title": "Prometheus"
+    },
+    {
+      "id": "puppeteer",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/puppeteer",
+      "sha256": "04b5dff4f2382ff3cd15312ee10a3129b86700c0d17de3c910f3163e1c1afd13",
+      "size": 347,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "none",
+      "description": "Headless Chrome automation and page scraping.",
+      "title": "Puppeteer (browser)"
+    },
+    {
+      "id": "railway",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/railway",
+      "sha256": "084bc3d8e44e5eaccba156d94f30da141c7f6ec0909832fc1ac162e1ac555eb4",
+      "size": 475,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "oauth",
+      "description": "Deploy services and manage environments on Railway.",
+      "title": "Railway"
+    },
+    {
+      "id": "razorpay",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/razorpay",
+      "sha256": "6d3229fb6d0e04c2336c07be135b141f475a358b8769f54e7f9b06d657cca130",
+      "size": 468,
+      "tags": [
+        "payments"
+      ],
+      "auth": "oauth",
+      "description": "Manage Razorpay payments and refunds.",
+      "title": "Razorpay"
+    },
+    {
+      "id": "reddit",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/reddit",
+      "sha256": "a99d5a4a2fff335b5c5407535d58480d10f076e5c21bac38f7584cfe9b0e3887",
+      "size": 307,
+      "tags": [
+        "data"
+      ],
+      "auth": "none",
+      "description": "Read posts and comments from subreddits.",
+      "title": "Reddit"
+    },
+    {
+      "id": "redis",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/redis",
+      "sha256": "0b401a0c94146d265dac17e5833e9dbdf26d8fbe5b292e82f7451380d69c03c6",
+      "size": 452,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Inspect keys, streams, and run Redis commands.",
+      "title": "Redis"
+    },
+    {
+      "id": "render",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/render",
+      "sha256": "3f758c7963c97894f3ac77f2dc49f73578dfcc968539f396d8ca2a80206fe8eb",
+      "size": 476,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "oauth",
+      "description": "List services, trigger deploys, and read logs on Render.",
+      "title": "Render"
+    },
+    {
+      "id": "s3",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/s3",
+      "sha256": "635163de7bf0b91f1ae27df01b62c8c10563ef08fe1102c2e71c288c5a0423b5",
+      "size": 791,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "token",
+      "description": "List buckets, upload/download objects, and copy files on S3.",
+      "title": "AWS S3"
+    },
+    {
+      "id": "semgrep",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/semgrep",
+      "sha256": "d809cf62fa6ce01a37f2b318e91540b091133c54ac87b92ca9022b06e02de969",
+      "size": 343,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "none",
+      "description": "Scan code for security vulnerabilities and anti-patterns.",
+      "title": "Semgrep"
+    },
+    {
+      "id": "sentry",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/sentry",
+      "sha256": "0738f18484081fadf663a6f915c7427c73fa325648ea6dce4248c7004f22e662",
+      "size": 635,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "oauth",
+      "description": "Triage errors and inspect stack traces from your Sentry project.",
+      "title": "Sentry"
+    },
+    {
+      "id": "sequential-thinking",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/sequential-thinking",
+      "sha256": "23cdaa890a719ce90d63559a4c3bb7fe46cb82cc7de6f41de28422861d4bcd5c",
+      "size": 414,
+      "tags": [
+        "ai"
+      ],
+      "auth": "none",
+      "description": "Structured step-by-step reasoning scaffold for hard problems.",
+      "title": "Sequential thinking"
+    },
+    {
+      "id": "shell",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/shell",
+      "sha256": "b70511e0ba87bd31134e6dedb4a61a52b09e04fe19c6124d8bd148f5ccfedc7f",
+      "size": 480,
+      "tags": [
+        "shell"
+      ],
+      "auth": "none",
+      "description": "Run allow-listed shell commands as tools.",
+      "title": "Shell (sandboxed)"
+    },
+    {
+      "id": "shopify",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/shopify",
+      "sha256": "ed510eee7711bb7b3b98c0d23fddd6f1c3004bac73a4070c01de5a7677e2d54c",
+      "size": 352,
+      "tags": [
+        "payments"
+      ],
+      "auth": "none",
+      "description": "GraphQL schema exploration and dev docs for Shopify apps.",
+      "title": "Shopify (dev docs)"
+    },
+    {
+      "id": "slack",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/slack",
+      "sha256": "d2cdd4f5e805193ec4c9dffc1fae0fbf28880c5fcd8e4dcc774540b0092bd14d",
+      "size": 498,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "oauth",
+      "description": "Read channels and send messages in your Slack workspace.",
+      "title": "Slack"
+    },
+    {
+      "id": "snowflake",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/snowflake",
+      "sha256": "7f8ab37b4a7a5afd83b47653ad65ecd6ab75ff8c33eb9d8e2e26bf1995ee951b",
+      "size": 827,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Query Snowflake warehouses and inspect schemas.",
+      "title": "Snowflake"
+    },
+    {
+      "id": "sonarqube",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/sonarqube",
+      "sha256": "8c55b800d101d0f4e4a14cae39f652fa5fb39faab18f5c99512c92c7da7e75fb",
+      "size": 655,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "token",
+      "description": "Inspect code quality metrics and issues.",
+      "title": "SonarQube"
+    },
+    {
+      "id": "sqlite",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/sqlite",
+      "sha256": "819e1560ca470d76b5d796bf508284d5cf2b37cc3db28b132eaf76b6c5f8bb7d",
+      "size": 357,
+      "tags": [
+        "database"
+      ],
+      "auth": "none",
+      "description": "Query and modify a local SQLite database file.",
+      "title": "SQLite"
+    },
+    {
+      "id": "storybook",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/storybook",
+      "sha256": "d4b1e90a084309bc04b2dcf5667bd922298bf436a46425b308a5aa9287478a04",
+      "size": 334,
+      "tags": [
+        "devtools"
+      ],
+      "auth": "none",
+      "description": "Browse and test Storybook stories and components.",
+      "title": "Storybook"
+    },
+    {
+      "id": "stripe",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/stripe",
+      "sha256": "e0d3b1f45f12fe0c1bc02556e6d96411d454fb7d8a03b1a756577bb1da066e53",
+      "size": 532,
+      "tags": [
+        "payments"
+      ],
+      "auth": "token",
+      "description": "Manage customers, payments, and subscriptions (test-mode safe options).",
+      "title": "Stripe"
+    },
+    {
+      "id": "supabase",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/supabase",
+      "sha256": "7b55194df06d63a86f25fd3e9e016c087f73ddb2a417b0bbde6e4538c9dfbaf5",
+      "size": 816,
+      "tags": [
+        "database"
+      ],
+      "auth": "oauth",
+      "description": "Query tables, manage auth users, run edge functions, and manage your Postgres project.",
+      "title": "Supabase"
+    },
+    {
+      "id": "supabase-db-direct",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/supabase-db-direct",
+      "sha256": "caadad2ac4d82950f2a7db99aa0cd0469f40f9ceb6581a6a3dbfef8c886dda8a",
+      "size": 540,
+      "tags": [
+        "database"
+      ],
+      "auth": "token",
+      "description": "Talk to your Supabase Postgres over a direct connection string.",
+      "title": "Supabase (direct DB)"
+    },
+    {
+      "id": "tavily",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/tavily",
+      "sha256": "922d340de9a44b85ff79c386df5d20b2b6e32e1d4565ef5b50a8fabc52703134",
+      "size": 486,
+      "tags": [
+        "search"
+      ],
+      "auth": "token",
+      "description": "AI-optimized web search API with clean results.",
+      "title": "Tavily"
+    },
+    {
+      "id": "telegram",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/telegram",
+      "sha256": "67bdb5f7e412d1d529196398c597137fbe3886fdad50aea635d685ed020df0f5",
+      "size": 461,
+      "tags": [
+        "comms"
+      ],
+      "auth": "token",
+      "description": "Send messages and manage a Telegram bot.",
+      "title": "Telegram"
+    },
+    {
+      "id": "terminal-control",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/terminal-control",
+      "sha256": "68d2a01df1d92e1b113104f8145a1f7b24c0da0a9ceb913fe2ada4f1c07c7b16",
+      "size": 355,
+      "tags": [
+        "shell"
+      ],
+      "auth": "none",
+      "description": "Persistent terminal sessions the agent can drive.",
+      "title": "Terminal"
+    },
+    {
+      "id": "todoist",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/todoist",
+      "sha256": "9222c26ebe4464d198a87f33ab2fae5f32a59bb28fc0ac930451a20d2b667102",
+      "size": 475,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "token",
+      "description": "Manage tasks and projects in Todoist.",
+      "title": "Todoist"
+    },
+    {
+      "id": "trello",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/trello",
+      "sha256": "5aa39f1ac8cf4a7a2132d2c89b226ec353783290232e98c325f411a258a04296",
+      "size": 580,
+      "tags": [
+        "productivity"
+      ],
+      "auth": "token",
+      "description": "Read and manage Trello boards, lists, and cards.",
+      "title": "Trello"
+    },
+    {
+      "id": "twilio",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/twilio",
+      "sha256": "70ebad4ff6094cd0edc31d5cc567afcbf1535cd285f63022f594f9de10df9038",
+      "size": 622,
+      "tags": [
+        "comms"
+      ],
+      "auth": "token",
+      "description": "Send SMS/WhatsApp and manage calls.",
+      "title": "Twilio"
+    },
+    {
+      "id": "vercel",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/vercel",
+      "sha256": "eec5c5ebf79887bcd69033634ced048a28e3718b702f59cb7717bb17792b0289",
+      "size": 685,
+      "tags": [
+        "cloud"
+      ],
+      "auth": "oauth",
+      "description": "Manage deployments, projects, DNS, and logs on Vercel.",
+      "title": "Vercel"
+    },
+    {
+      "id": "whatsapp",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/whatsapp",
+      "sha256": "10574ade8db8fa175dc5f4e44ec1c28b15ed55a29c31a414b3e999f5da101465",
+      "size": 627,
+      "tags": [
+        "comms"
+      ],
+      "auth": "token",
+      "description": "Send WhatsApp messages via the Business Cloud API.",
+      "title": "WhatsApp"
+    },
+    {
+      "id": "youtube",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "mcp/youtube",
+      "sha256": "e7c447a951c7971e8cb1ff9770bff47be02f6fe0166eec005bdbd5b38eccc710",
+      "size": 468,
+      "tags": [
+        "data"
+      ],
+      "auth": "token",
+      "description": "Search videos, fetch transcripts, and manage a channel.",
+      "title": "YouTube"
+    },
+    {
+      "id": "api-client",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/api-client",
+      "sha256": "cc8681d1204c6738c63416afd8a8344ac7e57575cc69dd03b1987fa13c47ae59",
+      "size": 1029,
+      "tags": [
+        "domain"
+      ],
+      "description": "Client data-fetching conventions: the shared apiFetch wrapper, typed responses, abortable requests, honest error surfaces.",
+      "title": "api-client",
+      "skillCount": 1
+    },
+    {
+      "id": "ask-when-ambiguous",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/ask-when-ambiguous",
+      "sha256": "1cc3eb9980305e94d3b310d4fcd956dd9057c2ada47463449f07987864cbd8f4",
+      "size": 1086,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Ambiguity triggers one clarifying question, not a guess: irreversible or product-shaped decisions belong to the human.",
+      "title": "ask-when-ambiguous",
+      "skillCount": 1
+    },
+    {
+      "id": "auth-gates",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/auth-gates",
+      "sha256": "9f7e558bc646cb07c5bf82b22e3ced765797b85feaa85a388493cf7bd2df8fae",
+      "size": 890,
+      "tags": [
+        "security"
+      ],
+      "description": "Route handlers authenticate first: session checked before any work, per-user scoping on every query.",
+      "title": "auth-gates",
+      "skillCount": 1
+    },
+    {
+      "id": "background-jobs",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/background-jobs",
+      "sha256": "6713004002163aea8b8d4bf21f5212db22dc1888ce2f92c06aac23694bca78cf",
+      "size": 1027,
+      "tags": [
+        "domain"
+      ],
+      "description": "Long-running work follows the executor pattern: DB-backed state, lease/claim discipline, resumable progress, honest terminal states.",
+      "title": "background-jobs",
+      "skillCount": 1
+    },
+    {
+      "id": "backup-aware",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/backup-aware",
+      "sha256": "1f87596a533d94c1be0ddf814fae6c42caf1c97176c1f7c8d8baf273b05c49b6",
+      "size": 1046,
+      "tags": [
+        "devops"
+      ],
+      "description": "Data-touching operations respect backups: snapshot before risky changes, verify restore paths, never hand-edit production data.",
+      "title": "backup-aware",
+      "skillCount": 1
+    },
+    {
+      "id": "branch-discipline",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/branch-discipline",
+      "sha256": "0d958ec5ab53ae715ebfd8c494fcdffb8e8e2a05247366b2587233c79b1c10b2",
+      "size": 1171,
+      "tags": [
+        "devops"
+      ],
+      "description": "Feature-branch workflow guardrails: pushes to main/master are blocked, commits and pushes are announced, and every task starts from a clean tree.",
+      "title": "branch-discipline",
+      "skillCount": 1
+    },
+    {
+      "id": "ci-green",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/ci-green",
+      "sha256": "618dda5cbf7dbc1bb39bf7ebf9f0cf3526f3dc0fdbc90ef020ea5086605d2509",
+      "size": 998,
+      "tags": [
+        "devops"
+      ],
+      "description": "CI is the shared gatekeeper: the agent reproduces failing CI steps locally before pushing any fix.",
+      "title": "ci-green",
+      "skillCount": 1
+    },
+    {
+      "id": "clean-imports",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/clean-imports",
+      "sha256": "db7bf8f5c2efe36cebf77f73981a4c96bdc459aa5cc89468b891802cdd42b94e",
+      "size": 875,
+      "tags": [
+        "quality"
+      ],
+      "description": "Import hygiene: no unused imports, no circular dependencies, consistent path aliases.",
+      "title": "clean-imports",
+      "skillCount": 1
+    },
+    {
+      "id": "conventional-commits",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/conventional-commits",
+      "sha256": "108065b537242b1ae53422bade0b89df0d90675c9aa6e977c4090cade521b258",
+      "size": 1054,
+      "tags": [
+        "devops"
+      ],
+      "description": "Commit messages follow Conventional Commits: type(scope): subject, imperative mood, body explains why.",
+      "title": "conventional-commits",
+      "skillCount": 1
+    },
+    {
+      "id": "csrf-origin",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/csrf-origin",
+      "sha256": "0e727f6f5c85bd1f5d09faf4e38ab13088a96f1842aef0210d0b135e26553d91",
+      "size": 989,
+      "tags": [
+        "security"
+      ],
+      "description": "State-changing endpoints verify origin/method semantics: JSON-only POSTs, origin checks, safe-method discipline.",
+      "title": "csrf-origin",
+      "skillCount": 1
+    },
+    {
+      "id": "db-migrations",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/db-migrations",
+      "sha256": "b16f1b56f216cdbb9e0f1275819d911063eefb3fabb93c22914bb4ece6ec67c2",
+      "size": 1022,
+      "tags": [
+        "devops"
+      ],
+      "description": "Schema changes are additive-first and pushed with the client regenerated — destructive steps are called out for human review.",
+      "title": "db-migrations",
+      "skillCount": 1
+    },
+    {
+      "id": "dependency-audit",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/dependency-audit",
+      "sha256": "49b06c66e880918407e279b9cd36b2ad6ea73e9a88f65f94641e76d2f41f33f6",
+      "size": 1000,
+      "tags": [
+        "security"
+      ],
+      "description": "New dependencies are justified, pinned, and checked: no floating ranges, no packages that duplicate existing ones.",
+      "title": "dependency-audit",
+      "skillCount": 1
+    },
+    {
+      "id": "doc-strings",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/doc-strings",
+      "sha256": "783ac8d40aaf8ee4973b32cac6e6a4c31867cb1af5f87d35732ff432c7163b76",
+      "size": 963,
+      "tags": [
+        "quality"
+      ],
+      "description": "Every exported function gets a doc comment: what it does, what it returns, and what it throws.",
+      "title": "doc-strings",
+      "skillCount": 1
+    },
+    {
+      "id": "docker-hygiene",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/docker-hygiene",
+      "sha256": "5195fd2b4a6218f7b43cfb5da4e401044728455535f08708477fb2c97d4f1822",
+      "size": 918,
+      "tags": [
+        "devops"
+      ],
+      "description": "Containerfiles stay lean and reproducible: pinned bases, layered caching, non-root runtime user.",
+      "title": "docker-hygiene",
+      "skillCount": 1
+    },
+    {
+      "id": "env-parity",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/env-parity",
+      "sha256": "26b75994ac1e495394448da17541514ed2c40dc4ecf9bb3fff03efda49f6fe0c",
+      "size": 994,
+      "tags": [
+        "devops"
+      ],
+      "description": "Environment configuration stays explicit: new env vars are documented, defaulted, and never silently required.",
+      "title": "env-parity",
+      "skillCount": 1
+    },
+    {
+      "id": "error-handling",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/error-handling",
+      "sha256": "e0efa39dfd4511f0165c91cc3f921c14ab45ef9f65903fa7b9d95c1c14159960",
+      "size": 958,
+      "tags": [
+        "quality"
+      ],
+      "description": "Errors are typed, actionable, and never swallowed: no empty catch blocks, no string-only errors.",
+      "title": "error-handling",
+      "skillCount": 1
+    },
+    {
+      "id": "evidence-summary",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/evidence-summary",
+      "sha256": "102ec4f4b0cfc104afe22a350b5df9c0e6887d2b8ad27c175db5e40abf477a80",
+      "size": 993,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Task summaries cite evidence: exit codes, test names, file paths — claims are backed by shown output, not vibes.",
+      "title": "evidence-summary",
+      "skillCount": 1
+    },
+    {
+      "id": "form-validation",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/form-validation",
+      "sha256": "4fe933dd683a067668b780dba7d1c0e78684ba147d24b22840f627bc5272add2",
+      "size": 1015,
+      "tags": [
+        "domain"
+      ],
+      "description": "Form patterns: schema-driven validation shared between client and server, inline errors, disabled-while-pending submit.",
+      "title": "form-validation",
+      "skillCount": 1
+    },
+    {
+      "id": "input-validation",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/input-validation",
+      "sha256": "113ab02800ebceb71b9a3ae5163ad49ad1677d331b2a576fba4e1814b5810808",
+      "size": 946,
+      "tags": [
+        "security"
+      ],
+      "description": "Every request body, query param, and external input is schema-validated before use — zod at the boundary.",
+      "title": "input-validation",
+      "skillCount": 1
+    },
+    {
+      "id": "lint-clean",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/lint-clean",
+      "sha256": "1a66cadc0e97130cd239f0d72d71d5186adf58f69b67c0970a4f55201bf09210",
+      "size": 980,
+      "tags": [
+        "quality"
+      ],
+      "description": "The linter is the gate: zero new warnings allowed, autofix first, disable-with-reason only when justified.",
+      "title": "lint-clean",
+      "skillCount": 1
+    },
+    {
+      "id": "log-hygiene",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/log-hygiene",
+      "sha256": "06a8eed96cdc3b82b3363d741ba08d433ed556fb2b58663adcf3f51cc5993d44",
+      "size": 921,
+      "tags": [
+        "security"
+      ],
+      "description": "Logs are safe by construction: no tokens, no personal data, no full payloads — ids and summaries only.",
+      "title": "log-hygiene",
+      "skillCount": 1
+    },
+    {
+      "id": "memory-saver",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/memory-saver",
+      "sha256": "1797e37befcd66ae8af24c06ec2574f6e09baffaa47a9c1016c87e3787afb740",
+      "size": 1089,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Durable workspace facts get captured: stack decisions, user preferences, verified patterns — so the next task starts smarter.",
+      "title": "memory-saver",
+      "skillCount": 1
+    },
+    {
+      "id": "minimal-diff",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/minimal-diff",
+      "sha256": "66b33b8f5caebfdc9d13733231a538651d00810cca5486bb59639b93cc968632",
+      "size": 1035,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Changes stay minimal and reviewable: no drive-by reformatting, no scope creep, every touched line justified by the task.",
+      "title": "minimal-diff",
+      "skillCount": 1
+    },
+    {
+      "id": "notification-events",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/notification-events",
+      "sha256": "d4b54d04281b539827cb9035a86504d8a7c21f86382ab057156192592d8b8fc9",
+      "size": 1028,
+      "tags": [
+        "domain"
+      ],
+      "description": "App notification conventions: typed events into the notification center, user-readable copy, no raw errors.",
+      "title": "notification-events",
+      "skillCount": 1
+    },
+    {
+      "id": "path-containment",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/path-containment",
+      "sha256": "223b8c84ce153de6bf138f7699916b35eec00d831d4ac15c02587bb87ecf7921",
+      "size": 953,
+      "tags": [
+        "security"
+      ],
+      "description": "File operations stay inside the workspace: absolute-path escapes, traversal, and symlink hops are refused.",
+      "title": "path-containment",
+      "skillCount": 1
+    },
+    {
+      "id": "plan-then-act",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/plan-then-act",
+      "sha256": "994d8c1c89be15753fc310478950ad24248d5b5802706c6c879f3e071a23794c",
+      "size": 1009,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Multi-step tasks get a visible plan first: steps enumerated, files identified, risks named — then execution follows the plan.",
+      "title": "plan-then-act",
+      "skillCount": 1
+    },
+    {
+      "id": "prisma-model",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/prisma-model",
+      "sha256": "35717c6813701b88f9d61f2b832dfec88d9ca90532b1961b6e0830c08251fb85",
+      "size": 999,
+      "tags": [
+        "domain"
+      ],
+      "description": "Prisma model conventions: cuid ids, timestamps, motivated indexes, snake_case table mapping, generate+push after edits.",
+      "title": "prisma-model",
+      "skillCount": 1
+    },
+    {
+      "id": "react-component",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/react-component",
+      "sha256": "40026a32a3b0c86b4a7e09a760a57f7f6573b22bc7f86cca053d2d28eceb18e1",
+      "size": 1111,
+      "tags": [
+        "domain"
+      ],
+      "description": "React component conventions: hooks-first, props typed at the definition, lists keyed stably, effects narrow and cancellable.",
+      "title": "react-component",
+      "skillCount": 1
+    },
+    {
+      "id": "refactor-safety",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/refactor-safety",
+      "sha256": "0d6feb8ce59af6fe7b6b23d9f730904023e9da87cfd497e210067cfb1ec59619",
+      "size": 977,
+      "tags": [
+        "quality"
+      ],
+      "description": "Behavior-preserving refactors in small verified steps — never mix 'move code' and 'change behavior' in one edit.",
+      "title": "refactor-safety",
+      "skillCount": 1
+    },
+    {
+      "id": "release-notes",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/release-notes",
+      "sha256": "481d185be88aa672563c90b5fcf4d6f593b6df5d7e460b3380a4eb6665f6ab5a",
+      "size": 933,
+      "tags": [
+        "devops"
+      ],
+      "description": "Every finished task produces a changelog-ready entry: what changed, why, migration/upgrade notes.",
+      "title": "release-notes",
+      "skillCount": 1
+    },
+    {
+      "id": "rest-endpoint",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/rest-endpoint",
+      "sha256": "dc26b25f5d27e4d0ea71ec1d7f39bc140c4e8751c555581e5b0aafd29c65e5dc",
+      "size": 1627,
+      "tags": [
+        "domain"
+      ],
+      "description": "Scaffolding for typed Next.js route handlers: auth first, zod-validated bodies, typed JSON errors, status-code discipline.",
+      "title": "rest-endpoint",
+      "skillCount": 1
+    },
+    {
+      "id": "root-cause-first",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/root-cause-first",
+      "sha256": "4d621c56895fe2ffff06d1c481d2ca4dab6f1dcd6a9a5c9e1c3a3149efbd3096",
+      "size": 1020,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Fix causes, not symptoms: reproduce, trace to origin, then patch — patching the nearest symptom is failure.",
+      "title": "root-cause-first",
+      "skillCount": 1
+    },
+    {
+      "id": "safe-commands",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/safe-commands",
+      "sha256": "91269a2535744f4b58bf5799d32835553e134bb7d8e5cf630140ea7199c8918b",
+      "size": 1151,
+      "tags": [
+        "security"
+      ],
+      "description": "Shell commands run screened and narrow: no rm -rf, no curl|sh, no chained evasion forms.",
+      "title": "safe-commands",
+      "skillCount": 1
+    },
+    {
+      "id": "secret-hygiene",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/secret-hygiene",
+      "sha256": "7e77ff83cc692f5997d1602318fdbe33b367e9c2fdc321c2ca1045eb59cbf7c2",
+      "size": 1264,
+      "tags": [
+        "security"
+      ],
+      "description": "Blocks tool calls that would write or echo credential-shaped strings (AWS keys, GitHub tokens, private key blocks) before they land in any file or log.",
+      "title": "secret-hygiene",
+      "skillCount": 1
+    },
+    {
+      "id": "strict-types",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/strict-types",
+      "sha256": "5270fe685ca3a0d32fea536cb85cf6767daed9d455a454f7725da6a9a2604adb",
+      "size": 910,
+      "tags": [
+        "quality"
+      ],
+      "description": "No any, no silent casts: the agent must typecheck clean and prefer narrowing over assertions.",
+      "title": "strict-types",
+      "skillCount": 1
+    },
+    {
+      "id": "test-first",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/test-first",
+      "sha256": "454ce27aeea6b85f370a6681168bdbfc6513edac444a70c4b3fe7aaadca9456e",
+      "size": 1008,
+      "tags": [
+        "quality"
+      ],
+      "description": "Test-driven discipline: a failing test exists before any fix, and new features land with coverage.",
+      "title": "test-first",
+      "skillCount": 1
+    },
+    {
+      "id": "token-frugality",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/token-frugality",
+      "sha256": "eed74c9c486c67008ec8f1d36bcec65de5bcbe143e85888de1a10b794eb3fe3c",
+      "size": 1159,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Context-budget habits: read files in targeted slices, never re-read what is already in the transcript, prefer precise searches over dumps.",
+      "title": "token-frugality",
+      "skillCount": 1
+    },
+    {
+      "id": "tool-budget",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/tool-budget",
+      "sha256": "a01d9aa6d1c938c83124edba94f609aca59efa1fb535adccf40277309179d536",
+      "size": 1074,
+      "tags": [
+        "intelligence"
+      ],
+      "description": "Deliberate tool use: every call has a purpose, redundant probes are batched, exploratory churn is visible and self-limited.",
+      "title": "tool-budget",
+      "skillCount": 1
+    },
+    {
+      "id": "verified-commits",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/verified-commits",
+      "sha256": "39e1689e9e783abc1ba61b082938468cd6ffacba4604bbae62bc0c78f08031a3",
+      "size": 1308,
+      "tags": [
+        "quality"
+      ],
+      "description": "The agent may only claim a task done when the machine agrees: typecheck and tests must exit 0 before any 'done' summary, and history rewriting is off-limits.",
+      "title": "verified-commits",
+      "skillCount": 1
+    },
+    {
+      "id": "ws-sse-streams",
+      "kind": "plugin",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "plugins/ws-sse-streams",
+      "sha256": "9e6d8cb8c7e6c14b3d49688b92598105b237e1b72f5907ef0fa1a121b8ccb515",
+      "size": 1003,
+      "tags": [
+        "domain"
+      ],
+      "description": "Streaming endpoint conventions: SSE with heartbeats, cursor-based resumption, client cleanup on unmount.",
+      "title": "ws-sse-streams",
+      "skillCount": 1
+    },
+    {
+      "id": "add-types",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/add-types",
+      "sha256": "4ed34994c6b0bb0c9bbcf1f44d07f59bdf8c4680457d6589ce3953a6188ef653",
+      "size": 370,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Add strict TypeScript types",
+      "title": "Type Annotations"
+    },
+    {
+      "id": "animation-patterns",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/animation-patterns",
+      "sha256": "56f6c2ba57faaab15ef8aa820ffc3739f0bb7de9ef6fc4b7b04272cb9f658cf7",
+      "size": 558,
+      "tags": [
+        "frontend"
+      ],
+      "description": "Purposeful motion design",
+      "title": "Animation Patterns"
+    },
+    {
+      "id": "api-documentation",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/api-documentation",
+      "sha256": "f473f5f0be924fde1ef2e11f4bf806ed0ff3bc1b929e52afb0827ebf8d718152",
+      "size": 487,
+      "tags": [
+        "business"
+      ],
+      "description": "Generate OpenAPI/Swagger spec",
+      "title": "API Documentation (OpenAPI)"
+    },
+    {
+      "id": "api-scaffold",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/api-scaffold",
+      "sha256": "45d18879d41e1a2a0212ef2e0af76803f19ba39f7fdd9591e2d0c62d82c26b1b",
+      "size": 430,
+      "tags": [
+        "generation"
+      ],
+      "description": "Scaffold REST/GraphQL API endpoints",
+      "title": "API Scaffold"
+    },
+    {
+      "id": "auth-check",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/auth-check",
+      "sha256": "9cb70a4ffcd005da62a4fb380ba3afc54e9310df56baa13bb3f9fee3527c1494",
+      "size": 387,
+      "tags": [
+        "security"
+      ],
+      "description": "Review auth implementation",
+      "title": "Auth & Authorization Check"
+    },
+    {
+      "id": "blue-green-deploy",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/blue-green-deploy",
+      "sha256": "6fcfea8a682e822b628be27584c76b3ac92f2c8c8af99bfed5f7156bac686a1e",
+      "size": 516,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Zero-downtime deployment strategies",
+      "title": "Blue-Green / Canary Deploy"
+    },
+    {
+      "id": "caveman-mode",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/caveman-mode",
+      "sha256": "629758ec6561bdadc46bb7a9c504431dfc7595e21d127713e97fd01f18d24265",
+      "size": 418,
+      "tags": [
+        "quality"
+      ],
+      "description": "Cut output tokens by 65%, keep all facts",
+      "title": "Caveman Mode (Token Saver)"
+    },
+    {
+      "id": "chain-of-thought",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/chain-of-thought",
+      "sha256": "c9d7a8dc8ee5727e551315091c89571d0ffc10a3229e381d4a56d97fa72ac687",
+      "size": 350,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Step-by-step logical reasoning",
+      "title": "Chain of Thought"
+    },
+    {
+      "id": "changelog-generator",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/changelog-generator",
+      "sha256": "338b39af64493d50f41d647883fdc90aa8f90a6c086cc92e33b416b319a2e68d",
+      "size": 477,
+      "tags": [
+        "business"
+      ],
+      "description": "Generate changelog from git commits",
+      "title": "Changelog Generator"
+    },
+    {
+      "id": "chat-widget",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/chat-widget",
+      "sha256": "2977a007d856c3f6a2430bb0973d2bc0fd5d91d12f9f837e455498ce16f22331",
+      "size": 473,
+      "tags": [
+        "integrations"
+      ],
+      "description": "Implement real-time chat with WebSocket",
+      "title": "Real-Time Chat (WebSocket)"
+    },
+    {
+      "id": "cicd-pipeline",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/cicd-pipeline",
+      "sha256": "f8b086dfd7c92b8f1d3b40a74fae387390ac10bc3bc98602aebc635491df7340",
+      "size": 457,
+      "tags": [
+        "devops"
+      ],
+      "description": "GitHub Actions / GitLab CI pipeline",
+      "title": "CI/CD Pipeline"
+    },
+    {
+      "id": "circuit-breaker",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/circuit-breaker",
+      "sha256": "209cfd7a3adf37d49208fef546c820f7fc3381a395604407d0fda97d8b1a0e24",
+      "size": 489,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Add circuit breaker for external calls",
+      "title": "Circuit Breaker Pattern"
+    },
+    {
+      "id": "code-review",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/code-review",
+      "sha256": "45aaae22b63fe99d2d9863850bd7af8d85d3b48279665b31b19af8c1f9ea88b9",
+      "size": 485,
+      "tags": [
+        "analysis"
+      ],
+      "description": "Deep review for bugs, security, quality",
+      "title": "Code Review"
+    },
+    {
+      "id": "commit-conventions",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/commit-conventions",
+      "sha256": "84388e8c8992f36917fd51753c48819b6189314a65432b618851a967d5daae99",
+      "size": 468,
+      "tags": [
+        "quality"
+      ],
+      "description": "Format commits following conventional commits spec",
+      "title": "Conventional Commits"
+    },
+    {
+      "id": "complexity-estimate",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/complexity-estimate",
+      "sha256": "289d11907ad7947e3955ab15c4b13c2e5ce14202dfee00108afb0d23d420e2c4",
+      "size": 394,
+      "tags": [
+        "analysis"
+      ],
+      "description": "Estimate code complexity",
+      "title": "Complexity Estimate"
+    },
+    {
+      "id": "composition-patterns",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/composition-patterns",
+      "sha256": "243a87f2a0d119bcbdfdaeac7444eb7d1fc0bbd32fde1fad734707cac6cd25de",
+      "size": 474,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Replace boolean props with compound components",
+      "title": "Composition Patterns"
+    },
+    {
+      "id": "context-mode",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/context-mode",
+      "sha256": "fdf4968b3d954533f6b6cf954e2753571a60f24ec51ee03bb2ad69dbd8ea3bbf",
+      "size": 463,
+      "tags": [
+        "quality"
+      ],
+      "description": "Filter shell output noise from context",
+      "title": "Context Mode (Noise Filter)"
+    },
+    {
+      "id": "cron-worker",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/cron-worker",
+      "sha256": "5cf09d12f21a316b24a421c72bdcbd2f62d9849e650a1548f0c997b92afa1997",
+      "size": 499,
+      "tags": [
+        "generation"
+      ],
+      "description": "Generate background job processing",
+      "title": "Background Worker / Cron"
+    },
+    {
+      "id": "crypto-review",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/crypto-review",
+      "sha256": "3ff3b4f438524cbd1b7779fd37338f6b8b1dd7d3db5ee6bdb9f2b8a53acf1710",
+      "size": 487,
+      "tags": [
+        "security"
+      ],
+      "description": "Review crypto implementation",
+      "title": "Cryptography Review"
+    },
+    {
+      "id": "data-pipeline",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/data-pipeline",
+      "sha256": "9d84344fd09c2ff2061b51e34a673bcfa27fcca54cc69abd3078589b30758a7a",
+      "size": 472,
+      "tags": [
+        "data-ai"
+      ],
+      "description": "Generate ETL/ELT data pipeline",
+      "title": "Data Pipeline (ETL)"
+    },
+    {
+      "id": "dead-code",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/dead-code",
+      "sha256": "74f97dd020e77cf1a54d7f65ff5f51329fb7f73a8e3ea53ed50420d2df69af1f",
+      "size": 374,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Find and remove unused code",
+      "title": "Remove Dead Code"
+    },
+    {
+      "id": "dependency-audit",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/dependency-audit",
+      "sha256": "c5c03898fa9625570c776737f75b282687f80283c73f414507cb018f9b37e5f1",
+      "size": 400,
+      "tags": [
+        "analysis"
+      ],
+      "description": "Check dependencies for issues",
+      "title": "Dependency Audit"
+    },
+    {
+      "id": "design-system",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/design-system",
+      "sha256": "b259eca592fd01a7b16c48c7da4c0c0528839e0d366c97e536bda664de5cff12",
+      "size": 572,
+      "tags": [
+        "frontend"
+      ],
+      "description": "Build reusable component library",
+      "title": "Design System Components"
+    },
+    {
+      "id": "doc-generator",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/doc-generator",
+      "sha256": "c08701be54abd917e681609360589636be78c5a76ff8c7595e3d59a8f2a2a35a",
+      "size": 409,
+      "tags": [
+        "generation"
+      ],
+      "description": "Generate documentation and README",
+      "title": "Doc Generator"
+    },
+    {
+      "id": "doc-lookup",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/doc-lookup",
+      "sha256": "70ab7e64d3503f338e1f71e50ff00d7142bba508096c0d8e13ed4812e49bfb7d",
+      "size": 343,
+      "tags": [
+        "web-research"
+      ],
+      "description": "Find official documentation",
+      "title": "Documentation Lookup"
+    },
+    {
+      "id": "docker-setup",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/docker-setup",
+      "sha256": "d4337b9a5faefa30d03e8ffe250fbfab4a678cd9e9233abc4662866ea81b5fc6",
+      "size": 433,
+      "tags": [
+        "generation"
+      ],
+      "description": "Create Dockerfile and CI pipeline",
+      "title": "Docker / CI Setup"
+    },
+    {
+      "id": "e2e-playwright",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/e2e-playwright",
+      "sha256": "3443700e7924a7bf5c1749bc37060f5a9b0833c63dfc4b104ed922340e920aa1",
+      "size": 456,
+      "tags": [
+        "testing"
+      ],
+      "description": "Generate end-to-end browser tests",
+      "title": "E2E Playwright Tests"
+    },
+    {
+      "id": "email-service",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/email-service",
+      "sha256": "a7142da1773fc79ef1f50fb7ba039004ca3b93b70669d32504c3180e3f9a82fc",
+      "size": 477,
+      "tags": [
+        "integrations"
+      ],
+      "description": "Integrate transactional email service",
+      "title": "Email Service (SendGrid/Resend)"
+    },
+    {
+      "id": "email-templates",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/email-templates",
+      "sha256": "bfb31d324685b40b86f900c9cd28a9c6bf273fe529e237c895b8a90b17c8a15e",
+      "size": 508,
+      "tags": [
+        "media"
+      ],
+      "description": "Generate responsive HTML email templates",
+      "title": "Email Template Generator"
+    },
+    {
+      "id": "error-handling",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/error-handling",
+      "sha256": "420a9ae192721848a9e4f36399d77be5494602a10a2221bd21e7e3b9bd2e743a",
+      "size": 406,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Add proper error handling patterns",
+      "title": "Error Handling"
+    },
+    {
+      "id": "event-sourcing",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/event-sourcing",
+      "sha256": "c92b5d07a338234d0c796d57d45b65f9daa5d856a828efb219a980121b140c3b",
+      "size": 487,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Implement event sourcing with CQRS",
+      "title": "Event Sourcing / CQRS"
+    },
+    {
+      "id": "expo-setup",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/expo-setup",
+      "sha256": "eb584633d7dcb979e6ba7fd46c78047512699c52eb7f252bff611685dcecf07f",
+      "size": 443,
+      "tags": [
+        "mobile"
+      ],
+      "description": "Set up Expo project with navigation",
+      "title": "Expo / React Native Setup"
+    },
+    {
+      "id": "extract-function",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/extract-function",
+      "sha256": "2f9fc60e2c500f15588a327bd15a04900e9cd0f913ce8bbcf04a9fcc7facb11b",
+      "size": 393,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Break large functions into smaller ones",
+      "title": "Extract Function"
+    },
+    {
+      "id": "firecrawl-scrape",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/firecrawl-scrape",
+      "sha256": "3ab02d25849f742c8cecab20bc134a3df5dcca6efa3a8678572e3bc93756c308",
+      "size": 447,
+      "tags": [
+        "web-research"
+      ],
+      "description": "Scrape and extract web content",
+      "title": "Web Scraping (Firecrawl)"
+    },
+    {
+      "id": "first-principles",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/first-principles",
+      "sha256": "73e2bb4987d2270518738e60bdfed01619cbfbf00f1a0e2c61140cf60b1155f8",
+      "size": 354,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Break problem down to fundamentals",
+      "title": "First Principles"
+    },
+    {
+      "id": "flutter-widget",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/flutter-widget",
+      "sha256": "dd5e02ea9bdb3ce84f84af84ed06b61e47a356ea1dd266f81894cd1a005f54f3",
+      "size": 462,
+      "tags": [
+        "mobile"
+      ],
+      "description": "Generate Flutter widgets with state management",
+      "title": "Flutter Widget"
+    },
+    {
+      "id": "frontend-design",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/frontend-design",
+      "sha256": "6a5080db6e5bdfb3127fd88324058ef298f0f0d961e3cab74c6ea1a579c5ac22",
+      "size": 573,
+      "tags": [
+        "frontend"
+      ],
+      "description": "Production-grade UI (not generic AI slop)",
+      "title": "Frontend Design"
+    },
+    {
+      "id": "gitops-workflow",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/gitops-workflow",
+      "sha256": "0811c9d97349fcd5b059189b9ad1618a06242225162acd528376e5de958e7dc4",
+      "size": 460,
+      "tags": [
+        "devops"
+      ],
+      "description": "Declarative K8s deployment with GitOps",
+      "title": "GitOps (ArgoCD/Flux)"
+    },
+    {
+      "id": "graceful-shutdown",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/graceful-shutdown",
+      "sha256": "1cdf37f173013749ecfd615df5981568e03f071fc3c2c595178f093ac6e28112",
+      "size": 382,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Add clean shutdown handling",
+      "title": "Graceful Shutdown"
+    },
+    {
+      "id": "graphql-scaffold",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/graphql-scaffold",
+      "sha256": "86cfee8741fe9af7fbed863d8083d8932fd9cfb045f2e0dc723f3779056235a4",
+      "size": 542,
+      "tags": [
+        "generation"
+      ],
+      "description": "Generate GraphQL schema, resolvers, and queries",
+      "title": "GraphQL Scaffold"
+    },
+    {
+      "id": "grill-me",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/grill-me",
+      "sha256": "70e4b5bb4a0994839cce09f0792f6382927a6da6572ee2f63a51e6e8c5a3fee2",
+      "size": 467,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Interview about the plan before coding",
+      "title": "Grill Me (Plan Interview)"
+    },
+    {
+      "id": "grpc-scaffold",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/grpc-scaffold",
+      "sha256": "e4c282b4c5c8d106098f94cd4d94da189c6355228e1944822859e4747596ee95",
+      "size": 500,
+      "tags": [
+        "generation"
+      ],
+      "description": "Generate protobuf definitions and gRPC services",
+      "title": "gRPC / Protobuf Scaffold"
+    },
+    {
+      "id": "handoff",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/handoff",
+      "sha256": "ed9829bec24a1540b076fffe365c539eb3c3aae59c6642af59b44f08e0d0ce4f",
+      "size": 498,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Compress session into handoff doc",
+      "title": "Session Handoff"
+    },
+    {
+      "id": "icon-system",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/icon-system",
+      "sha256": "334f8a6b44da413b503f5ad3b991b98c06bae2682ba1ffed90129116c2485812",
+      "size": 483,
+      "tags": [
+        "media"
+      ],
+      "description": "Generate optimized SVG icon library",
+      "title": "SVG Icon System"
+    },
+    {
+      "id": "idempotency",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/idempotency",
+      "sha256": "1c941b6fb5fc5c4e325fb9dc443f306db2046d485dbceeb6df7f1ee260a73ab6",
+      "size": 514,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Make operations idempotent and safe to retry",
+      "title": "Idempotency Framework"
+    },
+    {
+      "id": "integration-test",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/integration-test",
+      "sha256": "b91447df5a8b274f00e5d9c0a53cf068b2f18b41ed6b30227add09042b0d4d14",
+      "size": 496,
+      "tags": [
+        "testing"
+      ],
+      "description": "Generate integration tests for APIs",
+      "title": "Integration Test Generator"
+    },
+    {
+      "id": "istio-service-mesh",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/istio-service-mesh",
+      "sha256": "1531512e59fc54e84761768668e7274611cc3a4fbf353b0a65a1f6ad171905d6",
+      "size": 433,
+      "tags": [
+        "devops"
+      ],
+      "description": "Configure Istio traffic management",
+      "title": "Istio Service Mesh"
+    },
+    {
+      "id": "job-state-machine",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/job-state-machine",
+      "sha256": "59ccdb73206bfd39ebea6c2bbafe09dd818dab44ee7784201ec4b9745fc66f78",
+      "size": 495,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Model jobs as finite state machines",
+      "title": "Job State Machine"
+    },
+    {
+      "id": "karpathy-rules",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/karpathy-rules",
+      "sha256": "f56b1d261693850e6ff47fa1550ab47e104b073f581963757d6e58d5e00f457b",
+      "size": 599,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Andrej Karpathy's 4 rules for LLM coding",
+      "title": "Karpathy's LLM Rules"
+    },
+    {
+      "id": "kubernetes-manifests",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/kubernetes-manifests",
+      "sha256": "4351ff973f023840bd82dee1b06077630a7150d7aba0f4eb4e7478c08cbcad38",
+      "size": 476,
+      "tags": [
+        "devops"
+      ],
+      "description": "Generate k8s deployment, service, ingress",
+      "title": "Kubernetes Manifests"
+    },
+    {
+      "id": "landing-page",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/landing-page",
+      "sha256": "d7ebedeff9c7a41fbd1951c14e74430e091bcbed0ea8a1bed3e5834b9501181d",
+      "size": 524,
+      "tags": [
+        "business"
+      ],
+      "description": "Write high-converting landing page",
+      "title": "Landing Page Copy"
+    },
+    {
+      "id": "leader-election",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/leader-election",
+      "sha256": "29be53c3805639c53011fa5511cd2938cab6763ccec3188254aeed7b902c126e",
+      "size": 483,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Distributed leader election for singletons",
+      "title": "Leader Election"
+    },
+    {
+      "id": "lib-compare",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/lib-compare",
+      "sha256": "6ebbb42d6dc7ad736c6442c171c4eca6f31615eb6b1d98bd24194eeb9206b1fe",
+      "size": 397,
+      "tags": [
+        "web-research"
+      ],
+      "description": "Compare libraries and frameworks",
+      "title": "Library Comparison"
+    },
+    {
+      "id": "lint-check",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/lint-check",
+      "sha256": "fd1a9a58cc642677b9da1ce07e60a6e3e95528398c030f5751f9e434557af02f",
+      "size": 306,
+      "tags": [
+        "quality"
+      ],
+      "description": "Run linter and fix issues",
+      "title": "Lint & Format"
+    },
+    {
+      "id": "load-test",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/load-test",
+      "sha256": "a907e1f3cb034740d7afd51398dc8c718195ffa32efa795b25235b9fc04ce25b",
+      "size": 475,
+      "tags": [
+        "testing"
+      ],
+      "description": "Generate load test scripts (k6/artillery)",
+      "title": "Load & Stress Testing"
+    },
+    {
+      "id": "merge-conflict-resolver",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/merge-conflict-resolver",
+      "sha256": "dbe749cbb1e0caf2638dc52f5efec62cc3d28f46d4676bfae23dcf344e298f3d",
+      "size": 543,
+      "tags": [
+        "analysis"
+      ],
+      "description": "Resolve git merge conflicts",
+      "title": "Merge Conflict Resolver"
+    },
+    {
+      "id": "microservice-scaffold",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/microservice-scaffold",
+      "sha256": "e0d796aa3351ebb2893356b9985b276562ad2d2ab20a9807dfae04855422b645",
+      "size": 476,
+      "tags": [
+        "generation"
+      ],
+      "description": "Generate microservice with API gateway",
+      "title": "Microservice Scaffold"
+    },
+    {
+      "id": "migration-script",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/migration-script",
+      "sha256": "7e7ac17b0f6cbc37729173ab67b493d91554e451c5df5048fa86671e25d2062f",
+      "size": 437,
+      "tags": [
+        "generation"
+      ],
+      "description": "Generate database migration scripts",
+      "title": "Migration Script"
+    },
+    {
+      "id": "ml-pipeline",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/ml-pipeline",
+      "sha256": "7553dedded290d691694bd5f2e01498b9bb7f4208d34e46ea8f8ee1985b7a821",
+      "size": 469,
+      "tags": [
+        "data-ai"
+      ],
+      "description": "End-to-end ML training pipeline",
+      "title": "ML Pipeline (MLOps)"
+    },
+    {
+      "id": "monorepo-scaffold",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/monorepo-scaffold",
+      "sha256": "63398ab941e76c623e804707235a00fb64a53371294320fee7ea8955639edb23",
+      "size": 468,
+      "tags": [
+        "generation"
+      ],
+      "description": "Set up Turborepo/Nx/pnpm workspace",
+      "title": "Monorepo Setup"
+    },
+    {
+      "id": "mutation-test",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/mutation-test",
+      "sha256": "9633207266c1e5a7c5d40e14c46f64ff1de9aed1a5bfd2d74e62fba9453254e2",
+      "size": 466,
+      "tags": [
+        "testing"
+      ],
+      "description": "Check test quality with mutation testing",
+      "title": "Mutation Testing"
+    },
+    {
+      "id": "naming-review",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/naming-review",
+      "sha256": "05c251cea23894de287486afd308c3aa338595b2bbfe677e2f48205f878e5195",
+      "size": 393,
+      "tags": [
+        "quality"
+      ],
+      "description": "Improve variable and function names",
+      "title": "Naming Review"
+    },
+    {
+      "id": "nextjs-app-router",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/nextjs-app-router",
+      "sha256": "9f88eb3a7fca8b9a72ed3dbbb089f422598511d089c65b09bd9fa13351f4ef9e",
+      "size": 544,
+      "tags": [
+        "frontend"
+      ],
+      "description": "App Router, Server Components, streaming",
+      "title": "Next.js App Router"
+    },
+    {
+      "id": "nginx-config",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/nginx-config",
+      "sha256": "a8933d1836c56458b68bed3cd976001c563ccf53fa9fadcc463147693377cf95",
+      "size": 437,
+      "tags": [
+        "devops"
+      ],
+      "description": "Generate nginx reverse proxy config",
+      "title": "Nginx Configuration"
+    },
+    {
+      "id": "oauth-integration",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/oauth-integration",
+      "sha256": "c85d90eaddefdbeafe9bb86f7fed46ea61148d913e3753bc959f614c3fec6371",
+      "size": 483,
+      "tags": [
+        "integrations"
+      ],
+      "description": "Implement OAuth 2.0 flow (Google, GitHub, etc.)",
+      "title": "OAuth 2.0 Integration"
+    },
+    {
+      "id": "observability-stack",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/observability-stack",
+      "sha256": "3f8c3852fd98563d4daa956a69e8c96462522ef699a9f15e7ccf31e97156c8a8",
+      "size": 483,
+      "tags": [
+        "devops"
+      ],
+      "description": "Add tracing, metrics, and logging",
+      "title": "Observability (OpenTelemetry)"
+    },
+    {
+      "id": "og-image-generator",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/og-image-generator",
+      "sha256": "7bed426bd158302bc203bb4c86d33a725912b59fe75722d4a04e15e73beae4be",
+      "size": 477,
+      "tags": [
+        "media"
+      ],
+      "description": "Generate Open Graph images dynamically",
+      "title": "OG Image / Social Card"
+    },
+    {
+      "id": "pdf-generator",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/pdf-generator",
+      "sha256": "ebfa8228e0bdcd13ce368fb2974d9fccfda2306c1668c6b56c00101a4a58bcc6",
+      "size": 460,
+      "tags": [
+        "media"
+      ],
+      "description": "Generate PDFs, DOCX, XLSX, PPTX",
+      "title": "PDF / Document Generator"
+    },
+    {
+      "id": "performance-profile",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/performance-profile",
+      "sha256": "567c80c47282d9803a7057f8d0cee045e472f6bf34d5b6f74412fcbe981e6ea5",
+      "size": 477,
+      "tags": [
+        "analysis"
+      ],
+      "description": "Find bottlenecks and optimize",
+      "title": "Performance Profile"
+    },
+    {
+      "id": "plugin-architecture",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/plugin-architecture",
+      "sha256": "b3c5086af77fae1ad7c7da9f87a562e99000b74db528906dcd000f23f662139d",
+      "size": 501,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Build extensible plugin system",
+      "title": "Plugin Architecture"
+    },
+    {
+      "id": "property-test",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/property-test",
+      "sha256": "2ff0996fae1203ab9b28885c692850d3a2abac3ea9bffa0e2fd5764d1720f77c",
+      "size": 502,
+      "tags": [
+        "testing"
+      ],
+      "description": "Generate property-based tests (fast-check)",
+      "title": "Property-Based Testing"
+    },
+    {
+      "id": "rate-limiter-advanced",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/rate-limiter-advanced",
+      "sha256": "35e9fecce95b66f23dd39df732a58af1a66123c1607921983c6d5957829a0664",
+      "size": 527,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Token bucket, sliding window, adaptive",
+      "title": "Advanced Rate Limiting"
+    },
+    {
+      "id": "react-best-practices",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/react-best-practices",
+      "sha256": "6b951c3987429485811024b63105f003ad4de464c86974efd59c4a3bf1bc13b4",
+      "size": 653,
+      "tags": [
+        "frontend"
+      ],
+      "description": "57 performance rules for React/Next.js",
+      "title": "React Best Practices"
+    },
+    {
+      "id": "react-native-component",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/react-native-component",
+      "sha256": "95c6cc8c9b07009c3486bc6344ec211d48d7fe50adbb34b397fbdb06e91e8405",
+      "size": 467,
+      "tags": [
+        "mobile"
+      ],
+      "description": "Generate cross-platform RN components",
+      "title": "React Native Component"
+    },
+    {
+      "id": "remotion-video",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/remotion-video",
+      "sha256": "d3dc7a1f4fb24ff9c735675e08d1b43dd01478ff819efe801b00e29ac6951532",
+      "size": 511,
+      "tags": [
+        "frontend"
+      ],
+      "description": "Programmatic video with React (Remotion)",
+      "title": "Remotion Video Generation"
+    },
+    {
+      "id": "risk-metrics",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/risk-metrics",
+      "sha256": "d6884235746f3aece4c0605698aef6b555a05cac75ce1486f6bfe91365bc3cbd",
+      "size": 464,
+      "tags": [
+        "data-ai"
+      ],
+      "description": "VaR, Sharpe, Sortino, drawdown analysis",
+      "title": "Financial Risk Metrics"
+    },
+    {
+      "id": "saga-pattern",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/saga-pattern",
+      "sha256": "7f6940ac82ee5de4eeebc1da7d343d7ce81d189a2361a2d7c261ef85bb31da0f",
+      "size": 493,
+      "tags": [
+        "advanced"
+      ],
+      "description": "Distributed transactions with sagas",
+      "title": "Saga / Choreography Pattern"
+    },
+    {
+      "id": "sanitize-input",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/sanitize-input",
+      "sha256": "3aa475875892fabbc95e732b7fb01e8f4988f9f8976a43f51df6516dd75ed037",
+      "size": 381,
+      "tags": [
+        "security"
+      ],
+      "description": "Add input validation and sanitization",
+      "title": "Input Sanitization"
+    },
+    {
+      "id": "secret-scanner",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/secret-scanner",
+      "sha256": "f41dbacb2d44677ff6aa890b6ec873fa4327de80aa337da6a7d40f8f3454e5bb",
+      "size": 386,
+      "tags": [
+        "security"
+      ],
+      "description": "Find exposed secrets and API keys",
+      "title": "Secret Scanner"
+    },
+    {
+      "id": "security-audit",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/security-audit",
+      "sha256": "eab2c1cce041071ff01493a5f324723027063acd522005c3bb83e1720b8e2307",
+      "size": 489,
+      "tags": [
+        "analysis"
+      ],
+      "description": "Find vulnerabilities and attack vectors",
+      "title": "Security Audit"
+    },
+    {
+      "id": "self-reflection",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/self-reflection",
+      "sha256": "7558a7d838226826a855155d3fa68cc29d8ea8e6f83464ea45b3d0de7f45e5ea",
+      "size": 383,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Review and critique your own output",
+      "title": "Self-Reflection"
+    },
+    {
+      "id": "semgrep-scan",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/semgrep-scan",
+      "sha256": "0201495d67c4f9875129bd8a19e9527ad60d4e73f3c86f118d269b5b71170c9a",
+      "size": 455,
+      "tags": [
+        "security"
+      ],
+      "description": "Static analysis with Semgrep rules",
+      "title": "Semgrep SAST Scan"
+    },
+    {
+      "id": "seo-copywriting",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/seo-copywriting",
+      "sha256": "64fcb79c98ea7162a4597a6024425c31991affc0c9d9d76ad039357a810a0db1",
+      "size": 455,
+      "tags": [
+        "business"
+      ],
+      "description": "Optimize content for search engines",
+      "title": "SEO Copywriting"
+    },
+    {
+      "id": "simplify-code",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/simplify-code",
+      "sha256": "cf16661aa27552c00dba97d1a3e74339d03f1f1ed8b13bd824329126a9d97496",
+      "size": 479,
+      "tags": [
+        "refactoring"
+      ],
+      "description": "Reduce complexity and improve readability",
+      "title": "Simplify Code"
+    },
+    {
+      "id": "sql-optimization",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/sql-optimization",
+      "sha256": "a93bbd255ac98af8ac2166a365779c553ef356c1ca1bbdca63684bee27129997",
+      "size": 464,
+      "tags": [
+        "data-ai"
+      ],
+      "description": "Optimize slow SQL queries",
+      "title": "SQL Query Optimization"
+    },
+    {
+      "id": "stackoverflow",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/stackoverflow",
+      "sha256": "2ec5fbcebf3d1998bdf9911606297fb7ff4c9270220b70cd71860387471dd76d",
+      "size": 313,
+      "tags": [
+        "web-research"
+      ],
+      "description": "Find community solutions",
+      "title": "Stack Overflow Research"
+    },
+    {
+      "id": "stripe-integration",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/stripe-integration",
+      "sha256": "e933e6e0b59ba7ae4408785bff0f2321db8b926ade0d4a8b93ac0ac92d5fc825",
+      "size": 514,
+      "tags": [
+        "integrations"
+      ],
+      "description": "Full Stripe checkout, webhooks, subscription",
+      "title": "Stripe Payment Integration"
+    },
+    {
+      "id": "superpowers-planning",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/superpowers-planning",
+      "sha256": "d4b0480473620c1819aec31c303550eb12a8f9cf2b7ad5b4914752de4e9ee6dc",
+      "size": 529,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Structured multi-step dev with TDD",
+      "title": "Superpowers (TDD + Plans)"
+    },
+    {
+      "id": "supply-chain-audit",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/supply-chain-audit",
+      "sha256": "0e9f2124c92b8012f9b9679d723bf27beaaa5476c3071623adffb368aa82b7f9",
+      "size": 508,
+      "tags": [
+        "security"
+      ],
+      "description": "Audit npm/pip dependencies for risks",
+      "title": "Supply Chain Security"
+    },
+    {
+      "id": "terraform-module",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/terraform-module",
+      "sha256": "73b603c48d84fc1700f7137bf0882bcf4540849609fd5a8bb9d4bd06ec4ae984",
+      "size": 461,
+      "tags": [
+        "devops"
+      ],
+      "description": "Generate Terraform IaC modules",
+      "title": "Terraform Module"
+    },
+    {
+      "id": "test-generator",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/test-generator",
+      "sha256": "8e7154fce3ec0ab939913c942a22f6426c348470adf89d108909f5bf5e7e3be2",
+      "size": 447,
+      "tags": [
+        "generation"
+      ],
+      "description": "Generate comprehensive test suites",
+      "title": "Test Generator"
+    },
+    {
+      "id": "trail-of-bits-security",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/trail-of-bits-security",
+      "sha256": "2e51df607979a12356fd44afb0ece6f81978cdf4ad156d764800560123c87c8a",
+      "size": 563,
+      "tags": [
+        "analysis"
+      ],
+      "description": "CodeQL + Semgrep vulnerability analysis",
+      "title": "Trail of Bits Security"
+    },
+    {
+      "id": "tree-of-thought",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/tree-of-thought",
+      "sha256": "512539bcd6f597a4770170eeab339cf6d2464596e2b2322b8dd4c8c5de7aa344",
+      "size": 342,
+      "tags": [
+        "reasoning"
+      ],
+      "description": "Explore multiple solution paths",
+      "title": "Tree of Thought"
+    },
+    {
+      "id": "type-check",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/type-check",
+      "sha256": "0fa6d51cffed734e2d2695b99fc2fe5cf0681a391ad17574bf9abfaee43d545e",
+      "size": 319,
+      "tags": [
+        "quality"
+      ],
+      "description": "Fix TypeScript errors properly",
+      "title": "Type Check"
+    },
+    {
+      "id": "unit-test-gen",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/unit-test-gen",
+      "sha256": "d9babea7f3e0c112ccd0b08cc7beb2fcc4809ecedaaf06a563414ce889d3e147",
+      "size": 460,
+      "tags": [
+        "testing"
+      ],
+      "description": "Generate unit tests with edge cases",
+      "title": "Unit Test Generator"
+    },
+    {
+      "id": "vector-search",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/vector-search",
+      "sha256": "dffec782af00be7acdf0f1bca42c3523c5e19663d67047d25723223a7aa61dc3",
+      "size": 488,
+      "tags": [
+        "data-ai"
+      ],
+      "description": "Build RAG pipeline with vector DB",
+      "title": "Vector Search / RAG"
+    },
+    {
+      "id": "wcag-accessibility",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/wcag-accessibility",
+      "sha256": "ea416c02b96a8d63abc764c20fa24fc57bcb7e2c93e187f215f2f5e92e063861",
+      "size": 568,
+      "tags": [
+        "frontend"
+      ],
+      "description": "Full WCAG 2.2 audit and remediation",
+      "title": "WCAG 2.2 Accessibility"
+    },
+    {
+      "id": "web-search",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/web-search",
+      "sha256": "decbb65888f3a12256d98714c643a1013300b4c6550be8f9a17bc712b27edde6",
+      "size": 303,
+      "tags": [
+        "web-research"
+      ],
+      "description": "Search the web for information",
+      "title": "Web Search"
+    },
+    {
+      "id": "web-typography",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/web-typography",
+      "sha256": "f3a021105db40faca9e128bf647724f75319254a82484d156a6b372254522af6",
+      "size": 525,
+      "tags": [
+        "frontend"
+      ],
+      "description": "Readable, accessible text styling",
+      "title": "Web Typography"
+    },
+    {
+      "id": "webapp-testing",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/webapp-testing",
+      "sha256": "0a76bdd03bff82ffdffdebeeda0424f75237094f78da5e09b7f1704b6088360f",
+      "size": 503,
+      "tags": [
+        "web-research"
+      ],
+      "description": "Test local app in real browser (Playwright)",
+      "title": "Webapp Browser Testing"
+    },
+    {
+      "id": "webhook-handler",
+      "kind": "skill",
+      "version": "1.0.0",
+      "engine": ">=0.1.0",
+      "path": "skills/webhook-handler",
+      "sha256": "7e558e387f3abdb133b78138694a119a5055fa63ccebf64d1e57562dca491acb",
+      "size": 484,
+      "tags": [
+        "integrations"
+      ],
+      "description": "Robust webhook receiver with verification",
+      "title": "Webhook Handler"
+    }
+  ],
+  "signature": "bNOYeRI6btp5_TTafsOOuTcKyhJoBFD1oTc3ZJC_0KXE2iCLaXU4TEvVfZk8qjejg1wpAYOKgkchPUSFkixuDQ"
+}

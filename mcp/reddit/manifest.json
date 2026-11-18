@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "reddit",
+  "name": "Reddit",
+  "description": "Read posts and comments from subreddits.",
+  "category": "data",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-reddit"
+    ],
+    "env": []
+  }
+}

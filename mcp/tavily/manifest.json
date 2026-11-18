@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "tavily",
+  "name": "Tavily",
+  "description": "AI-optimized web search API with clean results.",
+  "category": "search",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "tavily-mcp"
+    ],
+    "env": [
+      {
+        "name": "TAVILY_API_KEY",
+        "label": "API key (tavily.com)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

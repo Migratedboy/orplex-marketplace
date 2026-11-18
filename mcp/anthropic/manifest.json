@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "anthropic",
+  "name": "Anthropic (Claude Code)",
+  "description": "Drive Claude Code (read/edit files, run tools) over MCP from the agent.",
+  "category": "ai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@anthropic-ai/claude-code",
+      "mcp",
+      "serve"
+    ],
+    "env": [
+      {
+        "name": "ANTHROPIC_API_KEY",
+        "label": "API key (optional if the Claude CLI is signed in)",
+        "secret": true,
+        "required": true,
+        "help": "sk-ant-…"
+      }
+    ]
+  }
+}

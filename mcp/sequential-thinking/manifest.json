@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "sequential-thinking",
+  "name": "Sequential thinking",
+  "description": "Structured step-by-step reasoning scaffold for hard problems.",
+  "category": "ai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-sequential-thinking"
+    ],
+    "env": []
+  }
+}

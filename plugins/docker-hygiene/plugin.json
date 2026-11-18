@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "docker-hygiene",
+  "name": "docker-hygiene",
+  "description": "Containerfiles stay lean and reproducible: pinned bases, layered caching, non-root runtime user.",
+  "category": "devops",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "docker-hygiene",
+      "path": "skills/docker-hygiene.md"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "notification-events",
+  "name": "notification-events",
+  "description": "App notification conventions: typed events into the notification center, user-readable copy, no raw errors.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "notification-events",
+      "path": "skills/notification-events.md"
+    }
+  ]
+}

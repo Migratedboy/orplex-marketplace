@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "penpot",
+  "name": "Penpot",
+  "description": "Interact with Penpot design files (open-source Figma alt).",
+  "category": "design",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "penpot-mcp"
+    ],
+    "env": [
+      {
+        "name": "PENPOT_API_URL",
+        "label": "Penpot API base",
+        "required": true,
+        "help": "https://design.penpot.app/api"
+      },
+      {
+        "name": "PENPOT_USERNAME",
+        "label": "Penpot username",
+        "required": false
+      },
+      {
+        "name": "PENPOT_PASSWORD",
+        "label": "Penpot password",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      }
+    ]
+  }
+}

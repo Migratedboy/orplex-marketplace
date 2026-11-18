@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Migratedboy/orplex-marketplace/main/schemas/plugin.schema.json",
+  "title": "Orplex marketplace plugin (bundle) manifest",
+  "description": "A plugin is data: skill files plus declarative hook rules. Anything executable belongs in the app or the SDK, never here.",
+  "type": "object",
+  "required": ["schemaVersion", "slug", "description", "version", "skills"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$" },
+    "name": { "type": "string" },
+    "description": { "type": "string", "minLength": 11 },
+    "category": { "type": "string" },
+    "version": { "type": "string" },
+    "license": { "type": "string" },
+    "hooks": {
+      "type": "object",
+      "description": "Declarative hook rules: hook name -> list of rules ('deny:...' / 'notify:...'). Compiled by the host, never evaluated as code.",
+      "additionalProperties": { "type": "array", "items": { "type": "string", "maxLength": 500 } }
+    },
+    "mcp": {
+      "type": "object",
+      "description": "Optional MCP requirements, keyed by catalog id.",
+      "additionalProperties": { "type": "object" }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "path"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "pattern": "^skills/[A-Za-z0-9._-]+\\.md$" }
+        }
+      }
+    }
+  }
+}

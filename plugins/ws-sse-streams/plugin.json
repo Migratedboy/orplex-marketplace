@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "ws-sse-streams",
+  "name": "ws-sse-streams",
+  "description": "Streaming endpoint conventions: SSE with heartbeats, cursor-based resumption, client cleanup on unmount.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "ws-sse-streams",
+      "path": "skills/ws-sse-streams.md"
+    }
+  ]
+}

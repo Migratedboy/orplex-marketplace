@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "asana",
+  "name": "Asana",
+  "description": "Manage Asana tasks, projects, and teams.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.asana.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.asana.com/mcp"
+    ],
+    "env": [
+      {
+        "name": "ASANA_ACCESS_TOKEN",
+        "label": "Personal access token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "plan-then-act",
+  "name": "plan-then-act",
+  "description": "Multi-step tasks get a visible plan first: steps enumerated, files identified, risks named — then execution follows the plan.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "plan-then-act",
+      "path": "skills/plan-then-act.md"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "clean-imports",
+  "name": "clean-imports",
+  "description": "Import hygiene: no unused imports, no circular dependencies, consistent path aliases.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "clean-imports",
+      "path": "skills/clean-imports.md"
+    }
+  ]
+}

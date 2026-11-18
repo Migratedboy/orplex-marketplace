@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "paypal",
+  "name": "PayPal",
+  "description": "Create and inspect invoices and payments.",
+  "category": "payments",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.paypal.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.paypal.com/mcp"
+    ],
+    "env": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "react-component",
+  "name": "react-component",
+  "description": "React component conventions: hooks-first, props typed at the definition, lists keyed stably, effects narrow and cancellable.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "react-component",
+      "path": "skills/react-component.md"
+    }
+  ]
+}

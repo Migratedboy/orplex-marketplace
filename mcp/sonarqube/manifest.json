@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "sonarqube",
+  "name": "SonarQube",
+  "description": "Inspect code quality metrics and issues.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "sonarqube-api-mcp"
+    ],
+    "env": [
+      {
+        "name": "SONAR_HOST_URL",
+        "label": "SonarQube base URL",
+        "secret": true,
+        "required": true,
+        "help": "https://sonarqube.example.com"
+      },
+      {
+        "name": "SONAR_TOKEN",
+        "label": "SonarQube token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

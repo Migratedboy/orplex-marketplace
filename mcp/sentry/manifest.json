@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "sentry",
+  "name": "Sentry",
+  "description": "Triage errors and inspect stack traces from your Sentry project.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.sentry.dev/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@sentry/mcp-server"
+    ],
+    "env": [
+      {
+        "name": "SENTRY_TOKEN",
+        "label": "Auth token (OAuth prompt if empty)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

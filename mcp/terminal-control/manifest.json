@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "terminal-control",
+  "name": "Terminal",
+  "description": "Persistent terminal sessions the agent can drive.",
+  "category": "shell",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@wonderwhy-er/desktop-commander"
+    ],
+    "env": []
+  }
+}

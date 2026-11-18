@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "elevenlabs",
+  "name": "ElevenLabs",
+  "description": "Text-to-speech and voice cloning.",
+  "category": "ai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://api.elevenlabs.io/v1/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {
+    "cimd": true
+  },
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.elevenlabs.io/v1/mcp",
+      "--transport",
+      "http",
+      "--header",
+      "Authorization:${ELEVENLABS_API_KEY}"
+    ],
+    "env": [
+      {
+        "name": "ELEVENLABS_API_KEY",
+        "label": "Full header value — 'Bearer' + your API key",
+        "secret": true,
+        "required": true,
+        "help": "Bearer …"
+      }
+    ]
+  }
+}

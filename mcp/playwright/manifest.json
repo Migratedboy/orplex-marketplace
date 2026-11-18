@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "playwright",
+  "name": "Playwright (browser)",
+  "description": "Drive a real browser: navigate, click, screenshot, evaluate.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@playwright/mcp@latest"
+    ],
+    "env": []
+  }
+}

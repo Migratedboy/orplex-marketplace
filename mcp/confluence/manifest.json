@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "confluence",
+  "name": "Confluence",
+  "description": "Search and edit Confluence spaces and pages.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "confluence-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "CONFLUENCE_URL",
+        "label": "Site URL",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "CONFLUENCE_EMAIL",
+        "label": "Email",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "CONFLUENCE_API_TOKEN",
+        "label": "API token",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "slug": "branch-discipline",
+  "name": "branch-discipline",
+  "description": "Feature-branch workflow guardrails: pushes to main/master are blocked, commits and pushes are announced, and every task starts from a clean tree.",
+  "category": "devops",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "deny": [
+      "git\\s+push\\s+.*\\b(main|master)\\b",
+      "git\\s+push\\s+origin\\s+(main|master)\\s*$"
+    ],
+    "notify": [
+      "git\\s+push",
+      "git\\s+commit"
+    ]
+  },
+  "skills": [
+    {
+      "name": "branch-discipline",
+      "path": "skills/branch-discipline.md"
+    }
+  ]
+}

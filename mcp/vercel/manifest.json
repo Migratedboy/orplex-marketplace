@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "vercel",
+  "name": "Vercel",
+  "description": "Manage deployments, projects, DNS, and logs on Vercel.",
+  "category": "cloud",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.vercel.com",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@vercel/mcp-adapter",
+      "vercel"
+    ],
+    "env": [
+      {
+        "name": "VERCEL_API_TOKEN",
+        "label": "Token from vercel.com/account/tokens",
+        "secret": true,
+        "required": true
+      }
+    ]
+  },
+  "docsUrl": "https://vercel.com/docs/mcp"
+}

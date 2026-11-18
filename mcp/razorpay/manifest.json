@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "razorpay",
+  "name": "Razorpay",
+  "description": "Manage Razorpay payments and refunds.",
+  "category": "payments",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.razorpay.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.razorpay.com/mcp"
+    ],
+    "env": []
+  }
+}

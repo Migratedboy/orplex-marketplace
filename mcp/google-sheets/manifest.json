@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "google-sheets",
+  "name": "Google Sheets",
+  "description": "Read and write spreadsheets.",
+  "category": "files",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "google-sheets-mcp"
+    ],
+    "env": [
+      {
+        "name": "GOOGLE_SHEETS_CREDENTIALS",
+        "label": "Service-account JSON",
+        "secret": true,
+        "required": true,
+        "help": "{…}"
+      }
+    ]
+  }
+}

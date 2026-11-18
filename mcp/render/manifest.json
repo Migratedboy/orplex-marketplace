@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "render",
+  "name": "Render",
+  "description": "List services, trigger deploys, and read logs on Render.",
+  "category": "cloud",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.render.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.render.com/mcp"
+    ],
+    "env": []
+  }
+}

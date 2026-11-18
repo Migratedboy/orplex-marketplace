@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "supabase-db-direct",
+  "name": "Supabase (direct DB)",
+  "description": "Talk to your Supabase Postgres over a direct connection string.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "postgres-mcp"
+    ],
+    "env": [
+      {
+        "name": "DATABASE_URI",
+        "label": "postgresql://postgres:pass@db.<ref>.supabase.co:5432/postgres",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

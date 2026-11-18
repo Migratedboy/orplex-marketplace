@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "firebase",
+  "name": "Firebase",
+  "description": "Manage Firestore documents, auth users, and Firebase project resources.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@gannonh/firebase-mcp"
+    ],
+    "env": [
+      {
+        "name": "FIREBASE_SERVICE_ACCOUNT_KEY",
+        "label": "Service-account JSON (raw or base64)",
+        "secret": true,
+        "required": true,
+        "help": "{…service account json…}"
+      }
+    ]
+  }
+}

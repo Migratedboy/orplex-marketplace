@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "slug": "ci-green",
+  "name": "ci-green",
+  "description": "CI is the shared gatekeeper: the agent reproduces failing CI steps locally before pushing any fix.",
+  "category": "devops",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "notify": [
+      "run_command.*ci",
+      "run_command.*act "
+    ]
+  },
+  "skills": [
+    {
+      "name": "ci-green",
+      "path": "skills/ci-green.md"
+    }
+  ]
+}

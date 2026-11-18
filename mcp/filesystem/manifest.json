@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "filesystem",
+  "name": "Filesystem (sandboxed folder)",
+  "description": "Read/write files inside a folder you choose.",
+  "category": "files",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-filesystem",
+      "/absolute/path/to/folder"
+    ],
+    "env": []
+  }
+}

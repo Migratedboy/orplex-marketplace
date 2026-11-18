@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "prometheus",
+  "name": "Prometheus",
+  "description": "Run PromQL queries against your metrics.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "prometheus-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "PROMETHEUS_URL",
+        "label": "Prometheus URL",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

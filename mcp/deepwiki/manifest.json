@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "deepwiki",
+  "name": "DeepWiki (repo docs)",
+  "description": "Ask questions about any public GitHub repo and get cited answers.",
+  "category": "search",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.deepwiki.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.deepwiki.com/mcp"
+    ],
+    "env": []
+  }
+}

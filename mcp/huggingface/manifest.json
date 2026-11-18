@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "huggingface",
+  "name": "Hugging Face",
+  "description": "Search models/datasets/spaces and run HF inference.",
+  "category": "ai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://huggingface.co/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://huggingface.co/mcp"
+    ],
+    "env": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "slug": "safe-commands",
+  "name": "safe-commands",
+  "description": "Shell commands run screened and narrow: no rm -rf, no curl|sh, no chained evasion forms.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "deny": [
+      "rm\\s+-rf\\s+/",
+      "curl[^|]*\\|\\s*(ba)?sh",
+      "wget[^|]*\\|\\s*(ba)?sh",
+      "mkfs",
+      ":(){:\\|:&};:"
+    ],
+    "notify": [
+      "run_command"
+    ]
+  },
+  "skills": [
+    {
+      "name": "safe-commands",
+      "path": "skills/safe-commands.md"
+    }
+  ]
+}

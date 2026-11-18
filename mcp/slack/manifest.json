@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "slack",
+  "name": "Slack",
+  "description": "Read channels and send messages in your Slack workspace.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.slack.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.slack.com/mcp"
+    ],
+    "env": []
+  }
+}

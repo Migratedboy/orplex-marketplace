@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "slug": "test-first",
+  "name": "test-first",
+  "description": "Test-driven discipline: a failing test exists before any fix, and new features land with coverage.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "notify": [
+      "run_command.*test",
+      "run_command.*jest",
+      "run_command.*pytest"
+    ]
+  },
+  "skills": [
+    {
+      "name": "test-first",
+      "path": "skills/test-first.md"
+    }
+  ]
+}

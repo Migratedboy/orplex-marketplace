@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "todoist",
+  "name": "Todoist",
+  "description": "Manage tasks and projects in Todoist.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@abhiz123/todoist-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "TODOIST_API_TOKEN",
+        "label": "API token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

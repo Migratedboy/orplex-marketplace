@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "refactor-safety",
+  "name": "refactor-safety",
+  "description": "Behavior-preserving refactors in small verified steps — never mix 'move code' and 'change behavior' in one edit.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "refactor-safety",
+      "path": "skills/refactor-safety.md"
+    }
+  ]
+}

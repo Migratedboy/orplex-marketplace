@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "background-jobs",
+  "name": "background-jobs",
+  "description": "Long-running work follows the executor pattern: DB-backed state, lease/claim discipline, resumable progress, honest terminal states.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "background-jobs",
+      "path": "skills/background-jobs.md"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "strict-types",
+  "name": "strict-types",
+  "description": "No any, no silent casts: the agent must typecheck clean and prefer narrowing over assertions.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "strict-types",
+      "path": "skills/strict-types.md"
+    }
+  ]
+}

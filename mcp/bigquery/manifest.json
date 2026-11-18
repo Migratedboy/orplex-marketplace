@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bigquery",
+  "name": "Google BigQuery",
+  "description": "Run SQL over BigQuery datasets with a service account.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-bigquery"
+    ],
+    "env": [
+      {
+        "name": "BIGQUERY_PROJECT",
+        "label": "GCP project id",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "GOOGLE_APPLICATION_CREDENTIALS_JSON",
+        "label": "Service-account JSON",
+        "secret": true,
+        "required": true,
+        "help": "{…}"
+      }
+    ]
+  }
+}

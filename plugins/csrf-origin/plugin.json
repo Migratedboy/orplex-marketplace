@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "csrf-origin",
+  "name": "csrf-origin",
+  "description": "State-changing endpoints verify origin/method semantics: JSON-only POSTs, origin checks, safe-method discipline.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "csrf-origin",
+      "path": "skills/csrf-origin.md"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "slug": "db-migrations",
+  "name": "db-migrations",
+  "description": "Schema changes are additive-first and pushed with the client regenerated — destructive steps are called out for human review.",
+  "category": "devops",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "notify": [
+      "run_command.*prisma"
+    ]
+  },
+  "skills": [
+    {
+      "name": "db-migrations",
+      "path": "skills/db-migrations.md"
+    }
+  ]
+}

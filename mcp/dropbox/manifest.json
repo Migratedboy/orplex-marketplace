@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "dropbox",
+  "name": "Dropbox",
+  "description": "Browse and fetch files from Dropbox.",
+  "category": "files",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "dropbox-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "DROPBOX_ACCESS_TOKEN",
+        "label": "OAuth token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "blender",
+  "name": "Blender",
+  "description": "Create and manipulate 3D scenes in a running Blender instance.",
+  "category": "design",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "blender-mcp"
+    ],
+    "env": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "mysql",
+  "name": "MySQL",
+  "description": "Schema inspection and read-only queries for MySQL.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@benborla29/mcp-server-mysql"
+    ],
+    "env": [
+      {
+        "name": "MYSQL_HOST",
+        "label": "Host",
+        "required": true
+      },
+      {
+        "name": "MYSQL_USER",
+        "label": "User",
+        "required": true
+      },
+      {
+        "name": "MYSQL_PASS",
+        "label": "Password",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "MYSQL_DATABASE",
+        "label": "Database name",
+        "required": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "canva",
+  "name": "Canva",
+  "description": "Create and edit Canva designs programmatically.",
+  "category": "design",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.canva.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.canva.com/mcp"
+    ],
+    "env": []
+  }
+}

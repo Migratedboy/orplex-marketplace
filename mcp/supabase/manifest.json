@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "supabase",
+  "name": "Supabase",
+  "description": "Query tables, manage auth users, run edge functions, and manage your Postgres project.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.supabase.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@supabase/mcp-server-supabase",
+      "--project-ref=<project-ref>"
+    ],
+    "env": [
+      {
+        "name": "SUPABASE_ACCESS_TOKEN",
+        "label": "Personal access token (supabase.com/dashboard/account/tokens)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  },
+  "docsUrl": "https://supabase.com/docs/guides/getting-started/mcp"
+}

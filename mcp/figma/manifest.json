@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "figma",
+  "name": "Figma",
+  "description": "Read designs, components, and dev-mode metadata from Figma files.",
+  "category": "design",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.figma.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.figma.com/mcp"
+    ],
+    "env": []
+  },
+  "docsUrl": "https://developers.figma.com/docs/figma-mcp-server/"
+}

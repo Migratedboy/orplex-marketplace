@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "auth-gates",
+  "name": "auth-gates",
+  "description": "Route handlers authenticate first: session checked before any work, per-user scoping on every query.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "auth-gates",
+      "path": "skills/auth-gates.md"
+    }
+  ]
+}

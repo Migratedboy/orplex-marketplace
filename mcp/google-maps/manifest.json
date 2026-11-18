@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "google-maps",
+  "name": "Google Maps",
+  "description": "Geocoding, directions, and place lookups.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "google-maps-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "GOOGLE_MAPS_API_KEY",
+        "label": "Maps API key",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

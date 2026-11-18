@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "gitlab",
+  "name": "GitLab",
+  "description": "Manage GitLab projects, MRs, pipelines, and issues.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://gitlab.com/api/v4/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@zereight/mcp-gitlab"
+    ],
+    "env": [
+      {
+        "name": "GITLAB_API_URL",
+        "label": "API base",
+        "required": true,
+        "help": "https://gitlab.com/api/v4"
+      },
+      {
+        "name": "GITLAB_PERSONAL_ACCESS_TOKEN",
+        "label": "PAT",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

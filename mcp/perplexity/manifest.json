@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "perplexity",
+  "name": "Perplexity",
+  "description": "Ask Perplexity's models for cited web answers.",
+  "category": "search",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@perplexity-ai/mcp-server"
+    ],
+    "env": [
+      {
+        "name": "PERPLEXITY_API_KEY",
+        "label": "API key (pplx-…)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

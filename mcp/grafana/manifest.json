@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "grafana",
+  "name": "Grafana",
+  "description": "Query dashboards and datasources; investigate incidents.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-grafana"
+    ],
+    "env": [
+      {
+        "name": "GRAFANA_URL",
+        "label": "Grafana URL",
+        "secret": true,
+        "required": true,
+        "help": "https://grafana.example.com"
+      },
+      {
+        "name": "GRAFANA_SERVICE_ACCOUNT_TOKEN",
+        "label": "Service account token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

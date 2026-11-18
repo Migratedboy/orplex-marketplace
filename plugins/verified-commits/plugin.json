@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "slug": "verified-commits",
+  "name": "verified-commits",
+  "description": "The agent may only claim a task done when the machine agrees: typecheck and tests must exit 0 before any 'done' summary, and history rewriting is off-limits.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "deny": [
+      "git\\s+push\\s+.*--force",
+      "git\\s+commit\\s+.*--no-verify"
+    ],
+    "notify": [
+      "git\\s+commit"
+    ]
+  },
+  "skills": [
+    {
+      "name": "verified-commits",
+      "path": "skills/verified-commits.md"
+    }
+  ]
+}

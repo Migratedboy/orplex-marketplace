@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "google-sheets-remote",
+  "name": "Google Sheets (remote)",
+  "description": "Read and write Google Sheets via Google's hosted MCP.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://sheetsmcp.googleapis.com/mcp/v1",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://sheetsmcp.googleapis.com/mcp/v1"
+    ],
+    "env": []
+  }
+}

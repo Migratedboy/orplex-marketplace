@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Migratedboy/orplex-marketplace/main/schemas/mcp.schema.json",
+  "title": "Orplex marketplace MCP server manifest",
+  "type": "object",
+  "required": ["schemaVersion", "id", "name", "description", "auth", "version"],
+  "additionalProperties": true,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 11 },
+    "category": { "type": "string" },
+    "version": { "type": "string" },
+    "license": { "type": "string" },
+    "auth": { "enum": ["oauth", "token", "none"] },
+    "popular": { "type": "boolean" },
+    "docsUrl": { "type": "string", "format": "uri" },
+    "remote": {
+      "type": "object",
+      "required": ["url", "transport"],
+      "additionalProperties": false,
+      "properties": {
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "transport": { "enum": ["streamable-http", "sse"] }
+      }
+    },
+    "oauth": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scopes": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "clientId": { "type": "string" },
+        "clientSecret": { "type": "string" },
+        "authority": { "type": "string", "format": "uri" },
+        "cimd": { "type": "boolean" }
+      }
+    },
+    "stdio": {
+      "type": "object",
+      "required": ["command", "args"],
+      "additionalProperties": false,
+      "properties": {
+        "command": { "type": "string", "minLength": 1 },
+        "args": { "type": "array", "items": { "type": "string" } },
+        "env": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "label"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$" },
+              "label": { "type": "string", "minLength": 1 },
+              "secret": { "type": "boolean" },
+              "required": { "type": "boolean" },
+              "help": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

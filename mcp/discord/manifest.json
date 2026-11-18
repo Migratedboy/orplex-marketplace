@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "discord",
+  "name": "Discord",
+  "description": "Read channels and send messages to a Discord server.",
+  "category": "comms",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "discord-mcp"
+    ],
+    "env": [
+      {
+        "name": "DISCORD_BOT_TOKEN",
+        "label": "Bot token",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "DISCORD_GUILD_ID",
+        "label": "Server id",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

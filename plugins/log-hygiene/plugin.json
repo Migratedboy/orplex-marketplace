@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "log-hygiene",
+  "name": "log-hygiene",
+  "description": "Logs are safe by construction: no tokens, no personal data, no full payloads — ids and summaries only.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "log-hygiene",
+      "path": "skills/log-hygiene.md"
+    }
+  ]
+}

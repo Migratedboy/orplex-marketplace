@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "env-parity",
+  "name": "env-parity",
+  "description": "Environment configuration stays explicit: new env vars are documented, defaulted, and never silently required.",
+  "category": "devops",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "env-parity",
+      "path": "skills/env-parity.md"
+    }
+  ]
+}

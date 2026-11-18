@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "puppeteer",
+  "name": "Puppeteer (browser)",
+  "description": "Headless Chrome automation and page scraping.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "puppeteer-mcp-server"
+    ],
+    "env": []
+  }
+}

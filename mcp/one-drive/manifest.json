@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "one-drive",
+  "name": "OneDrive / SharePoint",
+  "description": "Search and read files from Microsoft 365.",
+  "category": "files",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://graph.microsoft.com/mcp/v1",
+    "transport": "streamable-http"
+  },
+  "oauth": {
+    "authority": "https://login.microsoftonline.com/common",
+    "scopes": [
+      "User.Read",
+      "Files.Read.All",
+      "Sites.Read.All",
+      "offline_access"
+    ]
+  },
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://graph.microsoft.com/mcp/v1"
+    ],
+    "env": []
+  }
+}

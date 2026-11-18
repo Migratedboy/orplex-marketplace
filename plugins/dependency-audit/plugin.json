@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "dependency-audit",
+  "name": "dependency-audit",
+  "description": "New dependencies are justified, pinned, and checked: no floating ranges, no packages that duplicate existing ones.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "dependency-audit",
+      "path": "skills/dependency-audit.md"
+    }
+  ]
+}

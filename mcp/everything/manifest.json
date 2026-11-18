@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "everything",
+  "name": "Everything (test server)",
+  "description": "Reference MCP server exercising every protocol capability — useful to verify the pipeline.",
+  "category": "ai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-everything"
+    ],
+    "env": []
+  }
+}

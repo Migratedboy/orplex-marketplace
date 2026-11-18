@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "google-slides-remote",
+  "name": "Google Slides (remote)",
+  "description": "Read and edit Google Slides via Google's hosted MCP.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://slidesmcp.googleapis.com/mcp/v1",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://slidesmcp.googleapis.com/mcp/v1"
+    ],
+    "env": []
+  }
+}

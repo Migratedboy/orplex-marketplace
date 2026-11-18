@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "firecrawl",
+  "name": "Firecrawl",
+  "description": "Scrape, crawl, and extract structured data from websites.",
+  "category": "data",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "firecrawl-mcp"
+    ],
+    "env": [
+      {
+        "name": "FIRECRAWL_API_KEY",
+        "label": "API key (firecrawl.dev)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

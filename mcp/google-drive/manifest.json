@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "google-drive",
+  "name": "Google Drive",
+  "description": "Search and read files from Google Drive.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "google-drive-mcp"
+    ],
+    "env": [
+      {
+        "name": "GOOGLE_CLIENT_ID",
+        "label": "OAuth client id",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "GOOGLE_CLIENT_SECRET",
+        "label": "OAuth client secret",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      }
+    ]
+  }
+}

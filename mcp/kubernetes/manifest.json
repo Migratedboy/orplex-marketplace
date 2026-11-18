@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "kubernetes",
+  "name": "Kubernetes",
+  "description": "Inspect pods, deployments, and logs in your kubectl-connected cluster.",
+  "category": "cloud",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-server-kubernetes"
+    ],
+    "env": []
+  }
+}

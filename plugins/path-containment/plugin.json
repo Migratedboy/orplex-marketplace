@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "path-containment",
+  "name": "path-containment",
+  "description": "File operations stay inside the workspace: absolute-path escapes, traversal, and symlink hops are refused.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "path-containment",
+      "path": "skills/path-containment.md"
+    }
+  ]
+}

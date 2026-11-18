@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "input-validation",
+  "name": "input-validation",
+  "description": "Every request body, query param, and external input is schema-validated before use — zod at the boundary.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "input-validation",
+      "path": "skills/input-validation.md"
+    }
+  ]
+}

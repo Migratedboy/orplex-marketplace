@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "mongodb",
+  "name": "MongoDB",
+  "description": "Query collections and inspect documents in a MongoDB deployment.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mongodb-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "MDB_MCP_CONNECTION_STRING",
+        "label": "mongodb+srv://user:pass@cluster/…",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

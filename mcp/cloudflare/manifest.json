@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "description": "Manage Workers, KV, R2, DNS, and analytics across your CF account.",
+  "category": "cloud",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.cloudflare.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.cloudflare.com/mcp"
+    ],
+    "env": []
+  },
+  "docsUrl": "https://developers.cloudflare.com/agents/model-context-protocol/"
+}

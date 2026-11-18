@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "obsidian",
+  "name": "Obsidian",
+  "description": "Read and edit notes in your Obsidian vault (Local REST API plugin).",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-obsidian"
+    ],
+    "env": [
+      {
+        "name": "OBSIDIAN_API_KEY",
+        "label": "REST API key from the plugin",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

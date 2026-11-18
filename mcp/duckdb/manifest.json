@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "duckdb",
+  "name": "DuckDB",
+  "description": "Query local files (Parquet/CSV/JSON) with DuckDB SQL.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "popular": true,
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-duckdb"
+    ],
+    "env": []
+  }
+}

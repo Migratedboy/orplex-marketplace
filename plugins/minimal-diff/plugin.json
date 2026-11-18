@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "minimal-diff",
+  "name": "minimal-diff",
+  "description": "Changes stay minimal and reviewable: no drive-by reformatting, no scope creep, every touched line justified by the task.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "minimal-diff",
+      "path": "skills/minimal-diff.md"
+    }
+  ]
+}

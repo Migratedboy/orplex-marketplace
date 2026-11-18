@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "shell",
+  "name": "Shell (sandboxed)",
+  "description": "Run allow-listed shell commands as tools.",
+  "category": "shell",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-shell"
+    ],
+    "env": [
+      {
+        "name": "SHELL_ALLOWLIST",
+        "label": "Comma-separated commands",
+        "required": false,
+        "help": "ls,grep,wc"
+      }
+    ]
+  }
+}

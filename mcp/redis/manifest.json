@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "redis",
+  "name": "Redis",
+  "description": "Inspect keys, streams, and run Redis commands.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-redis"
+    ],
+    "env": [
+      {
+        "name": "REDIS_URI",
+        "label": "redis://host:6379",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "google-drive-remote",
+  "name": "Google Drive (remote)",
+  "description": "Search and read files from Google Drive via Google's hosted MCP.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://drivemcp.googleapis.com/mcp/v1",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://drivemcp.googleapis.com/mcp/v1"
+    ],
+    "env": []
+  }
+}

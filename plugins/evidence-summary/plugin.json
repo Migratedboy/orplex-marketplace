@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "evidence-summary",
+  "name": "evidence-summary",
+  "description": "Task summaries cite evidence: exit codes, test names, file paths — claims are backed by shown output, not vibes.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "evidence-summary",
+      "path": "skills/evidence-summary.md"
+    }
+  ]
+}

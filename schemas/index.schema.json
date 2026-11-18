@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Migratedboy/orplex-marketplace/main/schemas/index.schema.json",
+  "title": "Orplex marketplace index",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "items", "signature"],
+  "additionalProperties": true,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "minAppVersion": { "type": ["string", "null"] },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "skill": { "type": "integer", "minimum": 0 },
+        "mcp": { "type": "integer", "minimum": 0 },
+        "plugin": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/item" }
+    },
+    "signature": {
+      "type": ["string", "null"],
+      "description": "base64url Ed25519 signature over canonical JSON of this index without the signature field."
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": ["id", "kind", "version", "path", "sha256"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$" },
+        "kind": { "enum": ["skill", "mcp", "plugin"] },
+        "version": { "type": "string" },
+        "engine": { "type": ["string", "null"], "description": "Semver range of consuming app/sdk." },
+        "path": { "type": "string", "description": "Directory inside this repo, e.g. skills/add-types." },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "sha256 over sorted 'name\\ncontent' pairs of every file in the item directory."
+        },
+        "size": { "type": "integer", "minimum": 0 },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "auth": { "enum": ["oauth", "token", "none"] },
+        "description": { "type": "string" },
+        "title": { "type": "string" },
+        "skillCount": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "arxiv",
+  "name": "arXiv",
+  "description": "Search and fetch research papers.",
+  "category": "data",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "arxiv-mcp-server"
+    ],
+    "env": []
+  }
+}

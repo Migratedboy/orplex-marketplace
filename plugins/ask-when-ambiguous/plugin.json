@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "ask-when-ambiguous",
+  "name": "ask-when-ambiguous",
+  "description": "Ambiguity triggers one clarifying question, not a guess: irreversible or product-shaped decisions belong to the human.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "ask-when-ambiguous",
+      "path": "skills/ask-when-ambiguous.md"
+    }
+  ]
+}

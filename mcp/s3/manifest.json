@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "s3",
+  "name": "AWS S3",
+  "description": "List buckets, upload/download objects, and copy files on S3.",
+  "category": "cloud",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-s3"
+    ],
+    "env": [
+      {
+        "name": "AWS_ACCESS_KEY_ID",
+        "label": "Access key id",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "AWS_SECRET_ACCESS_KEY",
+        "label": "Secret access key",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      },
+      {
+        "name": "AWS_REGION",
+        "label": "Region",
+        "secret": true,
+        "required": true,
+        "help": "us-east-1"
+      }
+    ]
+  }
+}

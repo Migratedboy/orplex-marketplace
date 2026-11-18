@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "slug": "lint-clean",
+  "name": "lint-clean",
+  "description": "The linter is the gate: zero new warnings allowed, autofix first, disable-with-reason only when justified.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "notify": [
+      "run_command.*eslint",
+      "run_command.*lint"
+    ]
+  },
+  "skills": [
+    {
+      "name": "lint-clean",
+      "path": "skills/lint-clean.md"
+    }
+  ]
+}

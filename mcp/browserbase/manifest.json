@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "browserbase",
+  "name": "Browserbase",
+  "description": "Run headless browser sessions in the cloud for scraping.",
+  "category": "data",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@browserbasehq/mcp"
+    ],
+    "env": [
+      {
+        "name": "BROWSERBASE_API_KEY",
+        "label": "API key",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "BROWSERBASE_PROJECT_ID",
+        "label": "Project id",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

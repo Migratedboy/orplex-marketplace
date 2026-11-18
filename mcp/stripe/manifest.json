@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "stripe",
+  "name": "Stripe",
+  "description": "Manage customers, payments, and subscriptions (test-mode safe options).",
+  "category": "payments",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@stripe/mcp"
+    ],
+    "env": [
+      {
+        "name": "STRIPE_SECRET_KEY",
+        "label": "Secret key",
+        "secret": true,
+        "required": true,
+        "help": "sk_…"
+      }
+    ]
+  }
+}

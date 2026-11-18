@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "root-cause-first",
+  "name": "root-cause-first",
+  "description": "Fix causes, not symptoms: reproduce, trace to origin, then patch — patching the nearest symptom is failure.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "root-cause-first",
+      "path": "skills/root-cause-first.md"
+    }
+  ]
+}

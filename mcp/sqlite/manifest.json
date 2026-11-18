@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "sqlite",
+  "name": "SQLite",
+  "description": "Query and modify a local SQLite database file.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-sqlite",
+      "--db-path",
+      "database.db"
+    ],
+    "env": []
+  }
+}

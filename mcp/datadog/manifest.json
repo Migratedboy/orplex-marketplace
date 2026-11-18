@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "datadog",
+  "name": "Datadog",
+  "description": "Query monitors, metrics, and logs from Datadog.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "datadog-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "DD_API_KEY",
+        "label": "API key",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "DD_APP_KEY",
+        "label": "Application key",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      }
+    ]
+  }
+}

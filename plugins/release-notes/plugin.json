@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "release-notes",
+  "name": "release-notes",
+  "description": "Every finished task produces a changelog-ready entry: what changed, why, migration/upgrade notes.",
+  "category": "devops",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "release-notes",
+      "path": "skills/release-notes.md"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "exa",
+  "name": "Exa",
+  "description": "Neural/semantic web search and similar-page search.",
+  "category": "search",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "exa-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "EXA_API_KEY",
+        "label": "API key (exa.ai)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

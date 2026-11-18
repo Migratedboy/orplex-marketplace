@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "doc-strings",
+  "name": "doc-strings",
+  "description": "Every exported function gets a doc comment: what it does, what it returns, and what it throws.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "doc-strings",
+      "path": "skills/doc-strings.md"
+    }
+  ]
+}

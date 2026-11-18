@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "slug": "token-frugality",
+  "name": "token-frugality",
+  "description": "Context-budget habits: read files in targeted slices, never re-read what is already in the transcript, prefer precise searches over dumps.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "notify": [
+      "read_file"
+    ]
+  },
+  "skills": [
+    {
+      "name": "token-frugality",
+      "path": "skills/token-frugality.md"
+    }
+  ]
+}

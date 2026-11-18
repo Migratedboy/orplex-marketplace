@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "airtable",
+  "name": "Airtable",
+  "description": "Create, read, and update records in Airtable bases.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.airtable.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "airtable-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "AIRTABLE_API_KEY",
+        "label": "Personal access token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

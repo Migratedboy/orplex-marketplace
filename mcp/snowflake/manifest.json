@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "snowflake",
+  "name": "Snowflake",
+  "description": "Query Snowflake warehouses and inspect schemas.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-snowflake-server"
+    ],
+    "env": [
+      {
+        "name": "SNOWFLAKE_ACCOUNT",
+        "label": "Account identifier",
+        "required": true
+      },
+      {
+        "name": "SNOWFLAKE_USER",
+        "label": "User",
+        "required": true
+      },
+      {
+        "name": "SNOWFLAKE_PASSWORD",
+        "label": "Password",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      },
+      {
+        "name": "SNOWFLAKE_WAREHOUSE",
+        "label": "Warehouse",
+        "required": true
+      }
+    ]
+  }
+}

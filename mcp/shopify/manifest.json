@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "shopify",
+  "name": "Shopify (dev docs)",
+  "description": "GraphQL schema exploration and dev docs for Shopify apps.",
+  "category": "payments",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@shopify/dev-mcp"
+    ],
+    "env": []
+  }
+}

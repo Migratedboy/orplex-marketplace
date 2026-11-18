@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "git",
+  "name": "Git (local)",
+  "description": "Read and operate on a local git repository: diff, log, commit, branch.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-git",
+      "--repository",
+      "."
+    ],
+    "env": []
+  }
+}

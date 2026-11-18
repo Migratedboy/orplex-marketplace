@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "framer",
+  "name": "Framer",
+  "description": "Manage Framer projects and publish sites.",
+  "category": "design",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.framer.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.framer.com/mcp"
+    ],
+    "env": []
+  }
+}

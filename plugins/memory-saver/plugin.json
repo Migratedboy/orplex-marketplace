@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "memory-saver",
+  "name": "memory-saver",
+  "description": "Durable workspace facts get captured: stack decisions, user preferences, verified patterns — so the next task starts smarter.",
+  "category": "intelligence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "memory-saver",
+      "path": "skills/memory-saver.md"
+    }
+  ]
+}

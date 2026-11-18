@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "twilio",
+  "name": "Twilio",
+  "description": "Send SMS/WhatsApp and manage calls.",
+  "category": "comms",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@twilio-alpha/mcp"
+    ],
+    "env": [
+      {
+        "name": "TWILIO_ACCOUNT_SID",
+        "label": "Account SID",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "TWILIO_AUTH_TOKEN",
+        "label": "Auth token",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      }
+    ]
+  }
+}

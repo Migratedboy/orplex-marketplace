@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "apify",
+  "name": "Apify",
+  "description": "Run Apify actors (web scrapers) and fetch their results.",
+  "category": "data",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@apify/actors-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "APIFY_TOKEN",
+        "label": "Apify token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

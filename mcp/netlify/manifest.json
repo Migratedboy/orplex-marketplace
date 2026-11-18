@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "netlify",
+  "name": "Netlify",
+  "description": "Create sites, deploy builds, and read deploy logs.",
+  "category": "cloud",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@netlify/mcp"
+    ],
+    "env": [
+      {
+        "name": "NETLIFY_ACCESS_TOKEN",
+        "label": "Personal access token",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

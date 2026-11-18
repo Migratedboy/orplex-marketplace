@@ -1,0 +1,22 @@
+{
+  "name": "orplex-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Signed data catalog of Orplex skills, MCP servers and plugins. Consumed by @orplex/sdk at runtime; never executes fetched code.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "extract": "node scripts/extract.mjs",
+    "generate": "node scripts/generate.mjs",
+    "gen": "npm run extract && npm run generate && npm run parity && npm run build:index",
+    "parity": "node scripts/parity.mjs",
+    "build:index": "node scripts/build-index.mjs",
+    "validate": "node scripts/validate.mjs",
+    "verify:sdk": "node scripts/verify-with-sdk.mjs",
+    "keys": "node scripts/keygen.mjs",
+    "test": "npm run validate && npm run verify:sdk"
+  }
+}

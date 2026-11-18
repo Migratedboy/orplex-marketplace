@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "prisma-model",
+  "name": "prisma-model",
+  "description": "Prisma model conventions: cuid ids, timestamps, motivated indexes, snake_case table mapping, generate+push after edits.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "prisma-model",
+      "path": "skills/prisma-model.md"
+    }
+  ]
+}

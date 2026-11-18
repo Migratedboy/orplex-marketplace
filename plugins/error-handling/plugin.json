@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "error-handling",
+  "name": "error-handling",
+  "description": "Errors are typed, actionable, and never swallowed: no empty catch blocks, no string-only errors.",
+  "category": "quality",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "error-handling",
+      "path": "skills/error-handling.md"
+    }
+  ]
+}

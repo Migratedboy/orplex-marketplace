@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "neon",
+  "name": "Neon Postgres",
+  "description": "Manage Neon projects, branches, and run SQL on serverless Postgres.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.neon.tech/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.neon.tech/mcp"
+    ],
+    "env": []
+  },
+  "docsUrl": "https://neon.com/docs/ai/neon-mcp-server"
+}

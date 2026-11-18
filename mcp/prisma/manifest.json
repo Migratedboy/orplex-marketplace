@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "prisma",
+  "name": "Prisma Postgres",
+  "description": "Query and manage a Prisma Postgres instance.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://mcp.prisma.io/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.prisma.io/mcp"
+    ],
+    "env": []
+  },
+  "docsUrl": "https://www.prisma.io/docs/postgres/integrations/mcp-server"
+}

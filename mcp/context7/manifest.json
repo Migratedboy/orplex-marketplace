@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "context7",
+  "name": "Context7 (library docs)",
+  "description": "Up-to-date documentation for thousands of libraries, injected at prompt time.",
+  "category": "search",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.context7.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@upstash/context7-mcp"
+    ],
+    "env": []
+  }
+}

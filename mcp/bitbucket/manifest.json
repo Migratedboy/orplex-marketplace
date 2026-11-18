@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bitbucket",
+  "name": "Bitbucket",
+  "description": "Manage Bitbucket repos and pull requests.",
+  "category": "devtools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-bitbucket"
+    ],
+    "env": [
+      {
+        "name": "BITBUCKET_USERNAME",
+        "label": "Username",
+        "secret": true,
+        "required": true
+      },
+      {
+        "name": "BITBUCKET_APP_PASSWORD",
+        "label": "App password",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      }
+    ]
+  }
+}

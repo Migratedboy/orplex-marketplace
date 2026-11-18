@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fetch",
+  "name": "Fetch (web pages)",
+  "description": "Fetch a URL and return clean readable text/markdown.",
+  "category": "web",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "popular": true,
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-server-fetch"
+    ],
+    "env": []
+  }
+}

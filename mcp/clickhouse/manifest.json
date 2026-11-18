@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "clickhouse",
+  "name": "ClickHouse",
+  "description": "Run SQL and inspect tables on ClickHouse.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "mcp-clickhouse"
+    ],
+    "env": [
+      {
+        "name": "CLICKHOUSE_HOST",
+        "label": "Host URL",
+        "required": true
+      },
+      {
+        "name": "CLICKHOUSE_USER",
+        "label": "User",
+        "required": true
+      },
+      {
+        "name": "CLICKHOUSE_PASSWORD",
+        "label": "Password",
+        "secret": true,
+        "required": true,
+        "help": "••••"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "markdown-notes",
+  "name": "Markdown notes (filesystem)",
+  "description": "Give the agent structured access to a folder of markdown notes.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-filesystem",
+      "/path/to/notes"
+    ],
+    "env": []
+  }
+}

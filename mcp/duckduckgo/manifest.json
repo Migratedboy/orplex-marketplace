@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "duckduckgo",
+  "name": "DuckDuckGo",
+  "description": "Free web search with no API key required.",
+  "category": "search",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "popular": true,
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "duckduckgo-mcp-server"
+    ],
+    "env": []
+  }
+}

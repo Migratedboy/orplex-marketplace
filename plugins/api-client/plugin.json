@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "api-client",
+  "name": "api-client",
+  "description": "Client data-fetching conventions: the shared apiFetch wrapper, typed responses, abortable requests, honest error surfaces.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "api-client",
+      "path": "skills/api-client.md"
+    }
+  ]
+}

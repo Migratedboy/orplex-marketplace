@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "flyio",
+  "name": "Fly.io",
+  "description": "Manage Fly machines and apps.",
+  "category": "cloud",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "fly-io-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "FLY_API_TOKEN",
+        "label": "Fly.io token (flyctl tokens create)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

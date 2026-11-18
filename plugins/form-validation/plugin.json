@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "form-validation",
+  "name": "form-validation",
+  "description": "Form patterns: schema-driven validation shared between client and server, inline errors, disabled-while-pending submit.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "form-validation",
+      "path": "skills/form-validation.md"
+    }
+  ]
+}

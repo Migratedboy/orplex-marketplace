@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "postgres",
+  "name": "PostgreSQL (read-only)",
+  "description": "Inspect schemas and run read-only SQL against a Postgres database.",
+  "category": "database",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "token",
+  "popular": true,
+  "stdio": {
+    "command": "uvx",
+    "args": [
+      "postgres-mcp",
+      "--access-mode=restricted"
+    ],
+    "env": [
+      {
+        "name": "DATABASE_URI",
+        "label": "postgres://user:pass@host:5432/db",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

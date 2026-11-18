@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "gmail",
+  "name": "Gmail",
+  "description": "Draft, search, and send email.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://gmailmcp.googleapis.com/mcp/v1",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://gmailmcp.googleapis.com/mcp/v1"
+    ],
+    "env": []
+  }
+}

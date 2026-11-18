@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "notion",
+  "name": "Notion",
+  "description": "Search, read, and write Notion pages, databases, and blocks.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "popular": true,
+  "remote": {
+    "url": "https://mcp.notion.com/mcp",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@notionhq/notion-mcp-server"
+    ],
+    "env": [
+      {
+        "name": "NOTION_TOKEN",
+        "label": "Internal integration token (secret_…)",
+        "secret": true,
+        "required": true
+      }
+    ]
+  }
+}

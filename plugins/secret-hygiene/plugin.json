@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "slug": "secret-hygiene",
+  "name": "secret-hygiene",
+  "description": "Blocks tool calls that would write or echo credential-shaped strings (AWS keys, GitHub tokens, private key blocks) before they land in any file or log.",
+  "category": "security",
+  "version": "1.0.0",
+  "license": "MIT",
+  "hooks": {
+    "deny": [
+      "AKIA[0-9A-Z]{16}",
+      "ghp_[A-Za-z0-9]{30,}",
+      "github_pat_[A-Za-z0-9_]{20,}",
+      "sk-[A-Za-z0-9]{20,}",
+      "-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----"
+    ],
+    "notify": [
+      "run_command.*env",
+      "run_command.*printenv"
+    ]
+  },
+  "skills": [
+    {
+      "name": "secret-hygiene",
+      "path": "skills/secret-hygiene.md"
+    }
+  ]
+}

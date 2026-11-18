@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "backup-aware",
+  "name": "backup-aware",
+  "description": "Data-touching operations respect backups: snapshot before risky changes, verify restore paths, never hand-edit production data.",
+  "category": "devops",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "backup-aware",
+      "path": "skills/backup-aware.md"
+    }
+  ]
+}

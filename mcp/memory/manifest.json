@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "memory",
+  "name": "Persistent memory",
+  "description": "Knowledge-graph memory the agent can read/write across runs.",
+  "category": "ai",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "none",
+  "popular": true,
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-memory"
+    ],
+    "env": []
+  }
+}

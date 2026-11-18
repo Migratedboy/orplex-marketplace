@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "google-docs-remote",
+  "name": "Google Docs (remote)",
+  "description": "Read and edit Google Docs via Google's hosted MCP.",
+  "category": "productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "auth": "oauth",
+  "remote": {
+    "url": "https://docsmcp.googleapis.com/mcp/v1",
+    "transport": "streamable-http"
+  },
+  "oauth": {},
+  "stdio": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://docsmcp.googleapis.com/mcp/v1"
+    ],
+    "env": []
+  }
+}

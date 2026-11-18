@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "slug": "rest-endpoint",
+  "name": "rest-endpoint",
+  "description": "Scaffolding for typed Next.js route handlers: auth first, zod-validated bodies, typed JSON errors, status-code discipline.",
+  "category": "domain",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "rest-endpoint",
+      "path": "skills/rest-endpoint.md"
+    }
+  ]
+}
