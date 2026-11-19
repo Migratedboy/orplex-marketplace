@@ -17,7 +17,8 @@
     "validate": "node scripts/validate.mjs",
     "verify:sdk": "node scripts/verify-with-sdk.mjs",
     "keys": "node scripts/keygen.mjs",
-    "test": "npm run validate && npm run verify:sdk",
-    "build:bundle": "node scripts/build-bundle.mjs"
+    "test": "npm run validate && npm run verify:sdk && npm run verify:hooks",
+    "build:bundle": "node scripts/build-bundle.mjs",
+    "verify:hooks": "node scripts/verify-hooks.mjs"
   }
 }

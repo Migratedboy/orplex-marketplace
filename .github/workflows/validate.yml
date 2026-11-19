@@ -28,3 +28,19 @@ jobs:
             echo "::error::catalog/index.json is stale — run 'npm run build:index' and commit the result"
             exit 1
           }
+
+      - name: Check the bundle carries hooks and is current
+        run: |
+          git diff --exit-code -- catalog/bundle.json || {
+            echo "::error::catalog/bundle.json is stale — run 'npm run build:bundle' and commit the result"
+            exit 1
+          }
+          node -e '
+            const b = require("./catalog/bundle.json");
+            const withHooks = b.plugins.filter((p) => p.hooks && p.hooks.deny && p.hooks.deny.length);
+            if (withHooks.length < 10) {
+              console.error("::error::only " + withHooks.length + " bundles publish deny rules — hooks are being dropped by build:bundle.mjs");
+              process.exit(1);
+            }
+            console.log("bundles with deny rules: " + withHooks.length);
+          '

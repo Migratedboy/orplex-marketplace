@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T13:55:23.329Z",
+  "generatedAt": "2026-11-19T17:19:40.797Z",
   "counts": {
     "skill": 101,
     "mcp": 100,
@@ -3628,6 +3628,16 @@
       "description": "Feature-branch workflow guardrails: pushes to main/master are blocked, commits and pushes are announced, and every task starts from a clean tree.",
       "category": "devops",
       "version": "1.0.0",
+      "hooks": {
+        "deny": [
+          "git\\s+push\\s+.*\\b(main|master)\\b",
+          "git\\s+push\\s+origin\\s+(main|master)\\s*$"
+        ],
+        "notify": [
+          "git\\s+push",
+          "git\\s+commit"
+        ]
+      },
       "skills": [
         {
           "name": "branch-discipline",
@@ -3642,6 +3652,12 @@
       "description": "CI is the shared gatekeeper: the agent reproduces failing CI steps locally before pushing any fix.",
       "category": "devops",
       "version": "1.0.0",
+      "hooks": {
+        "notify": [
+          "run_command.*ci",
+          "run_command.*act "
+        ]
+      },
       "skills": [
         {
           "name": "ci-green",
@@ -3670,6 +3686,11 @@
       "description": "Commit messages follow Conventional Commits: type(scope): subject, imperative mood, body explains why.",
       "category": "devops",
       "version": "1.0.0",
+      "hooks": {
+        "notify": [
+          "git\\s+commit"
+        ]
+      },
       "skills": [
         {
           "name": "conventional-commits",
@@ -3698,6 +3719,11 @@
       "description": "Schema changes are additive-first and pushed with the client regenerated — destructive steps are called out for human review.",
       "category": "devops",
       "version": "1.0.0",
+      "hooks": {
+        "notify": [
+          "run_command.*prisma"
+        ]
+      },
       "skills": [
         {
           "name": "db-migrations",
@@ -3824,6 +3850,12 @@
       "description": "The linter is the gate: zero new warnings allowed, autofix first, disable-with-reason only when justified.",
       "category": "quality",
       "version": "1.0.0",
+      "hooks": {
+        "notify": [
+          "run_command.*eslint",
+          "run_command.*lint"
+        ]
+      },
       "skills": [
         {
           "name": "lint-clean",
@@ -4006,6 +4038,18 @@
       "description": "Shell commands run screened and narrow: no rm -rf, no curl|sh, no chained evasion forms.",
       "category": "security",
       "version": "1.0.0",
+      "hooks": {
+        "deny": [
+          "rm\\s+-rf\\s+/",
+          "curl[^|]*\\|\\s*(ba)?sh",
+          "wget[^|]*\\|\\s*(ba)?sh",
+          "mkfs",
+          ":(){:\\|:&};:"
+        ],
+        "notify": [
+          "run_command"
+        ]
+      },
       "skills": [
         {
           "name": "safe-commands",
@@ -4020,6 +4064,19 @@
       "description": "Blocks tool calls that would write or echo credential-shaped strings (AWS keys, GitHub tokens, private key blocks) before they land in any file or log.",
       "category": "security",
       "version": "1.0.0",
+      "hooks": {
+        "deny": [
+          "AKIA[0-9A-Z]{16}",
+          "ghp_[A-Za-z0-9]{30,}",
+          "github_pat_[A-Za-z0-9_]{20,}",
+          "sk-[A-Za-z0-9]{20,}",
+          "-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----"
+        ],
+        "notify": [
+          "run_command.*env",
+          "run_command.*printenv"
+        ]
+      },
       "skills": [
         {
           "name": "secret-hygiene",
@@ -4048,6 +4105,13 @@
       "description": "Test-driven discipline: a failing test exists before any fix, and new features land with coverage.",
       "category": "quality",
       "version": "1.0.0",
+      "hooks": {
+        "notify": [
+          "run_command.*test",
+          "run_command.*jest",
+          "run_command.*pytest"
+        ]
+      },
       "skills": [
         {
           "name": "test-first",
@@ -4062,6 +4126,11 @@
       "description": "Context-budget habits: read files in targeted slices, never re-read what is already in the transcript, prefer precise searches over dumps.",
       "category": "intelligence",
       "version": "1.0.0",
+      "hooks": {
+        "notify": [
+          "read_file"
+        ]
+      },
       "skills": [
         {
           "name": "token-frugality",
@@ -4076,6 +4145,12 @@
       "description": "Deliberate tool use: every call has a purpose, redundant probes are batched, exploratory churn is visible and self-limited.",
       "category": "intelligence",
       "version": "1.0.0",
+      "hooks": {
+        "notify": [
+          "search_code",
+          "list_files"
+        ]
+      },
       "skills": [
         {
           "name": "tool-budget",
@@ -4090,6 +4165,15 @@
       "description": "The agent may only claim a task done when the machine agrees: typecheck and tests must exit 0 before any 'done' summary, and history rewriting is off-limits.",
       "category": "quality",
       "version": "1.0.0",
+      "hooks": {
+        "deny": [
+          "git\\s+push\\s+.*--force",
+          "git\\s+commit\\s+.*--no-verify"
+        ],
+        "notify": [
+          "git\\s+commit"
+        ]
+      },
       "skills": [
         {
           "name": "verified-commits",
@@ -4113,5 +4197,5 @@
       ]
     }
   ],
-  "signature": "034KfrnW7fT7CprdERfHmK-xZtrJkkThJAOht1twVJXT-URn98WIRYGe6Ae5fdQB4Ssh-uDRL9aEP2q6FzhwBQ"
+  "signature": "52sLwXYT1kALkOOOBJ6jfEIyS3hJXfstkc2fs9ATyhKQIJ3ZQgG_PzNStN4TvpcuZSdHazzJA7jpO3ax3wrxCg"
 }

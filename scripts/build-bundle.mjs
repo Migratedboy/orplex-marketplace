@@ -86,6 +86,11 @@ for (const slug of dirs("plugins")) {
     description: plugin.description || "",
     category: plugin.category || "general",
     version: plugin.version || "1.0.0",
+    // Declarative hooks are the reason a bundle is worth installing: they are the
+    // deny/notify rules the host enforces. Dropping them here would publish the
+    // prose without the guardrails.
+    ...(plugin.hooks ? { hooks: plugin.hooks } : {}),
+    ...(plugin.mcp ? { mcp: plugin.mcp } : {}),
     skills: skillsOut,
   });
 }
