@@ -8,7 +8,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 
-const APP_LIB = "D:/orplex/src/lib";
+// Source of truth moved: these constants now live in the SDK (@orplex/sdk), and
+// the app only re-exports them. Read the SDK so the marketplace tracks the package
+// that actually ships, not a shim.
+const SDK_LIB = "D:/orplex-sdk/src/lib";
+const APP_LIB = SDK_LIB;
 const WORK = "D:/orplex-marketplace/.tmp-extract";
 const OUT = "D:/orplex-marketplace/.tmp-extract/out";
 const TSC = "D:/orplex-sdk/node_modules/typescript/bin/tsc";
@@ -26,6 +30,10 @@ const FILES = [
 ];
 
 fs.rmSync(WORK, { recursive: true, force: true });
+// The marketplace package is "type": "module"; tsc emits CommonJS here, so the
+// scratch dir needs its own package.json or every dump.cjs require() throws.
+fs.mkdirSync(WORK, { recursive: true });
+fs.writeFileSync(path.join(WORK, "package.json"), JSON.stringify({ type: "commonjs" }));
 for (const rel of FILES) {
   const dst = path.join(WORK, "src/lib", rel);
   fs.mkdirSync(path.dirname(dst), { recursive: true });

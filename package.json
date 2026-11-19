@@ -11,12 +11,13 @@
   "scripts": {
     "extract": "node scripts/extract.mjs",
     "generate": "node scripts/generate.mjs",
-    "gen": "npm run extract && npm run generate && npm run parity && npm run build:index",
+    "gen": "npm run extract && npm run generate && npm run parity && npm run build:index && node scripts/build-bundle.mjs",
     "parity": "node scripts/parity.mjs",
     "build:index": "node scripts/build-index.mjs",
     "validate": "node scripts/validate.mjs",
     "verify:sdk": "node scripts/verify-with-sdk.mjs",
     "keys": "node scripts/keygen.mjs",
-    "test": "npm run validate && npm run verify:sdk"
+    "test": "npm run validate && npm run verify:sdk",
+    "build:bundle": "node scripts/build-bundle.mjs"
   }
 }

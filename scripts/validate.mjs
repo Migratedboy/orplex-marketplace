@@ -130,6 +130,46 @@ if (fs.existsSync(pluginDir)) {
   }
 }
 
+/* --------------------------------- bundle --------------------------------- */
+// catalog/bundle.json is derived, and derived files rot silently — the app would
+// happily render a stale catalogue that no longer matches what the index says is
+// published. Cross-check it here rather than discovering it in a release.
+const bundlePath = path.join(ROOT, "catalog/bundle.json");
+if (!fs.existsSync(bundlePath)) {
+  fail("catalog/bundle.json is missing (run: npm run build:bundle)");
+} else {
+  const bundle = JSON.parse(fs.readFileSync(bundlePath, "utf8"));
+  const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+  const { signature: bundleSignature, ...bundlePayload } = bundle;
+  if (!bundleSignature) {
+    fail("catalog/bundle.json is unsigned — the app rejects unsigned bundles");
+  } else {
+    try {
+      const key = crypto.createPublicKey(fs.readFileSync(PUBLIC_KEY, "utf8"));
+      const ok = crypto.verify(null, Buffer.from(canonicalJson(bundlePayload), "utf8"), key, Buffer.from(bundleSignature, "base64url"));
+      if (!ok) fail("catalog/bundle.json signature does not verify against keys/marketplace-public.pem");
+    } catch (err) {
+      fail(`bundle signature check threw: ${err.message}`);
+    }
+  }
+  const counted = { skill: bundle.skills?.length, mcp: bundle.mcp?.length, plugin: bundle.plugins?.length };
+  for (const [kind, n] of Object.entries(counted)) {
+    if (n !== index.counts[kind]) fail(`catalog/bundle.json has ${n} ${kind} items but the index advertises ${index.counts[kind]}`);
+  }
+  const bundleIds = new Set([
+    ...(bundle.skills || []).map((s) => `skill:${s.id}`),
+    ...(bundle.mcp || []).map((m) => `mcp:${m.id}`),
+    ...(bundle.plugins || []).map((p) => `plugin:${p.slug}`),
+  ]);
+  for (const item of index.items) {
+    if (!bundleIds.has(`${item.kind}:${item.id}`)) fail(`catalog/bundle.json is missing ${item.kind} ${item.id} that the index publishes`);
+  }
+  for (const skill of bundle.skills || []) {
+    if (!skill.promptPrefix) fail(`catalog/bundle.json: skill ${skill.id} has an empty promptPrefix`);
+    if (!skill.category) fail(`catalog/bundle.json: skill ${skill.id} has no category`);
+  }
+}
+
 /* ---------------------------------- report -------------------------------- */
 if (errors.length) {
   console.error(`validate: ${errors.length} problem(s)\n`);
@@ -140,5 +180,6 @@ if (errors.length) {
 
 const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
 console.log(
-  `validate: OK — ${index.items.length} items (skills ${index.counts.skill}, mcp ${index.counts.mcp}, plugins ${index.counts.plugin}), signature verified, no executable files`,
+  `validate: OK — ${index.items.length} items (skills ${index.counts.skill}, mcp ${index.counts.mcp}, plugins ${index.counts.plugin}), ` +
+    `index + bundle signatures verified, no executable files`,
 );
