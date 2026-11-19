@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-18T17:42:38.416Z",
+  "generatedAt": "2026-11-19T13:53:44.011Z",
   "minAppVersion": "0.1.0",
   "counts": {
     "skill": 101,
@@ -3523,5 +3523,5 @@
       "title": "Webhook Handler"
     }
   ],
-  "signature": "bNOYeRI6btp5_TTafsOOuTcKyhJoBFD1oTc3ZJC_0KXE2iCLaXU4TEvVfZk8qjejg1wpAYOKgkchPUSFkixuDQ"
+  "signature": "MGsgEnuj_HAMmBOmC4BhBnTOR2szqPhXjP-DNP_latew2daK1c5KtboxayWncu-BS2RgdQ2og6h-fK8RFMTFAw"
 }
