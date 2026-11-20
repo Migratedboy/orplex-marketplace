@@ -37,10 +37,10 @@ jobs:
           }
           node -e '
             const b = require("./catalog/bundle.json");
-            const withHooks = b.plugins.filter((p) => p.hooks && p.hooks.deny && p.hooks.deny.length);
+            const withHooks = b.plugins.filter((p) => p.hooks && (p.hooks.deny?.length || p.hooks.notify?.length));
             if (withHooks.length < 10) {
-              console.error("::error::only " + withHooks.length + " bundles publish deny rules — hooks are being dropped by build:bundle.mjs");
+              console.error("::error::only " + withHooks.length + " bundles publish hooks — hooks are being dropped by build:bundle.mjs");
               process.exit(1);
             }
-            console.log("bundles with deny rules: " + withHooks.length);
+            console.log("bundles with hook rules: " + withHooks.length);
           '
