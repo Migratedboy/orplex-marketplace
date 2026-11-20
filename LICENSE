@@ -1,14 +1,14 @@
-Copyright (c) 2026 orplex
+Copyright (c) 2026 orplex.techlimited
 All Rights Reserved.
 
-This license governs the use of the software project "orplex-sdk" and all associated source code, libraries, binaries, and documentation files (collectively, the "Software").
+This license governs the use of the software project "orplex-marketplace" and all associated source code, libraries, binaries, and documentation files (collectively, the "Software").
 
 1. Grant of Limited Personal License
 Permission is hereby granted, free of charge, to any individual obtaining a copy of orplex-sdk to view, download, and run the Software strictly for personal, non-commercial, and educational use.
 
 2. Restrictions
 Without explicit, prior written permission from the Copyright Holder, you may NOT:
-- Use orplex-sdk, in whole or in part, for any commercial purpose, business operation, client work, or revenue-generating activity.
+- Use orplex-marketplace, in whole or in part, for any commercial purpose, business operation, client work, or revenue-generating activity.
 - Modify, adapt, alter, translate, reverse-engineer, or create derivative works based on orplex-sdk.
 - Sell, resell, rent, lease, sublicense, distribute, or redistribute orplex-sdk or any copies of it to third parties.
 - Integrate orplex-sdk into any commercial product, paid service, or proprietary software package.
