@@ -4,10 +4,10 @@ The marketplace catalog is signed data. The checks in this guide inspect files a
 
 ## Run the offline audit
 
-The audit requires Python 3 and the `jsonschema` package:
+The audit requires Python 3 and the `jsonschema` package with its format-checking extras:
 
 ```sh
-python3 -m pip install jsonschema
+python3 -m pip install 'jsonschema[format]'
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 python3 scripts/audit_catalog.py
 python3 scripts/audit_catalog.py --json
