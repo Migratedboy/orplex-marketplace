@@ -4,6 +4,8 @@
   "title": "Orplex marketplace MCP server manifest",
   "type": "object",
   "required": ["schemaVersion", "id", "name", "description", "auth", "version"],
+  "description": "A server needs a local or hosted connection. Both may be supplied as alternatives; choosing one must not silently activate the other.",
+  "anyOf": [{ "required": ["remote"] }, { "required": ["stdio"] }],
   "additionalProperties": true,
   "properties": {
     "schemaVersion": { "const": 1 },
@@ -17,44 +19,34 @@
     "popular": { "type": "boolean" },
     "docsUrl": { "type": "string", "format": "uri" },
     "remote": {
-      "type": "object",
-      "required": ["url", "transport"],
-      "additionalProperties": false,
+      "type": "object", "required": ["url", "transport"], "additionalProperties": false,
       "properties": {
         "url": { "type": "string", "format": "uri", "pattern": "^https://" },
         "transport": { "enum": ["streamable-http", "sse"] }
       }
     },
     "oauth": {
-      "type": "object",
-      "additionalProperties": false,
+      "type": "object", "additionalProperties": false,
       "properties": {
         "scopes": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
         "clientId": { "type": "string" },
-        "clientSecret": { "type": "string" },
+        "clientSecret": false,
         "authority": { "type": "string", "format": "uri" },
         "cimd": { "type": "boolean" }
       }
     },
     "stdio": {
-      "type": "object",
-      "required": ["command", "args"],
-      "additionalProperties": false,
+      "type": "object", "required": ["command", "args"], "additionalProperties": false,
       "properties": {
         "command": { "type": "string", "minLength": 1 },
         "args": { "type": "array", "items": { "type": "string" } },
         "env": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["name", "label"],
-            "additionalProperties": false,
+          "type": "array", "items": {
+            "type": "object", "required": ["name", "label"], "additionalProperties": false,
             "properties": {
               "name": { "type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$" },
               "label": { "type": "string", "minLength": 1 },
-              "secret": { "type": "boolean" },
-              "required": { "type": "boolean" },
-              "help": { "type": "string" }
+              "secret": { "type": "boolean" }, "required": { "type": "boolean" }, "help": { "type": "string" }
             }
           }
         }

@@ -4,14 +4,16 @@
   "title": "Orplex marketplace index",
   "type": "object",
   "required": ["schemaVersion", "generatedAt", "items", "signature"],
-    "seq": { "type": "integer", "minimum": 1 },
-    "expiresAt": { "type": "string" },
-    "keyId": { "type": "string" },
-    "revoked": { "type": "array", "items": { "type": "string" } },
-    "keys": { "type": "array", "items": { "type": "object", "required": ["keyId", "publicKey"] } },
+  "if": { "properties": { "schemaVersion": { "const": 2 } } },
+  "then": { "required": ["seq", "expiresAt", "keyId"] },
   "additionalProperties": true,
   "properties": {
     "schemaVersion": { "enum": [1, 2] },
+    "seq": { "type": "integer", "minimum": 1 },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "keyId": { "type": "string", "minLength": 1 },
+    "revoked": { "type": "array", "items": { "type": "string" } },
+    "keys": { "type": "array", "items": { "type": "object", "required": ["keyId", "publicKey"], "properties": { "keyId": { "type": "string", "minLength": 1 }, "publicKey": { "type": "string", "minLength": 1 } } } },
     "generatedAt": { "type": "string", "format": "date-time" },
     "minAppVersion": { "type": ["string", "null"] },
     "counts": {
@@ -22,14 +24,8 @@
         "plugin": { "type": "integer", "minimum": 0 }
       }
     },
-    "items": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/item" }
-    },
-    "signature": {
-      "type": ["string", "null"],
-      "description": "base64url Ed25519 signature over canonical JSON of this index without the signature field."
-    }
+    "items": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    "signature": { "type": ["string", "null"], "description": "base64url Ed25519 signature over canonical JSON of this index without the signature field." }
   },
   "$defs": {
     "item": {
@@ -43,11 +39,7 @@
         "engine": { "type": ["string", "null"], "description": "Semver range of consuming app/sdk." },
         "path": { "type": "string", "description": "Directory inside this repo, e.g. skills/add-types." },
         "digest": { "enum": ["v1", "v2"] },
-        "sha256": {
-          "type": "string",
-          "pattern": "^[a-f0-9]{64}$",
-          "description": "sha256 over sorted 'name\\ncontent' pairs of every file in the item directory."
-        },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$", "description": "Digest of the item files, using the indicated digest version." },
         "size": { "type": "integer", "minimum": 0 },
         "tags": { "type": "array", "items": { "type": "string" } },
         "auth": { "enum": ["oauth", "token", "none"] },
