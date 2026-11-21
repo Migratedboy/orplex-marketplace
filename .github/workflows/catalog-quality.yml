@@ -1,0 +1,64 @@
+name: Catalog quality
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  offline-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Prepare schema checker (test runner only)
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get install -y --no-install-recommends python3-jsonschema python3-rfc3339-validator python3-rfc3987
+      - name: Check contracts and source-to-bundle parity
+        run: /usr/bin/python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Audit the catalog and prevent new review debt
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -n "$BASE_SHA" ]; then
+            git worktree add --detach "$RUNNER_TEMP/catalog-base" "$BASE_SHA"
+            /usr/bin/python3 scripts/audit_catalog.py --against "$RUNNER_TEMP/catalog-base"
+          else
+            /usr/bin/python3 scripts/audit_catalog.py
+          fi
+  sdk-compatibility:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: Migratedboy/orplex-sdk
+          ref: 5c08d176554322b47bc8e4e2be1983a44615a7b4
+          path: .quality-sdk
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build the pinned consumer SDK
+        working-directory: .quality-sdk
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm run build
+      - name: Verify the signed catalog and fallback
+        env:
+          SDK_ENTRY: ${{ github.workspace }}/.quality-sdk/dist/esm/marketplace.js
+          MARKETPLACE_ROOT: ${{ github.workspace }}
+        run: node scripts/verify-with-sdk.mjs
+      - name: Exercise plugin hooks with synthetic inputs
+        env:
+          SDK_ENTRY: ${{ github.workspace }}/.quality-sdk/dist/esm/lib/plugin-library.js
+          SDK_HOOKS: ${{ github.workspace }}/.quality-sdk/dist/esm/lib/tool-hooks.js
+          MARKETPLACE_ROOT: ${{ github.workspace }}
+        run: node scripts/verify-hooks.mjs
