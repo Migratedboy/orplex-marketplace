@@ -44,6 +44,19 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 22
+      - name: Use the checked-out SDK path in its build helper
+        working-directory: .quality-sdk
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          script = Path('scripts/fix-esm.mjs')
+          source = script.read_text(encoding='utf-8')
+          old = 'const ROOT = "D:/orplex-sdk/dist/esm";'
+          new = 'const ROOT = path.resolve("dist/esm");'
+          if source.count(old) != 1:
+              raise SystemExit('Pinned SDK build helper differs from the reviewed version')
+          script.write_text(source.replace(old, new), encoding='utf-8')
+          PY
       - name: Build the pinned consumer SDK
         working-directory: .quality-sdk
         run: |
