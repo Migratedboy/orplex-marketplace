@@ -12,6 +12,10 @@ import crypto from "node:crypto";
 const ROOT = process.env.MARKETPLACE_ROOT || "D:/orplex-marketplace";
 const PRIVATE_KEY = process.env.ORPLEX_MARKETPLACE_PRIVATE_KEY || path.join(ROOT, ".keys/marketplace-private.pem");
 const MIN_APP_VERSION = "0.1.0";
+const SCHEMA_VERSION = 2;
+/** An index is advisory after this long; the app re-fetches instead of trusting it. */
+const VALID_FOR_DAYS = 30;
+const KEY_ID = process.env.ORPLEX_MARKETPLACE_KEY_ID || "mk-2025-a";
 
 const readFiles = (dir, base = dir, out = {}) => {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -22,9 +26,20 @@ const readFiles = (dir, base = dir, out = {}) => {
   return out;
 };
 
+// Digest v2 (index schemaVersion 2). @orplex/sdk/marketplace itemDigest() with
+// version "v2" — per-file sha256 of `name NUL content`, joined by "\n".
+//
+// v1 hashed `names.map(n => n + "\n" + content).join("\n")`, which is ambiguous:
+// a file whose CONTENT begins with `another-file.txt\n…` produced the same byte
+// stream as a genuine two-file tree, so two different item trees could carry the
+// same digest. The NUL in v2 cannot occur in a path, so the boundary between a
+// name and its content is never attacker-controlled.
+const fileDigest = (name, content) =>
+  crypto.createHash("sha256").update(`${name}\u0000${content}`).digest("hex");
+
 const digest = (files) => {
   const names = Object.keys(files).sort();
-  return crypto.createHash("sha256").update(names.map((n) => `${n}\n${files[n]}`).join("\n")).digest("hex");
+  return crypto.createHash("sha256").update(names.map((n) => fileDigest(n, files[n])).join("\n")).digest("hex");
 };
 
 const sizeOf = (files) => Object.values(files).reduce((n, c) => n + Buffer.byteLength(c), 0);
@@ -62,6 +77,7 @@ for (const id of fs.readdirSync(path.join(ROOT, "skills")).sort()) {
     engine: ">=0.1.0",
     path: `skills/${id}`,
     sha256: digest(files),
+    digest: "v2",
     size: sizeOf(files),
     tags: [skill.category].filter(Boolean),
     description: skill.description || "",
@@ -81,6 +97,7 @@ for (const id of fs.readdirSync(path.join(ROOT, "mcp")).sort()) {
     engine: ">=0.1.0",
     path: `mcp/${id}`,
     sha256: digest(files),
+    digest: "v2",
     size: sizeOf(files),
     tags: [manifest.category].filter(Boolean),
     auth: manifest.auth || "none",
@@ -101,6 +118,7 @@ for (const slug of fs.readdirSync(path.join(ROOT, "plugins")).sort()) {
     engine: ">=0.1.0",
     path: `plugins/${slug}`,
     sha256: digest(files),
+    digest: "v2",
     size: sizeOf(files),
     tags: [plugin.category].filter(Boolean),
     description: plugin.description || "",
@@ -118,9 +136,20 @@ const canonicalJson = (value) => {
   return `{${keys.map((k) => `${JSON.stringify(k)}:${canonicalJson(value[k])}`).join(",")}}`;
 };
 
+const revokedPath = path.join(ROOT, "catalog/revoked.json");
+const revoked = fs.existsSync(revokedPath) ? JSON.parse(fs.readFileSync(revokedPath, "utf8")) : [];
+const seq = Number(process.env.ORPLEX_MARKETPLACE_SEQ || Math.floor(Date.now() / 1000));
+
 const index = {
-  schemaVersion: 1,
+  schemaVersion: SCHEMA_VERSION,
+  // seq + expiresAt close the replay window: a validly signed OLD index must be
+  // distinguishable from the current one, otherwise an attacker who can serve
+  // the raw file can pin installs to a withdrawn item.
+  seq,
   generatedAt: new Date().toISOString(),
+  expiresAt: new Date(Date.now() + VALID_FOR_DAYS * 24 * 60 * 60 * 1000).toISOString(),
+  keyId: KEY_ID,
+  revoked: Array.isArray(revoked) ? revoked : [],
   minAppVersion: MIN_APP_VERSION,
   counts: {
     skill: items.filter((i) => i.kind === "skill").length,

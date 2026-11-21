@@ -1,6 +1,10 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-11-19T13:53:44.011Z",
+  "schemaVersion": 2,
+  "seq": 1795251278,
+  "generatedAt": "2026-11-21T08:54:38.459Z",
+  "expiresAt": "2026-12-21T08:54:38.462Z",
+  "keyId": "mk-2025-a",
+  "revoked": [],
   "minAppVersion": "0.1.0",
   "counts": {
     "skill": 101,
@@ -14,7 +18,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/airtable",
-      "sha256": "2e596c28921725ac95a11e102624da1bd246db40e6bbf3bba9faf0f200d52473",
+      "sha256": "2947405387741935f2e1e05cf9629128022067ff42092c08c714ed8645f034d0",
+      "digest": "v2",
       "size": 624,
       "tags": [
         "productivity"
@@ -29,7 +34,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/anthropic",
-      "sha256": "a35deddb45985c359f376fb66a74ab473a47bef4bf6405e255144da2923d4522",
+      "sha256": "3a90ae13632cd6ef8dd6b6dc60bbf883e913a5cbf711c9a507fa7b083b9726d3",
+      "digest": "v2",
       "size": 612,
       "tags": [
         "ai"
@@ -44,7 +50,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/apify",
-      "sha256": "823068c6fe8c7c9535f017583e966d5c13aa5af86364129cc8462dffed3e82a8",
+      "sha256": "7ea4df84451d7293ac5d1a91acfd5dd37f0406c3d9643dd617a0a17f3e9fd810",
+      "digest": "v2",
       "size": 474,
       "tags": [
         "data"
@@ -59,7 +66,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/arxiv",
-      "sha256": "07b341539dffdfa2a63a2eb8e432eb03355c47bf08bff4e9192d6011d4bf0da9",
+      "sha256": "21e011b22777691ea3407755b8f33733e6bbe2ee8b5e48792df52ec7369ecb40",
+      "digest": "v2",
       "size": 297,
       "tags": [
         "data"
@@ -74,7 +82,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/asana",
-      "sha256": "fb0635ed77b301fcd415ddf1803146f2ecd5127371035a4e98ec003fe57398ea",
+      "sha256": "e15ccb423bd332d57b14d4f9495d70b1c7a8a9ef966f1455675cbc9544170b88",
+      "digest": "v2",
       "size": 613,
       "tags": [
         "productivity"
@@ -89,7 +98,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/aws",
-      "sha256": "e3f1fba14da0c926c792e4e74fb9eb1b40a8f29435a78b5e4b2a9dcc7d014790",
+      "sha256": "24f4fdef28322e4aa47a7d390c4e47da798dc49140c4d7c8fb87196427ac5bb4",
+      "digest": "v2",
       "size": 829,
       "tags": [
         "cloud"
@@ -104,7 +114,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/bigquery",
-      "sha256": "5464a382852f00d4dc8e787f5ea6c90c07604e7be9d08076598ec3fc84ccbc95",
+      "sha256": "9687d5697992e3d5d21cf4b78d719b9e3a8574e8c3f0e4bbc0cb06da0f1b17ac",
+      "digest": "v2",
       "size": 667,
       "tags": [
         "database"
@@ -119,7 +130,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/bitbucket",
-      "sha256": "16af62b23706f6807bc99ba54fea0b4013e924725fab2257f0bc0a57f115a5e2",
+      "sha256": "d969e6b98beb0166531176723bf95b6edf00bd362a7431c97daf1a15a1324102",
+      "digest": "v2",
       "size": 632,
       "tags": [
         "devtools"
@@ -134,7 +146,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/blender",
-      "sha256": "67b81703b7f1244cc0bca77cef4030fdf73ca213c989077cb95f0bf7874ff594",
+      "sha256": "cb1bf6ea1c07b17b5cf20fdce5b2e100e84b5696cd1339fbedec365c787c694d",
+      "digest": "v2",
       "size": 327,
       "tags": [
         "design"
@@ -149,7 +162,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/brave-search",
-      "sha256": "756af18106c507bece4e4fd7f0afd77a2fe0d3f673c34544573cab70618fb03a",
+      "sha256": "063169f7c5e002ae3752009c3bc8078eb4a4dfd090c2a3587c7953e921157c6c",
+      "digest": "v2",
       "size": 539,
       "tags": [
         "search"
@@ -164,7 +178,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/browserbase",
-      "sha256": "935a5dd16f2b9e2f309c847704db368aa8ccd305da670323d5adb2617455be88",
+      "sha256": "6006a055ea8d81a5632fd9abe4a5f97f641777a8c3e16ad93fc5aed0f1a6c97b",
+      "digest": "v2",
       "size": 623,
       "tags": [
         "data"
@@ -179,7 +194,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/canva",
-      "sha256": "491f2805c2fe3623a770d29437bd81500e05942b724c9c403301e10fd2a14514",
+      "sha256": "5faa0d119f87e4b5f4dd646653dcab46422b0d51d108adfe938e44afe01e990b",
+      "digest": "v2",
       "size": 464,
       "tags": [
         "design"
@@ -194,7 +210,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/circleci",
-      "sha256": "e93ad2555ad36e2d409bd6f565a3ab006f024d152bfa96fb0727af8c762547b4",
+      "sha256": "acf02dfab070523f2c5aef78aad7ab3e037872e8ed5be11e490f51db174eddaf",
+      "digest": "v2",
       "size": 489,
       "tags": [
         "devtools"
@@ -209,7 +226,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/clickhouse",
-      "sha256": "e3556a84d470c9a5b0c701628f16d0dcb0676157954baf4f29474c42f3e2ccbc",
+      "sha256": "aa299b992ee3032ddd9d51c825be61c994180a6a3abdb2fc9a0a25e0a76ee8d0",
+      "digest": "v2",
       "size": 696,
       "tags": [
         "database"
@@ -224,7 +242,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/cloudflare",
-      "sha256": "0d751d00abf335df696344d220471c8af31b527dbb211f8a1f5f63708d4ac80f",
+      "sha256": "0aec13fb072ce501e31e84572110a643c329b0d356d1e82b8fd5b64b99c3eedc",
+      "digest": "v2",
       "size": 583,
       "tags": [
         "cloud"
@@ -239,7 +258,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/confluence",
-      "sha256": "adafc60fb0aa11400d1df5f5f89cc94114796d1d7c96502b6662dbaf1a8b3294",
+      "sha256": "7e11a8bfad6e68bc57cf430c3d980f6f943c8ac00f5f341ab83d739c9ae0b66c",
+      "digest": "v2",
       "size": 773,
       "tags": [
         "productivity"
@@ -254,7 +274,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/context7",
-      "sha256": "3d99b2eee5b488868e8c72e06c4a32b695f717801aea6b606a88093e1101f2bb",
+      "sha256": "7506e9343cf2fa4a5e07fa4dbebba3bed414baab75c693ec82205a7a17007e6c",
+      "digest": "v2",
       "size": 513,
       "tags": [
         "search"
@@ -269,7 +290,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/datadog",
-      "sha256": "0b01befbc0329d6d14ba5aedc2e03aa95ee6f002a1e48094bda2ef3d58d0712c",
+      "sha256": "63c8dcfd3d075ad0953ad9756fa69b75cfa28c12a4dc428b48215f61c2c3eaa9",
+      "digest": "v2",
       "size": 626,
       "tags": [
         "devtools"
@@ -284,7 +306,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/deepwiki",
-      "sha256": "b4d83fcae871c785b2faa34c5f36df6ca402f01f0e1a64a76904b44e3846e3f6",
+      "sha256": "3f0ea3349df2864a68d30a1d769552de5714cc22a235272a9c275b5e025ecd5f",
+      "digest": "v2",
       "size": 506,
       "tags": [
         "search"
@@ -299,7 +322,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/discord",
-      "sha256": "ba5c9a6e9c8c45c929ce8bbae2bca77b9c09018bbac895a67e2571d4a83d39b7",
+      "sha256": "209b82de649d94d2c593727f92096f1eff8b6493169eea0e16e14f2c89427722",
+      "digest": "v2",
       "size": 598,
       "tags": [
         "comms"
@@ -314,7 +338,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/dropbox",
-      "sha256": "e8aa14e5ba1499435c9a202b3694f924613ce61bbbc15bfb812817f032427201",
+      "sha256": "9b58855a0b63c798870c0b4b58081152b4901eb98a2b1f3d35c87d1be043b4df",
+      "digest": "v2",
       "size": 462,
       "tags": [
         "files"
@@ -329,7 +354,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/duckdb",
-      "sha256": "531ac0f14de0d6ff60252e54921b71879143ae70248a0cc0f3da39f1f7b29758",
+      "sha256": "c5e42e6ce61a8c86293e33e4e80e21397b77c1dc5f6ca24151845e9ee4194027",
+      "digest": "v2",
       "size": 343,
       "tags": [
         "database"
@@ -344,7 +370,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/duckduckgo",
-      "sha256": "4d5876c049726c852ed39b0f485e50ba53b2e5703ee0e80fbc9200948cb20372",
+      "sha256": "f69d6f27f79cb8d8bc89880470b0f2af82c06ab404a55a99ecb980458a9fe658",
+      "digest": "v2",
       "size": 341,
       "tags": [
         "search"
@@ -359,7 +386,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/elevenlabs",
-      "sha256": "b3ee1df81b9800c7b8383095bd33b14735693e9a08be73b203600e560c17f028",
+      "sha256": "92fb028a02024ab6a728a0fd78f441765dc2ea4ad49ee73c00bf9a2629a8e0cb",
+      "digest": "v2",
       "size": 792,
       "tags": [
         "ai"
@@ -374,7 +402,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/everything",
-      "sha256": "53d350170d686c54149221a6edbb6b924549d88f79104487c846cc51c137225d",
+      "sha256": "8ac1ef1028082e17ea94ed7dbd402ab1e6e62d39ad904afceb5838e2cfb68b7b",
+      "digest": "v2",
       "size": 413,
       "tags": [
         "ai"
@@ -389,7 +418,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/exa",
-      "sha256": "5cc7f69d4ad0288a15edba97a8dc4b22502fe6a95378857989c98655ee3293c8",
+      "sha256": "12f1fd962be5528054deb8a50f82c59c9c56e1e6829c3d53b776d8c2be761065",
+      "digest": "v2",
       "size": 462,
       "tags": [
         "search"
@@ -404,7 +434,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/excel",
-      "sha256": "b46fcb173977b0552f5422ba747ec2fcffcb6d49b8dd20d5b4ad31a44ca0abe5",
+      "sha256": "8329755bf29f837a13b232afcea55ffa8645ed6c157568dd361cbb83eb760954",
+      "digest": "v2",
       "size": 336,
       "tags": [
         "files"
@@ -419,7 +450,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/fetch",
-      "sha256": "c620b82d2ec045c8e61c141cab55e2a014ccb2a3c8517aaadbeb5d4fa6f66d17",
+      "sha256": "7e396e2d71ac311fc66b671430600c3a0ddb9b7a95f2255c9ffcd94091e16b00",
+      "digest": "v2",
       "size": 346,
       "tags": [
         "web"
@@ -434,7 +466,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/figma",
-      "sha256": "123bb5bd7796dfc88365c1cf57cfd4ffaeea7cdaea46546e50487863c2016975",
+      "sha256": "1e93e790b31ea8a4c55e1e620d5ab63c71ee534dd616419bedd30108af8de8d7",
+      "digest": "v2",
       "size": 569,
       "tags": [
         "design"
@@ -449,7 +482,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/filesystem",
-      "sha256": "fae9f9d0fdf5d8c54d052f8ac85402b12f718975192ece1fa188eab1a56fc517",
+      "sha256": "60c6ece4702b0932a9effaf82828c936357f31eb150abb8762e27187c35e2ba6",
+      "digest": "v2",
       "size": 426,
       "tags": [
         "files"
@@ -464,7 +498,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/firebase",
-      "sha256": "c65ca5b4f6c18ce3522c3cf03e190441fa0d3d16cf2190e288d8cb4c59a060d6",
+      "sha256": "887683e625d411b760ce59bf705838ed98d225b97b258ae53cd56b88756d8aa4",
+      "digest": "v2",
       "size": 605,
       "tags": [
         "database"
@@ -479,7 +514,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/firecrawl",
-      "sha256": "9d010f566722427543a239eb3e1e03eb8820c44324da6b9a8afe2f6435e6d320",
+      "sha256": "3fefcc428954eefdda0f2f31eef55c12d5ea97bea21834497c8478c1fdb3a6d9",
+      "digest": "v2",
       "size": 509,
       "tags": [
         "data"
@@ -494,7 +530,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/flyio",
-      "sha256": "f20e3435a89904c9e0c8c54ecdf06e855ad2e663313f9664bd8ac1d89127307c",
+      "sha256": "487b633f2e188f602db20290cb4746ef41849523581b993cb779a46d9b70d09f",
+      "digest": "v2",
       "size": 468,
       "tags": [
         "cloud"
@@ -509,7 +546,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/framer",
-      "sha256": "67f2eb3ce8ed1ec6201f746e1d10455e3f03e33055b03702710dbdb8bfb2f879",
+      "sha256": "80bf787ec17c04ea8b91b35294d40da3e8833ebcdfe62bcaf4f29b5e506c3a48",
+      "digest": "v2",
       "size": 462,
       "tags": [
         "design"
@@ -524,7 +562,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/gcp",
-      "sha256": "a548161b3a09d2d94c6c57f9b01e9d26d778a88837854711f9130a2c2e5119e3",
+      "sha256": "2ceb8e8fc2aa1e69faea9859448e4f9ace91bf16983401f924c42e8cd63e6382",
+      "digest": "v2",
       "size": 493,
       "tags": [
         "cloud"
@@ -539,7 +578,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/git",
-      "sha256": "df059bef8035cb4d49cc3e81d03bada2d6232379c5f080e0e61ad81e49b6bc06",
+      "sha256": "82830f76e0703b348e9f858a2892381505c1c94b597bedc01efbca22b0ec308a",
+      "digest": "v2",
       "size": 373,
       "tags": [
         "devtools"
@@ -554,7 +594,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/github",
-      "sha256": "f854bc305ed8a842798795ee10dfdf9578956611af663df9ba5715218422f2b2",
+      "sha256": "353d82f9ad4330d18beffe8176c6c2b60d603164321a88fe436059468fc98cbe",
+      "digest": "v2",
       "size": 525,
       "tags": [
         "devtools"
@@ -569,7 +610,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/gitlab",
-      "sha256": "88b5dd1126b6915005b2672e5cc5e3205cb4e2976346710a93a3eb62f780579d",
+      "sha256": "85cc03f5e590cada37be508ec0a05e1bdcfdab619e9e6cf4f9ee978157e4ac1b",
+      "digest": "v2",
       "size": 743,
       "tags": [
         "devtools"
@@ -584,7 +626,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/gmail",
-      "sha256": "7828352f4b92b8044e2669ff9d53edb5c714c491d511accee7d85dd959d6dd26",
+      "sha256": "b8a6c22b8501dc345b4c8bbb7f0a6599c834fedbe87c86b38456e5fd6beda5b2",
+      "digest": "v2",
       "size": 479,
       "tags": [
         "productivity"
@@ -599,7 +642,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-calendar",
-      "sha256": "0f1e9c88c0459c6b8ee12f2d7a284e9d82cb0016edaaf30d5c224e3d6e8cc305",
+      "sha256": "fc06e5153db0f11050b6e17e0126c468356824eb2ef4ed43888da4e64569755c",
+      "digest": "v2",
       "size": 356,
       "tags": [
         "productivity"
@@ -614,7 +658,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-calendar-remote",
-      "sha256": "17b4e81b370e9da59106acad21916925b1e6d402de2b47bfe0c56fbb5efcf216",
+      "sha256": "18eac3c0edaead25e3c380c0b54fd315c2ccf74dc2bb48d6ed171b69ac2ba76a",
+      "digest": "v2",
       "size": 547,
       "tags": [
         "productivity"
@@ -629,7 +674,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-docs-remote",
-      "sha256": "54234421fbee5df90f3f491c429387c9425b41ce3b321817228cce39c1be36bc",
+      "sha256": "73636a545689cc8a288dbacd501413456723d0558c256f2ce78c4c23c1f353b0",
+      "digest": "v2",
       "size": 525,
       "tags": [
         "productivity"
@@ -644,7 +690,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-drive",
-      "sha256": "1bfa184268334a33bea3415832fd3a8efd91459027800d80258e0dea0c27820b",
+      "sha256": "f28e909f4ee9175c247fd6c71aeca1c3cb432cb3f8da5ea05ff9d4482e799e17",
+      "digest": "v2",
       "size": 659,
       "tags": [
         "productivity"
@@ -659,7 +706,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-drive-remote",
-      "sha256": "9ff8e3aaa3a2ca61824c9785b0cbf8f99992ffad1e35785dc93666a60b91f153",
+      "sha256": "57ed950713fda1520ac383eeb1b044a74fd21b5c1904582d3af76deb4a76019d",
+      "digest": "v2",
       "size": 543,
       "tags": [
         "productivity"
@@ -674,7 +722,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-maps",
-      "sha256": "e5e3b17793ad6eb64c151dd53cf8be3839a15ec4c451d18008c0b2a2fda9edc3",
+      "sha256": "dad747b6e6b5080801d9ebf0f857b6b68e89b060ff9f9d18218610d6119d6dee",
+      "digest": "v2",
       "size": 486,
       "tags": [
         "productivity"
@@ -689,7 +738,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-sheets",
-      "sha256": "c6807f05ae39ef6908a185d5b71a6733bf15940407d00efcb88eeed7dfc5a0ba",
+      "sha256": "839ad8cefcd650eb15974b600a29e59271ab30d397747f71226e25011a316c18",
+      "digest": "v2",
       "size": 504,
       "tags": [
         "files"
@@ -704,7 +754,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-sheets-remote",
-      "sha256": "679905790ad45ebe347759d113080819af029de3ca55562145d93d5c953e7a16",
+      "sha256": "a779f000d6d21644ce92b0d33df67735752017e23fa8d7371056ea9852037191",
+      "digest": "v2",
       "size": 536,
       "tags": [
         "productivity"
@@ -719,7 +770,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/google-slides-remote",
-      "sha256": "d12c8820f734c694473c1d4a319869e88716fd3fe380119a9c4bff8f2785d741",
+      "sha256": "b9855b63f1535130e9207fc7e3c0453247663225ee2975434c7493c6d1bbb4f8",
+      "digest": "v2",
       "size": 535,
       "tags": [
         "productivity"
@@ -734,7 +786,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/grafana",
-      "sha256": "9d308e2773a2190b8d9f901e4813bbdaa8fc366abf48405780dcd8b70a44ff51",
+      "sha256": "3883a8b6cf90c448102907b8dba206a95d77576efcf1407277f7bc897f582034",
+      "digest": "v2",
       "size": 661,
       "tags": [
         "devtools"
@@ -749,7 +802,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/huggingface",
-      "sha256": "73602f786c7d05cab350e72fc86ca722e61f4b6b62d37b46cba0e3ca9908d60b",
+      "sha256": "124824519353e5244fdf4d14eb889f0834048dc21da1261bf0ea8fb8539a014e",
+      "digest": "v2",
       "size": 479,
       "tags": [
         "ai"
@@ -764,7 +818,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/jira",
-      "sha256": "8b02b4eaf2bf5a2eca9b70911879f161a17e1519ee279a0af8f557a78a263d6c",
+      "sha256": "6306d40283ea4c314b5c29da99c99d90bc4c98bf339f2ee8459a2bbd8793940d",
+      "digest": "v2",
       "size": 738,
       "tags": [
         "devtools"
@@ -779,7 +834,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/kubernetes",
-      "sha256": "5b03fb616f5b034527b0b9d9b83a6b1a65e1a7acd2fb65d1e93dc583b7601a3d",
+      "sha256": "9474a392afe01aaa5b655a437f2b3ae522ccba81757166655a423e17c1e6398f",
+      "digest": "v2",
       "size": 362,
       "tags": [
         "cloud"
@@ -794,7 +850,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/markdown-notes",
-      "sha256": "6f9a3b6fb4ab5075405d64b97e36424902ed9e40b6977fa797e8168c57916f49",
+      "sha256": "cdc3c558accbb582f9306651fb2934a9886112d7d76ef34766380f27227cb066",
+      "digest": "v2",
       "size": 425,
       "tags": [
         "productivity"
@@ -809,7 +866,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/memory",
-      "sha256": "28f89ea9d522d62c278d86251ba9646f28c34f5c2012412495733b011c99a3e7",
+      "sha256": "3f018a575d7fc2444f0ee67713ec726ee6a33f46648aa324b27272059d50e6cc",
+      "digest": "v2",
       "size": 385,
       "tags": [
         "ai"
@@ -824,7 +882,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/mongodb",
-      "sha256": "d20750e6fe1d5d743f40d9e3493b52d424e526175e11bd8d39cdcdd8b6b8c53d",
+      "sha256": "cf6d849c96b6cafe9f41bfa8d6664a834b9b7f9e89a9c8fef39718771069331f",
+      "digest": "v2",
       "size": 522,
       "tags": [
         "database"
@@ -839,7 +898,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/mysql",
-      "sha256": "11c0682a94fae4d088582d670a4ae68c231345d264673b641cd3863fdc8f4e5c",
+      "sha256": "c064bb43d9a6014ef5aea35696df076ceec7208985ba0b19351557f67760e908",
+      "digest": "v2",
       "size": 777,
       "tags": [
         "database"
@@ -854,7 +914,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/neon",
-      "sha256": "963ea41461f9804297c4aa7a869908b1a933056f72c7e1caeb0a2457237f77bf",
+      "sha256": "5bc76550d079fb1ea69461c5c9417314e0c34b8302a9ca94a89f5dc93138d56f",
+      "digest": "v2",
       "size": 550,
       "tags": [
         "database"
@@ -869,7 +930,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/netlify",
-      "sha256": "0e47f487e7c6d9af084650cbd7b4eda8d53540c4a8b9f39371c9b7d4e40cb280",
+      "sha256": "9223385284191867abc8d4d0a40486c05218c84b83e2c7366265236f42cc06a1",
+      "digest": "v2",
       "size": 480,
       "tags": [
         "cloud"
@@ -884,7 +946,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/notion",
-      "sha256": "1c58b2d93684ff718a9bcefab3ce7ab43fbfa1e110e75130d6ea33084f62bdd1",
+      "sha256": "4b97407c6a099a56aca9bd274a81d13b61b08ff4a48e27bf5b5c67e7268ec209",
+      "digest": "v2",
       "size": 649,
       "tags": [
         "productivity"
@@ -899,7 +962,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/nx",
-      "sha256": "7716af7a66f890c80a3407aa0d1be3b401b6714f16b41812d4bd872b47bdef1f",
+      "sha256": "bbed42d88ff5ed1905027007a605e191bf978915258cbba2cb073ccb79f798e8",
+      "digest": "v2",
       "size": 335,
       "tags": [
         "devtools"
@@ -914,7 +978,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/obsidian",
-      "sha256": "bb37c094e94dc46ec862d3c98acd3d004935b6162f1a6cfefbf2b658f30fc7ad",
+      "sha256": "49cce95a6c49938bb3dc8bf878f6b823bd78b9a7f40a9a677c6748c163ddadba",
+      "digest": "v2",
       "size": 509,
       "tags": [
         "productivity"
@@ -929,7 +994,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/one-drive",
-      "sha256": "a5f391ccb4cbf83044ba06cb43f0cdfc7739b6a237947f5d8dbbde09d7729a71",
+      "sha256": "88762ef5cc9e1c1dbdcf2f69e2ebe15162f1b1d261cadadade10be326bab15bc",
+      "digest": "v2",
       "size": 671,
       "tags": [
         "files"
@@ -944,7 +1010,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/openai",
-      "sha256": "81d9c3ed207ba1e9c26900229d4291674655490e80fd4283ca4dc0a62a7d0963",
+      "sha256": "c2ae4e946b7e252dbef001ef2faf0d34c8eabec23c93e8195e2d53dba98aef22",
+      "digest": "v2",
       "size": 482,
       "tags": [
         "ai"
@@ -959,7 +1026,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/paypal",
-      "sha256": "54d6ec40412967b447420eae7e14ece15e12e8bf975ea60754be00fa399bef4a",
+      "sha256": "4c277d417ef6afd0d78f6d49227941be0e01c3ce52cd9fdbe70341715484b949",
+      "digest": "v2",
       "size": 464,
       "tags": [
         "payments"
@@ -974,7 +1042,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/penpot",
-      "sha256": "40a6aafffdba9e03c931d57cbee26805e3f52f1d5baf40d91e79fa650814b0c3",
+      "sha256": "618def528a101eb898aa24de05f3364efea3b68afb9cc4cc5ee14d319e202f7c",
+      "digest": "v2",
       "size": 769,
       "tags": [
         "design"
@@ -989,7 +1058,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/perplexity",
-      "sha256": "70c709496aa5115172918e36c44ccadcf95a16efbf475d82208b227f76f6011f",
+      "sha256": "478b9fb56a7a9679a21b6ac6b4c50e149c98390e67a99cca1fb32e24b442014d",
+      "digest": "v2",
       "size": 491,
       "tags": [
         "search"
@@ -1004,7 +1074,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/playwright",
-      "sha256": "2f2260a71220ccf27d03ad4e69594aa86ebea200cc410aa58dd1fe79de5032fd",
+      "sha256": "f622b203fb6e55f4ef60db19031b89e455d90a9acf5a9343b76bbadf80903e4c",
+      "digest": "v2",
       "size": 385,
       "tags": [
         "devtools"
@@ -1019,7 +1090,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/postgres",
-      "sha256": "ec6e6de40e07b437b4a01ce4d79fa03e0f58e41b4a602a10b6ce7424a9741a76",
+      "sha256": "ac4f88ba19e9462625a2afbe8ea5265506b9284bfebaf7ba389134573265366b",
+      "digest": "v2",
       "size": 560,
       "tags": [
         "database"
@@ -1034,7 +1106,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/postgres-full",
-      "sha256": "655a89673160b1ab8cd611fc4bd66b14647c5663232236052c80bca25a31098d",
+      "sha256": "90bab8d5c41c6ce82a83a4011758c78512eb5fdc1fdbbac779a84281c7d70ada",
+      "digest": "v2",
       "size": 518,
       "tags": [
         "database"
@@ -1049,7 +1122,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/prisma",
-      "sha256": "64465db8773febc07cd9792d99a044fbbf675e50fd729eecfed6f068ab2382d8",
+      "sha256": "3735fc114bbf48e4350f71b9f0008b47cc44d6918cb2aa7aca6a14577cb5cec3",
+      "digest": "v2",
       "size": 550,
       "tags": [
         "database"
@@ -1064,7 +1138,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/prometheus",
-      "sha256": "b4e6c20524cade74497cdc3d2af53d3b1327298b63bd6198ca1437967e6ad154",
+      "sha256": "8cc3232a95d737201099d604ab06392eb3b623d7694fc2285c0ee6ee5694d45e",
+      "digest": "v2",
       "size": 463,
       "tags": [
         "devtools"
@@ -1079,7 +1154,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/puppeteer",
-      "sha256": "04b5dff4f2382ff3cd15312ee10a3129b86700c0d17de3c910f3163e1c1afd13",
+      "sha256": "163c2c714972eb5ad2a90ece8a9639071c0e93a3f31ff8c115d3b4ce5612da56",
+      "digest": "v2",
       "size": 347,
       "tags": [
         "devtools"
@@ -1094,7 +1170,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/railway",
-      "sha256": "084bc3d8e44e5eaccba156d94f30da141c7f6ec0909832fc1ac162e1ac555eb4",
+      "sha256": "5b420fec53787ef453309d4079b97c5dd6ca2760d06aea1937d21491178ee0b7",
+      "digest": "v2",
       "size": 475,
       "tags": [
         "cloud"
@@ -1109,7 +1186,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/razorpay",
-      "sha256": "6d3229fb6d0e04c2336c07be135b141f475a358b8769f54e7f9b06d657cca130",
+      "sha256": "7919bac87ff1d99ce6efdfa318fb63c16ace9d7686c7dd0f45fa8fc62ed390aa",
+      "digest": "v2",
       "size": 468,
       "tags": [
         "payments"
@@ -1124,7 +1202,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/reddit",
-      "sha256": "a99d5a4a2fff335b5c5407535d58480d10f076e5c21bac38f7584cfe9b0e3887",
+      "sha256": "a5014a436963a251dd38b40c76ddb6b47e2700807ae2a4aea9a157f80a254bd6",
+      "digest": "v2",
       "size": 307,
       "tags": [
         "data"
@@ -1139,7 +1218,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/redis",
-      "sha256": "0b401a0c94146d265dac17e5833e9dbdf26d8fbe5b292e82f7451380d69c03c6",
+      "sha256": "8ddf63e21dbe4c38dd26d6f48e5519196c40eeadd4f5ad8099045c95881c5ef6",
+      "digest": "v2",
       "size": 452,
       "tags": [
         "database"
@@ -1154,7 +1234,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/render",
-      "sha256": "3f758c7963c97894f3ac77f2dc49f73578dfcc968539f396d8ca2a80206fe8eb",
+      "sha256": "9d41f88700354ac7370edad6d336a5caf77de4a2fee9895db4ecd458e80f5a17",
+      "digest": "v2",
       "size": 476,
       "tags": [
         "cloud"
@@ -1169,7 +1250,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/s3",
-      "sha256": "635163de7bf0b91f1ae27df01b62c8c10563ef08fe1102c2e71c288c5a0423b5",
+      "sha256": "5e434c058788d3bafe68b323d2be3709c740b0f538cd06e37d4f19416cae9b83",
+      "digest": "v2",
       "size": 791,
       "tags": [
         "cloud"
@@ -1184,7 +1266,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/semgrep",
-      "sha256": "d809cf62fa6ce01a37f2b318e91540b091133c54ac87b92ca9022b06e02de969",
+      "sha256": "90a110548088d8ab4e8d7dcae2810e7fa7a55464e67ae13c08d83c21b21c5423",
+      "digest": "v2",
       "size": 343,
       "tags": [
         "devtools"
@@ -1199,7 +1282,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/sentry",
-      "sha256": "0738f18484081fadf663a6f915c7427c73fa325648ea6dce4248c7004f22e662",
+      "sha256": "b65d438a97ffdcdcadb19303dbb95b76118e636470e6e3bbde1174dbc81d11b2",
+      "digest": "v2",
       "size": 635,
       "tags": [
         "devtools"
@@ -1214,7 +1298,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/sequential-thinking",
-      "sha256": "23cdaa890a719ce90d63559a4c3bb7fe46cb82cc7de6f41de28422861d4bcd5c",
+      "sha256": "32f30e07d00f95315f8127ac82a0344fb4497cfbad75d7dc16c5cc3b81eaf1c0",
+      "digest": "v2",
       "size": 414,
       "tags": [
         "ai"
@@ -1229,7 +1314,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/shell",
-      "sha256": "b70511e0ba87bd31134e6dedb4a61a52b09e04fe19c6124d8bd148f5ccfedc7f",
+      "sha256": "0491ca54f372601254a72e26a2b0c3b9ba9a5536c7d125bd2521dfb2e63f4e5d",
+      "digest": "v2",
       "size": 480,
       "tags": [
         "shell"
@@ -1244,7 +1330,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/shopify",
-      "sha256": "ed510eee7711bb7b3b98c0d23fddd6f1c3004bac73a4070c01de5a7677e2d54c",
+      "sha256": "7569dcf1aae97aac58b1003f0594d70bcce255139eb645f34331b8f819aaaf81",
+      "digest": "v2",
       "size": 352,
       "tags": [
         "payments"
@@ -1259,7 +1346,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/slack",
-      "sha256": "d2cdd4f5e805193ec4c9dffc1fae0fbf28880c5fcd8e4dcc774540b0092bd14d",
+      "sha256": "8efb2c650fd014d760d1042cc7ac7f27cb76d7e25c868501d6cdebd36c192774",
+      "digest": "v2",
       "size": 498,
       "tags": [
         "productivity"
@@ -1274,7 +1362,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/snowflake",
-      "sha256": "7f8ab37b4a7a5afd83b47653ad65ecd6ab75ff8c33eb9d8e2e26bf1995ee951b",
+      "sha256": "fa35e2655478a0c10230a1221503110c67493c95461e21ddee8ad05b7be778b6",
+      "digest": "v2",
       "size": 827,
       "tags": [
         "database"
@@ -1289,7 +1378,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/sonarqube",
-      "sha256": "8c55b800d101d0f4e4a14cae39f652fa5fb39faab18f5c99512c92c7da7e75fb",
+      "sha256": "f34fa0f6d2397a53f5b1b694b29e269da9e8e87b9ffb0cbfeae702f83c696869",
+      "digest": "v2",
       "size": 655,
       "tags": [
         "devtools"
@@ -1304,7 +1394,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/sqlite",
-      "sha256": "819e1560ca470d76b5d796bf508284d5cf2b37cc3db28b132eaf76b6c5f8bb7d",
+      "sha256": "7df97861a6b00f3c1a65e1d4df67737eeec1508e837dc22ee72bdc4393d39aa7",
+      "digest": "v2",
       "size": 357,
       "tags": [
         "database"
@@ -1319,7 +1410,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/storybook",
-      "sha256": "d4b1e90a084309bc04b2dcf5667bd922298bf436a46425b308a5aa9287478a04",
+      "sha256": "37c073e5519f54a7bc8f34304b4101799fe07a88f9f2b205004032d56517ea05",
+      "digest": "v2",
       "size": 334,
       "tags": [
         "devtools"
@@ -1334,7 +1426,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/stripe",
-      "sha256": "e0d3b1f45f12fe0c1bc02556e6d96411d454fb7d8a03b1a756577bb1da066e53",
+      "sha256": "124c19eb4db9690324c3bf03c706ca9e814b51baf561bb750be92aceea830bd7",
+      "digest": "v2",
       "size": 532,
       "tags": [
         "payments"
@@ -1349,7 +1442,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/supabase",
-      "sha256": "7b55194df06d63a86f25fd3e9e016c087f73ddb2a417b0bbde6e4538c9dfbaf5",
+      "sha256": "f2c6790e06a6bbb4d5f3157fe31862f2184b6929183e4d324cd284149e8ac882",
+      "digest": "v2",
       "size": 816,
       "tags": [
         "database"
@@ -1364,7 +1458,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/supabase-db-direct",
-      "sha256": "caadad2ac4d82950f2a7db99aa0cd0469f40f9ceb6581a6a3dbfef8c886dda8a",
+      "sha256": "080fc161c5e4b1f093cd7235371e69c71edf2a151a266ff5ba51287cd7dddbc4",
+      "digest": "v2",
       "size": 540,
       "tags": [
         "database"
@@ -1379,7 +1474,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/tavily",
-      "sha256": "922d340de9a44b85ff79c386df5d20b2b6e32e1d4565ef5b50a8fabc52703134",
+      "sha256": "d6ca08d66d08efb5b775fee0f73529ea8b38e49246e89218fd020a65aa7fa805",
+      "digest": "v2",
       "size": 486,
       "tags": [
         "search"
@@ -1394,7 +1490,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/telegram",
-      "sha256": "67bdb5f7e412d1d529196398c597137fbe3886fdad50aea635d685ed020df0f5",
+      "sha256": "997da094d2fcc07a2b761e7c3641b40d229219c9bcffc4810e42449bfb78809a",
+      "digest": "v2",
       "size": 461,
       "tags": [
         "comms"
@@ -1409,7 +1506,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/terminal-control",
-      "sha256": "68d2a01df1d92e1b113104f8145a1f7b24c0da0a9ceb913fe2ada4f1c07c7b16",
+      "sha256": "78764347ca20f473ec0eb75dd67351f30252aa848805ae2ce6af050908bd211d",
+      "digest": "v2",
       "size": 355,
       "tags": [
         "shell"
@@ -1424,7 +1522,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/todoist",
-      "sha256": "9222c26ebe4464d198a87f33ab2fae5f32a59bb28fc0ac930451a20d2b667102",
+      "sha256": "a239a9f8105af1ae5d4974ee2c8fc10d412b766e9dfd982f4bdc8d95628a2e35",
+      "digest": "v2",
       "size": 475,
       "tags": [
         "productivity"
@@ -1439,7 +1538,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/trello",
-      "sha256": "5aa39f1ac8cf4a7a2132d2c89b226ec353783290232e98c325f411a258a04296",
+      "sha256": "ba72f15efa855a2b897f51d1da3ded071180a5cee4cd15f6453db2238c519982",
+      "digest": "v2",
       "size": 580,
       "tags": [
         "productivity"
@@ -1454,7 +1554,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/twilio",
-      "sha256": "70ebad4ff6094cd0edc31d5cc567afcbf1535cd285f63022f594f9de10df9038",
+      "sha256": "2aa3e7489a363873bb832449a26ea6f151137460f2f6c544ac90f5771398c070",
+      "digest": "v2",
       "size": 622,
       "tags": [
         "comms"
@@ -1469,7 +1570,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/vercel",
-      "sha256": "eec5c5ebf79887bcd69033634ced048a28e3718b702f59cb7717bb17792b0289",
+      "sha256": "430717abd15f53950e984168ae21a93aeddf1036f842e958479c0255b3482ab6",
+      "digest": "v2",
       "size": 685,
       "tags": [
         "cloud"
@@ -1484,7 +1586,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/whatsapp",
-      "sha256": "10574ade8db8fa175dc5f4e44ec1c28b15ed55a29c31a414b3e999f5da101465",
+      "sha256": "a9e5175d0f991d64494301316fd9ef5a0f8061ae48e4aa070ece55aa1246cd9e",
+      "digest": "v2",
       "size": 627,
       "tags": [
         "comms"
@@ -1499,7 +1602,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "mcp/youtube",
-      "sha256": "e7c447a951c7971e8cb1ff9770bff47be02f6fe0166eec005bdbd5b38eccc710",
+      "sha256": "aacc5bebde02311b4aa19ad6fe138792bd669202220e5aca0297e91e3be59d71",
+      "digest": "v2",
       "size": 468,
       "tags": [
         "data"
@@ -1514,7 +1618,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/api-client",
-      "sha256": "cc8681d1204c6738c63416afd8a8344ac7e57575cc69dd03b1987fa13c47ae59",
+      "sha256": "7bb51332298ec3f7ca25ec6f4879682ae549263c5c952009454e2a18d58bc527",
+      "digest": "v2",
       "size": 1029,
       "tags": [
         "domain"
@@ -1529,7 +1634,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/ask-when-ambiguous",
-      "sha256": "1cc3eb9980305e94d3b310d4fcd956dd9057c2ada47463449f07987864cbd8f4",
+      "sha256": "1ff8a83499269c53a97431b4aba95950c6d3a83f350b5721802270e4b093e2f7",
+      "digest": "v2",
       "size": 1086,
       "tags": [
         "intelligence"
@@ -1544,7 +1650,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/auth-gates",
-      "sha256": "9f7e558bc646cb07c5bf82b22e3ced765797b85feaa85a388493cf7bd2df8fae",
+      "sha256": "165afded398b6ae1ce18d950c6edc04c78c201a7715bb697ede49e7d06b3d30c",
+      "digest": "v2",
       "size": 890,
       "tags": [
         "security"
@@ -1559,7 +1666,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/background-jobs",
-      "sha256": "6713004002163aea8b8d4bf21f5212db22dc1888ce2f92c06aac23694bca78cf",
+      "sha256": "626fc1fb494182f9bc4e33e02b4ec9eeb82ebfd0fb5e41f56cc0a098bc7df8b8",
+      "digest": "v2",
       "size": 1027,
       "tags": [
         "domain"
@@ -1574,7 +1682,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/backup-aware",
-      "sha256": "1f87596a533d94c1be0ddf814fae6c42caf1c97176c1f7c8d8baf273b05c49b6",
+      "sha256": "fd9571e579e2e9dc727c975b14b6ce93da413de43c268f462dab8d4329fe698e",
+      "digest": "v2",
       "size": 1046,
       "tags": [
         "devops"
@@ -1589,7 +1698,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/branch-discipline",
-      "sha256": "0d958ec5ab53ae715ebfd8c494fcdffb8e8e2a05247366b2587233c79b1c10b2",
+      "sha256": "1a38055caf9cdf683424264bc967debce90bddb070f13d36c1fb5e254c3a1155",
+      "digest": "v2",
       "size": 1171,
       "tags": [
         "devops"
@@ -1604,7 +1714,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/ci-green",
-      "sha256": "618dda5cbf7dbc1bb39bf7ebf9f0cf3526f3dc0fdbc90ef020ea5086605d2509",
+      "sha256": "bd204df421d6e5ea83c9d9352c069099f603b458265eb8059527b2d6d8fbbb95",
+      "digest": "v2",
       "size": 998,
       "tags": [
         "devops"
@@ -1619,7 +1730,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/clean-imports",
-      "sha256": "db7bf8f5c2efe36cebf77f73981a4c96bdc459aa5cc89468b891802cdd42b94e",
+      "sha256": "56e6271f5ed6c80ced8d4845ac418d378e3aba28aa8e6ead4a4dd1bf41b480c8",
+      "digest": "v2",
       "size": 875,
       "tags": [
         "quality"
@@ -1634,7 +1746,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/conventional-commits",
-      "sha256": "108065b537242b1ae53422bade0b89df0d90675c9aa6e977c4090cade521b258",
+      "sha256": "6ece3e3857e8b9c8aae468742c317cc17c8bb7801e5b75d80399004d9c131ae8",
+      "digest": "v2",
       "size": 1054,
       "tags": [
         "devops"
@@ -1649,7 +1762,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/csrf-origin",
-      "sha256": "0e727f6f5c85bd1f5d09faf4e38ab13088a96f1842aef0210d0b135e26553d91",
+      "sha256": "945840d7044d69ed0226dcdcfe38438348751ebbeaed024dac331260a1b853dd",
+      "digest": "v2",
       "size": 989,
       "tags": [
         "security"
@@ -1664,7 +1778,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/db-migrations",
-      "sha256": "b16f1b56f216cdbb9e0f1275819d911063eefb3fabb93c22914bb4ece6ec67c2",
+      "sha256": "3dd9fa250e48357a05c59ff474f534c47d55a414f0171ee65efdd34dd915b47d",
+      "digest": "v2",
       "size": 1022,
       "tags": [
         "devops"
@@ -1679,7 +1794,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/dependency-audit",
-      "sha256": "49b06c66e880918407e279b9cd36b2ad6ea73e9a88f65f94641e76d2f41f33f6",
+      "sha256": "7587574df304994ca778966c60a610e9af6dc137aa1476b73b183b2dfa7f8316",
+      "digest": "v2",
       "size": 1000,
       "tags": [
         "security"
@@ -1694,7 +1810,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/doc-strings",
-      "sha256": "783ac8d40aaf8ee4973b32cac6e6a4c31867cb1af5f87d35732ff432c7163b76",
+      "sha256": "bb3a6b438651aa991cb2f620e5c43e5d7c6de52736df272386dbaaaf99613fcd",
+      "digest": "v2",
       "size": 963,
       "tags": [
         "quality"
@@ -1709,7 +1826,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/docker-hygiene",
-      "sha256": "5195fd2b4a6218f7b43cfb5da4e401044728455535f08708477fb2c97d4f1822",
+      "sha256": "8866f9488fe65508e88771f54a9e17e99beb5f89b2491bc8611142aae285307f",
+      "digest": "v2",
       "size": 918,
       "tags": [
         "devops"
@@ -1724,7 +1842,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/env-parity",
-      "sha256": "26b75994ac1e495394448da17541514ed2c40dc4ecf9bb3fff03efda49f6fe0c",
+      "sha256": "46b6eec1fdb24d23d05bccad4e864b58705e09ca33c50ac0a864720a08f22673",
+      "digest": "v2",
       "size": 994,
       "tags": [
         "devops"
@@ -1739,7 +1858,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/error-handling",
-      "sha256": "e0efa39dfd4511f0165c91cc3f921c14ab45ef9f65903fa7b9d95c1c14159960",
+      "sha256": "58b271910e11aa571ac9ad60c0a0255ba9b92cf7d45d06342a722411f299e876",
+      "digest": "v2",
       "size": 958,
       "tags": [
         "quality"
@@ -1754,7 +1874,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/evidence-summary",
-      "sha256": "102ec4f4b0cfc104afe22a350b5df9c0e6887d2b8ad27c175db5e40abf477a80",
+      "sha256": "3d4743d7b7707712ffc1489f5064967d5036672402d610a48dd9b44db0e1cf9c",
+      "digest": "v2",
       "size": 993,
       "tags": [
         "intelligence"
@@ -1769,7 +1890,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/form-validation",
-      "sha256": "4fe933dd683a067668b780dba7d1c0e78684ba147d24b22840f627bc5272add2",
+      "sha256": "b6bc97ac07236646fd819db9713b147aeb39296c493c3efdbdb488829c9875ef",
+      "digest": "v2",
       "size": 1015,
       "tags": [
         "domain"
@@ -1784,7 +1906,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/input-validation",
-      "sha256": "113ab02800ebceb71b9a3ae5163ad49ad1677d331b2a576fba4e1814b5810808",
+      "sha256": "3d57c67d33256a7f8782124d5b4a8ab256c25c15f9042d6e8c8b9dceb4c6d232",
+      "digest": "v2",
       "size": 946,
       "tags": [
         "security"
@@ -1799,7 +1922,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/lint-clean",
-      "sha256": "1a66cadc0e97130cd239f0d72d71d5186adf58f69b67c0970a4f55201bf09210",
+      "sha256": "94b10d85ca184bf2188a88310d149adf3c0cb860b07fd24184e85a4107005ce3",
+      "digest": "v2",
       "size": 980,
       "tags": [
         "quality"
@@ -1814,7 +1938,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/log-hygiene",
-      "sha256": "06a8eed96cdc3b82b3363d741ba08d433ed556fb2b58663adcf3f51cc5993d44",
+      "sha256": "fab52ed2abccc8ce49985bba09d7f0fa468b88b052ba667c3889126dae1545df",
+      "digest": "v2",
       "size": 921,
       "tags": [
         "security"
@@ -1829,7 +1954,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/memory-saver",
-      "sha256": "1797e37befcd66ae8af24c06ec2574f6e09baffaa47a9c1016c87e3787afb740",
+      "sha256": "243aeca03581e20363b0cddb4ec9fd54e0bcd219cf9ef73fdb5818f9d17d44c8",
+      "digest": "v2",
       "size": 1089,
       "tags": [
         "intelligence"
@@ -1844,7 +1970,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/minimal-diff",
-      "sha256": "66b33b8f5caebfdc9d13733231a538651d00810cca5486bb59639b93cc968632",
+      "sha256": "3c9168450e55529fc41a3e46453e5ed69fd3bc2f92518dc9342b86792c71a4e8",
+      "digest": "v2",
       "size": 1035,
       "tags": [
         "intelligence"
@@ -1859,7 +1986,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/notification-events",
-      "sha256": "d4b54d04281b539827cb9035a86504d8a7c21f86382ab057156192592d8b8fc9",
+      "sha256": "7a05cac67d94d2e3e4e0c57de65163bc2aa9c12a5279b133d3937c98cbce9f25",
+      "digest": "v2",
       "size": 1028,
       "tags": [
         "domain"
@@ -1874,7 +2002,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/path-containment",
-      "sha256": "223b8c84ce153de6bf138f7699916b35eec00d831d4ac15c02587bb87ecf7921",
+      "sha256": "e19cfedf4c4f8fb28efa294484d0b7f3796af7eceae41c5b48c6a2de4c800d8e",
+      "digest": "v2",
       "size": 953,
       "tags": [
         "security"
@@ -1889,7 +2018,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/plan-then-act",
-      "sha256": "994d8c1c89be15753fc310478950ad24248d5b5802706c6c879f3e071a23794c",
+      "sha256": "5f4719aa26b57c58ed314e4c90bcfd999e7fb9a4408347e903f58dd4f0ce5a21",
+      "digest": "v2",
       "size": 1009,
       "tags": [
         "intelligence"
@@ -1904,7 +2034,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/prisma-model",
-      "sha256": "35717c6813701b88f9d61f2b832dfec88d9ca90532b1961b6e0830c08251fb85",
+      "sha256": "645ffe7663411c8caaab946b5f3c893e2c5cee35e43025342610dfec82b8b613",
+      "digest": "v2",
       "size": 999,
       "tags": [
         "domain"
@@ -1919,7 +2050,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/react-component",
-      "sha256": "40026a32a3b0c86b4a7e09a760a57f7f6573b22bc7f86cca053d2d28eceb18e1",
+      "sha256": "ee07e78459a9916a0bf2543e0851083863ae81c991c00a40db2bda5bc9afd79c",
+      "digest": "v2",
       "size": 1111,
       "tags": [
         "domain"
@@ -1934,7 +2066,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/refactor-safety",
-      "sha256": "0d6feb8ce59af6fe7b6b23d9f730904023e9da87cfd497e210067cfb1ec59619",
+      "sha256": "522e219927e5179f251d6ebb81ca64d7f55896c77fc4902f4c5e2c2e05b5c247",
+      "digest": "v2",
       "size": 977,
       "tags": [
         "quality"
@@ -1949,7 +2082,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/release-notes",
-      "sha256": "481d185be88aa672563c90b5fcf4d6f593b6df5d7e460b3380a4eb6665f6ab5a",
+      "sha256": "ccb4b7f6f4c515796460a843f7a2280e07d1044ccc25c961f3b4b0de4e3b2ffd",
+      "digest": "v2",
       "size": 933,
       "tags": [
         "devops"
@@ -1964,7 +2098,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/rest-endpoint",
-      "sha256": "dc26b25f5d27e4d0ea71ec1d7f39bc140c4e8751c555581e5b0aafd29c65e5dc",
+      "sha256": "1df9dce875915f937e2fdb58f783ac7086641a6685d63afdbf139631ff02b646",
+      "digest": "v2",
       "size": 1627,
       "tags": [
         "domain"
@@ -1979,7 +2114,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/root-cause-first",
-      "sha256": "4d621c56895fe2ffff06d1c481d2ca4dab6f1dcd6a9a5c9e1c3a3149efbd3096",
+      "sha256": "3020067391f4a75d66f9b9b078fb212844502cd2e593bbf9ffaa74d2df7203ff",
+      "digest": "v2",
       "size": 1020,
       "tags": [
         "intelligence"
@@ -1994,7 +2130,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/safe-commands",
-      "sha256": "91269a2535744f4b58bf5799d32835553e134bb7d8e5cf630140ea7199c8918b",
+      "sha256": "93faadb985d995eb30bba6b95d4d58d05f2f65be9cb3cf808b2eb5be48724326",
+      "digest": "v2",
       "size": 1151,
       "tags": [
         "security"
@@ -2009,7 +2146,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/secret-hygiene",
-      "sha256": "7e77ff83cc692f5997d1602318fdbe33b367e9c2fdc321c2ca1045eb59cbf7c2",
+      "sha256": "ac0a82e874e3c5012647490cdc9dddda171cfc42f7c424b57793cc5fdf94fc70",
+      "digest": "v2",
       "size": 1264,
       "tags": [
         "security"
@@ -2024,7 +2162,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/strict-types",
-      "sha256": "5270fe685ca3a0d32fea536cb85cf6767daed9d455a454f7725da6a9a2604adb",
+      "sha256": "3b3a1d1c8ed81d7fc6e2ecc45383219df1193bc6b51989ce7b830737353c601c",
+      "digest": "v2",
       "size": 910,
       "tags": [
         "quality"
@@ -2039,7 +2178,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/test-first",
-      "sha256": "454ce27aeea6b85f370a6681168bdbfc6513edac444a70c4b3fe7aaadca9456e",
+      "sha256": "f5001024c8145ff3c6747c76ac68095bca9d8a7e2699d7f6e8c05ea08d432fd3",
+      "digest": "v2",
       "size": 1008,
       "tags": [
         "quality"
@@ -2054,7 +2194,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/token-frugality",
-      "sha256": "eed74c9c486c67008ec8f1d36bcec65de5bcbe143e85888de1a10b794eb3fe3c",
+      "sha256": "260221568aada55d029d89e886f15ad45d5f20375971b098f5a5341b830f77e5",
+      "digest": "v2",
       "size": 1159,
       "tags": [
         "intelligence"
@@ -2069,7 +2210,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/tool-budget",
-      "sha256": "a01d9aa6d1c938c83124edba94f609aca59efa1fb535adccf40277309179d536",
+      "sha256": "8c92e87a12b2226203b5e56d32a7237b9097f5e998ccbe686ab602d2020bfde3",
+      "digest": "v2",
       "size": 1074,
       "tags": [
         "intelligence"
@@ -2084,7 +2226,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/verified-commits",
-      "sha256": "39e1689e9e783abc1ba61b082938468cd6ffacba4604bbae62bc0c78f08031a3",
+      "sha256": "5f90631ff29507d5cfef112a59776c7d06efca10f542d22e0c9409b4e5fa8d30",
+      "digest": "v2",
       "size": 1308,
       "tags": [
         "quality"
@@ -2099,7 +2242,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "plugins/ws-sse-streams",
-      "sha256": "9e6d8cb8c7e6c14b3d49688b92598105b237e1b72f5907ef0fa1a121b8ccb515",
+      "sha256": "f09c823c90ed1cb69739c58dac9a1f73d28cbdd3c1483b6709e46f15e96c5a26",
+      "digest": "v2",
       "size": 1003,
       "tags": [
         "domain"
@@ -2114,7 +2258,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/add-types",
-      "sha256": "4ed34994c6b0bb0c9bbcf1f44d07f59bdf8c4680457d6589ce3953a6188ef653",
+      "sha256": "edd203eda231e66244a749fdd8ab0b6e2ee600233c11dbef76ad495002f36dad",
+      "digest": "v2",
       "size": 370,
       "tags": [
         "refactoring"
@@ -2128,7 +2273,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/animation-patterns",
-      "sha256": "56f6c2ba57faaab15ef8aa820ffc3739f0bb7de9ef6fc4b7b04272cb9f658cf7",
+      "sha256": "97e06e74cf03b291519d5016e29eac5153ae723b322207d20e277341e50e41b2",
+      "digest": "v2",
       "size": 558,
       "tags": [
         "frontend"
@@ -2142,7 +2288,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/api-documentation",
-      "sha256": "f473f5f0be924fde1ef2e11f4bf806ed0ff3bc1b929e52afb0827ebf8d718152",
+      "sha256": "48f074a9d91ce8c3f605b8840d432758b2e6dcfc908f1b7cd0ee8a860266c1ac",
+      "digest": "v2",
       "size": 487,
       "tags": [
         "business"
@@ -2156,7 +2303,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/api-scaffold",
-      "sha256": "45d18879d41e1a2a0212ef2e0af76803f19ba39f7fdd9591e2d0c62d82c26b1b",
+      "sha256": "7e44ad0f2ffc1a3a3480461ee977f8d5bde7d9bcc71e81039e395e4edba8ba89",
+      "digest": "v2",
       "size": 430,
       "tags": [
         "generation"
@@ -2170,7 +2318,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/auth-check",
-      "sha256": "9cb70a4ffcd005da62a4fb380ba3afc54e9310df56baa13bb3f9fee3527c1494",
+      "sha256": "70f82a5268605d901d31839a606cce3c5dcde0c0988f646a0dbcb374efc508ce",
+      "digest": "v2",
       "size": 387,
       "tags": [
         "security"
@@ -2184,7 +2333,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/blue-green-deploy",
-      "sha256": "6fcfea8a682e822b628be27584c76b3ac92f2c8c8af99bfed5f7156bac686a1e",
+      "sha256": "8e91fa0804bcbcdf3f74f790fbd4fe13b6a5b2f1908e2dac1973e8a59321a6b7",
+      "digest": "v2",
       "size": 516,
       "tags": [
         "advanced"
@@ -2198,7 +2348,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/caveman-mode",
-      "sha256": "629758ec6561bdadc46bb7a9c504431dfc7595e21d127713e97fd01f18d24265",
+      "sha256": "4f6add42935c8fed588932023e1000f42632265c15b16b4f5ed082069af8d914",
+      "digest": "v2",
       "size": 418,
       "tags": [
         "quality"
@@ -2212,7 +2363,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/chain-of-thought",
-      "sha256": "c9d7a8dc8ee5727e551315091c89571d0ffc10a3229e381d4a56d97fa72ac687",
+      "sha256": "93c307cb3ccd9ab56c036935b11cd9830999f5100ccd4a50b12c26508df6dfb5",
+      "digest": "v2",
       "size": 350,
       "tags": [
         "reasoning"
@@ -2226,7 +2378,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/changelog-generator",
-      "sha256": "338b39af64493d50f41d647883fdc90aa8f90a6c086cc92e33b416b319a2e68d",
+      "sha256": "02732387ef5cce873bf2e383fb7c64a9c1559583425a795c92f53399aec4e893",
+      "digest": "v2",
       "size": 477,
       "tags": [
         "business"
@@ -2240,7 +2393,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/chat-widget",
-      "sha256": "2977a007d856c3f6a2430bb0973d2bc0fd5d91d12f9f837e455498ce16f22331",
+      "sha256": "614bc369a8f0eaee243a82b45867334d53bfcb7628568b0dac73d896c8a31fbf",
+      "digest": "v2",
       "size": 473,
       "tags": [
         "integrations"
@@ -2254,7 +2408,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/cicd-pipeline",
-      "sha256": "f8b086dfd7c92b8f1d3b40a74fae387390ac10bc3bc98602aebc635491df7340",
+      "sha256": "5aee06cd5abd578cf2bf3403559701eb9458855b541e2e4b268e7386bcd1b541",
+      "digest": "v2",
       "size": 457,
       "tags": [
         "devops"
@@ -2268,7 +2423,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/circuit-breaker",
-      "sha256": "209cfd7a3adf37d49208fef546c820f7fc3381a395604407d0fda97d8b1a0e24",
+      "sha256": "5993518099b4fa02c2f68733305eed0fbb44fef097f6b83431f00a5828d9567e",
+      "digest": "v2",
       "size": 489,
       "tags": [
         "refactoring"
@@ -2282,7 +2438,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/code-review",
-      "sha256": "45aaae22b63fe99d2d9863850bd7af8d85d3b48279665b31b19af8c1f9ea88b9",
+      "sha256": "0e55c7c5970aa279c23a89312a977396c0d3a7e30379936c5f600f75855941a9",
+      "digest": "v2",
       "size": 485,
       "tags": [
         "analysis"
@@ -2296,7 +2453,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/commit-conventions",
-      "sha256": "84388e8c8992f36917fd51753c48819b6189314a65432b618851a967d5daae99",
+      "sha256": "bee0fb9258053f63f1f8b3fa404c3f2776d075fddae8a21ec9d5acd320da6410",
+      "digest": "v2",
       "size": 468,
       "tags": [
         "quality"
@@ -2310,7 +2468,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/complexity-estimate",
-      "sha256": "289d11907ad7947e3955ab15c4b13c2e5ce14202dfee00108afb0d23d420e2c4",
+      "sha256": "56cdf9d874cda1e5e23181b12085eda0a47046291e9327beea1e1e35771402fa",
+      "digest": "v2",
       "size": 394,
       "tags": [
         "analysis"
@@ -2324,7 +2483,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/composition-patterns",
-      "sha256": "243a87f2a0d119bcbdfdaeac7444eb7d1fc0bbd32fde1fad734707cac6cd25de",
+      "sha256": "ef58a22accaae1b7a302bd7976d85e9200bb5661d912737ec1997d81557806b7",
+      "digest": "v2",
       "size": 474,
       "tags": [
         "refactoring"
@@ -2338,7 +2498,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/context-mode",
-      "sha256": "fdf4968b3d954533f6b6cf954e2753571a60f24ec51ee03bb2ad69dbd8ea3bbf",
+      "sha256": "97d5f30365325872a5d2ec7d45aaba0785534bda6621455f0741e4e1ab4a14e5",
+      "digest": "v2",
       "size": 463,
       "tags": [
         "quality"
@@ -2352,7 +2513,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/cron-worker",
-      "sha256": "5cf09d12f21a316b24a421c72bdcbd2f62d9849e650a1548f0c997b92afa1997",
+      "sha256": "9e8c98673001974344220e355101c4bdd9f2fd8a464a881b2c537313078b340e",
+      "digest": "v2",
       "size": 499,
       "tags": [
         "generation"
@@ -2366,7 +2528,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/crypto-review",
-      "sha256": "3ff3b4f438524cbd1b7779fd37338f6b8b1dd7d3db5ee6bdb9f2b8a53acf1710",
+      "sha256": "6976e702e33f05f5f6dc31952ae7421b9c465fdbe3525db3964d92412f1278df",
+      "digest": "v2",
       "size": 487,
       "tags": [
         "security"
@@ -2380,7 +2543,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/data-pipeline",
-      "sha256": "9d84344fd09c2ff2061b51e34a673bcfa27fcca54cc69abd3078589b30758a7a",
+      "sha256": "a3a33a1874d387fcccc822e33758f92cb8edbac9074f8dd98466560b5c499c97",
+      "digest": "v2",
       "size": 472,
       "tags": [
         "data-ai"
@@ -2394,7 +2558,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/dead-code",
-      "sha256": "74f97dd020e77cf1a54d7f65ff5f51329fb7f73a8e3ea53ed50420d2df69af1f",
+      "sha256": "2bbebfeb0f72d5a52a74149d1dac6fda429544e04a8fb7dcd928d75a23886189",
+      "digest": "v2",
       "size": 374,
       "tags": [
         "refactoring"
@@ -2408,7 +2573,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/dependency-audit",
-      "sha256": "c5c03898fa9625570c776737f75b282687f80283c73f414507cb018f9b37e5f1",
+      "sha256": "ea64715104360e1add5e59fbd914511bd125abbf3210ffe9f41480701c9b12b1",
+      "digest": "v2",
       "size": 400,
       "tags": [
         "analysis"
@@ -2422,7 +2588,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/design-system",
-      "sha256": "b259eca592fd01a7b16c48c7da4c0c0528839e0d366c97e536bda664de5cff12",
+      "sha256": "6dff5cb4c96f6a12c19581398e1bb081740309da49dbf456ed0b6faa299079d5",
+      "digest": "v2",
       "size": 572,
       "tags": [
         "frontend"
@@ -2436,7 +2603,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/doc-generator",
-      "sha256": "c08701be54abd917e681609360589636be78c5a76ff8c7595e3d59a8f2a2a35a",
+      "sha256": "f934882dce06b1fc7ef9264f31f632e7bf069e5970e6e6145dabf49cb5acd8f5",
+      "digest": "v2",
       "size": 409,
       "tags": [
         "generation"
@@ -2450,7 +2618,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/doc-lookup",
-      "sha256": "70ab7e64d3503f338e1f71e50ff00d7142bba508096c0d8e13ed4812e49bfb7d",
+      "sha256": "b1942b6d6260f6caf286edea47539fb43ce35f9940138192cf0c723380e6e092",
+      "digest": "v2",
       "size": 343,
       "tags": [
         "web-research"
@@ -2464,7 +2633,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/docker-setup",
-      "sha256": "d4337b9a5faefa30d03e8ffe250fbfab4a678cd9e9233abc4662866ea81b5fc6",
+      "sha256": "c2d7e517c3c00deca2240a61d31332d4189f1cb3410be40a9f29ec2883af810b",
+      "digest": "v2",
       "size": 433,
       "tags": [
         "generation"
@@ -2478,7 +2648,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/e2e-playwright",
-      "sha256": "3443700e7924a7bf5c1749bc37060f5a9b0833c63dfc4b104ed922340e920aa1",
+      "sha256": "62a06c199c5181bfc4e36a9b3d0e18ddcc943d4212c1c65edfc64be4ee5e4025",
+      "digest": "v2",
       "size": 456,
       "tags": [
         "testing"
@@ -2492,7 +2663,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/email-service",
-      "sha256": "a7142da1773fc79ef1f50fb7ba039004ca3b93b70669d32504c3180e3f9a82fc",
+      "sha256": "9ea451ff74403654785e1a874b76b41b7d3a6dbf2186ad9a0d9f19f5d04a3984",
+      "digest": "v2",
       "size": 477,
       "tags": [
         "integrations"
@@ -2506,7 +2678,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/email-templates",
-      "sha256": "bfb31d324685b40b86f900c9cd28a9c6bf273fe529e237c895b8a90b17c8a15e",
+      "sha256": "c06c35c5e3a5444fce049adfd08ae7ac8a8a1d184d46d219801606da63cecdfa",
+      "digest": "v2",
       "size": 508,
       "tags": [
         "media"
@@ -2520,7 +2693,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/error-handling",
-      "sha256": "420a9ae192721848a9e4f36399d77be5494602a10a2221bd21e7e3b9bd2e743a",
+      "sha256": "c339a6621021782fd4682cb010b72d037d0e2f535fb88d3ccec9d95bfa61c56c",
+      "digest": "v2",
       "size": 406,
       "tags": [
         "refactoring"
@@ -2534,7 +2708,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/event-sourcing",
-      "sha256": "c92b5d07a338234d0c796d57d45b65f9daa5d856a828efb219a980121b140c3b",
+      "sha256": "06a81b145119b3b84a064308b3c46ec60d0ea72b17d5086c7864bd4b9e42eed9",
+      "digest": "v2",
       "size": 487,
       "tags": [
         "advanced"
@@ -2548,7 +2723,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/expo-setup",
-      "sha256": "eb584633d7dcb979e6ba7fd46c78047512699c52eb7f252bff611685dcecf07f",
+      "sha256": "e7681de480cba2e705487446ed3e73078062672a198bcd690c731b0feb60c9f1",
+      "digest": "v2",
       "size": 443,
       "tags": [
         "mobile"
@@ -2562,7 +2738,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/extract-function",
-      "sha256": "2f9fc60e2c500f15588a327bd15a04900e9cd0f913ce8bbcf04a9fcc7facb11b",
+      "sha256": "dd708cfde26976b196ce6244df6a97a669bd8560fdb561aa8a15730466a1bfde",
+      "digest": "v2",
       "size": 393,
       "tags": [
         "refactoring"
@@ -2576,7 +2753,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/firecrawl-scrape",
-      "sha256": "3ab02d25849f742c8cecab20bc134a3df5dcca6efa3a8678572e3bc93756c308",
+      "sha256": "45f9396f8eb10832aefc03f32673955c0f1e79ff330d9eb44e9b1e985f8be43e",
+      "digest": "v2",
       "size": 447,
       "tags": [
         "web-research"
@@ -2590,7 +2768,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/first-principles",
-      "sha256": "73e2bb4987d2270518738e60bdfed01619cbfbf00f1a0e2c61140cf60b1155f8",
+      "sha256": "8c124741bccdb54d7efc10629ebdf47907fc4bc58432c9ded3a618a8c094800b",
+      "digest": "v2",
       "size": 354,
       "tags": [
         "reasoning"
@@ -2604,7 +2783,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/flutter-widget",
-      "sha256": "dd5e02ea9bdb3ce84f84af84ed06b61e47a356ea1dd266f81894cd1a005f54f3",
+      "sha256": "15e2a22de070bb98943e57d22f8b348d3a93c2b963ea7cec90376f721ffcf1aa",
+      "digest": "v2",
       "size": 462,
       "tags": [
         "mobile"
@@ -2618,7 +2798,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/frontend-design",
-      "sha256": "6a5080db6e5bdfb3127fd88324058ef298f0f0d961e3cab74c6ea1a579c5ac22",
+      "sha256": "2775bb968f0d1d1fe8963a2572125f0b06e35e1391c3d61294b2fc098e620248",
+      "digest": "v2",
       "size": 573,
       "tags": [
         "frontend"
@@ -2632,7 +2813,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/gitops-workflow",
-      "sha256": "0811c9d97349fcd5b059189b9ad1618a06242225162acd528376e5de958e7dc4",
+      "sha256": "c3cb48268f30ca81cb437068b6d4f6ea86266e96d0e78a675913c5ecc1fd0afb",
+      "digest": "v2",
       "size": 460,
       "tags": [
         "devops"
@@ -2646,7 +2828,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/graceful-shutdown",
-      "sha256": "1cdf37f173013749ecfd615df5981568e03f071fc3c2c595178f093ac6e28112",
+      "sha256": "908bb6e31a61f0289bc432bd7d3ecf021feb3cd2f1e3b78fdc44f56a9733937f",
+      "digest": "v2",
       "size": 382,
       "tags": [
         "refactoring"
@@ -2660,7 +2843,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/graphql-scaffold",
-      "sha256": "86cfee8741fe9af7fbed863d8083d8932fd9cfb045f2e0dc723f3779056235a4",
+      "sha256": "0f3215feb62ce9f6f8fd04bee3435fa9f3b73bf1c876b3f3334aab97551f79c7",
+      "digest": "v2",
       "size": 542,
       "tags": [
         "generation"
@@ -2674,7 +2858,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/grill-me",
-      "sha256": "70e4b5bb4a0994839cce09f0792f6382927a6da6572ee2f63a51e6e8c5a3fee2",
+      "sha256": "cc636e02c3b9b3a50e3b4c495d933993379126262587b357e334498fc3b3a342",
+      "digest": "v2",
       "size": 467,
       "tags": [
         "reasoning"
@@ -2688,7 +2873,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/grpc-scaffold",
-      "sha256": "e4c282b4c5c8d106098f94cd4d94da189c6355228e1944822859e4747596ee95",
+      "sha256": "b200536f7d70dee4f215a677b3a8bc1ae7246f24a1c10d16e507c818744eac93",
+      "digest": "v2",
       "size": 500,
       "tags": [
         "generation"
@@ -2702,7 +2888,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/handoff",
-      "sha256": "ed9829bec24a1540b076fffe365c539eb3c3aae59c6642af59b44f08e0d0ce4f",
+      "sha256": "c3366a2c82276a8090ce447e0cf7316a74fd40e2f2b6f96922ead8ff1f69b72d",
+      "digest": "v2",
       "size": 498,
       "tags": [
         "reasoning"
@@ -2716,7 +2903,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/icon-system",
-      "sha256": "334f8a6b44da413b503f5ad3b991b98c06bae2682ba1ffed90129116c2485812",
+      "sha256": "d56d19f7e9db73183b2d089241f2989b931175bb666234bcd4572436c7b82a4d",
+      "digest": "v2",
       "size": 483,
       "tags": [
         "media"
@@ -2730,7 +2918,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/idempotency",
-      "sha256": "1c941b6fb5fc5c4e325fb9dc443f306db2046d485dbceeb6df7f1ee260a73ab6",
+      "sha256": "eb92aa2a6e2e7d8e1a216756424b416a65955b8155f44fbe816ff8ba7abb5400",
+      "digest": "v2",
       "size": 514,
       "tags": [
         "advanced"
@@ -2744,7 +2933,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/integration-test",
-      "sha256": "b91447df5a8b274f00e5d9c0a53cf068b2f18b41ed6b30227add09042b0d4d14",
+      "sha256": "ca1a295956d647f23cb318e72a4f8f8e7f055979cc533ca755467e13a4bd3b12",
+      "digest": "v2",
       "size": 496,
       "tags": [
         "testing"
@@ -2758,7 +2948,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/istio-service-mesh",
-      "sha256": "1531512e59fc54e84761768668e7274611cc3a4fbf353b0a65a1f6ad171905d6",
+      "sha256": "0fcb4b2b0b53b7a0d255bef91bf6da103dc0297dd7837309af5757848a18a289",
+      "digest": "v2",
       "size": 433,
       "tags": [
         "devops"
@@ -2772,7 +2963,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/job-state-machine",
-      "sha256": "59ccdb73206bfd39ebea6c2bbafe09dd818dab44ee7784201ec4b9745fc66f78",
+      "sha256": "295e297c08898c94bb825126940d50b10b567a71308becb28c69df189ec3d156",
+      "digest": "v2",
       "size": 495,
       "tags": [
         "advanced"
@@ -2786,7 +2978,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/karpathy-rules",
-      "sha256": "f56b1d261693850e6ff47fa1550ab47e104b073f581963757d6e58d5e00f457b",
+      "sha256": "855a0a27409a3d2690833c594829f844ffb5d450584ad7c6d63174a7ed98d41b",
+      "digest": "v2",
       "size": 599,
       "tags": [
         "reasoning"
@@ -2800,7 +2993,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/kubernetes-manifests",
-      "sha256": "4351ff973f023840bd82dee1b06077630a7150d7aba0f4eb4e7478c08cbcad38",
+      "sha256": "facda40268e75114c6d5dbd55fe480819f65a7ba5ba68e1b9080d979870666c8",
+      "digest": "v2",
       "size": 476,
       "tags": [
         "devops"
@@ -2814,7 +3008,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/landing-page",
-      "sha256": "d7ebedeff9c7a41fbd1951c14e74430e091bcbed0ea8a1bed3e5834b9501181d",
+      "sha256": "1484db8848bbed25f757d4788eb7fdc534f2e178105c271a7e3841b34b96f7af",
+      "digest": "v2",
       "size": 524,
       "tags": [
         "business"
@@ -2828,7 +3023,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/leader-election",
-      "sha256": "29be53c3805639c53011fa5511cd2938cab6763ccec3188254aeed7b902c126e",
+      "sha256": "80fd527f0b94a766f5dfefbcf2ac3ba886004c2c04227dda118186fd18a667f1",
+      "digest": "v2",
       "size": 483,
       "tags": [
         "advanced"
@@ -2842,7 +3038,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/lib-compare",
-      "sha256": "6ebbb42d6dc7ad736c6442c171c4eca6f31615eb6b1d98bd24194eeb9206b1fe",
+      "sha256": "357098f0c586056141faa787768e3264c3b38895f21ff501ce78797714f2b448",
+      "digest": "v2",
       "size": 397,
       "tags": [
         "web-research"
@@ -2856,7 +3053,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/lint-check",
-      "sha256": "fd1a9a58cc642677b9da1ce07e60a6e3e95528398c030f5751f9e434557af02f",
+      "sha256": "8c6a11b144c7337e00abfbc112d540772c96bc566b8904f2240b061ed38fcbf4",
+      "digest": "v2",
       "size": 306,
       "tags": [
         "quality"
@@ -2870,7 +3068,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/load-test",
-      "sha256": "a907e1f3cb034740d7afd51398dc8c718195ffa32efa795b25235b9fc04ce25b",
+      "sha256": "f1dc9113dca8013673e6f53515980e3147df3cb833e17b57998ffbdf3330c897",
+      "digest": "v2",
       "size": 475,
       "tags": [
         "testing"
@@ -2884,7 +3083,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/merge-conflict-resolver",
-      "sha256": "dbe749cbb1e0caf2638dc52f5efec62cc3d28f46d4676bfae23dcf344e298f3d",
+      "sha256": "d8cd100cc5ea74606c7416fdbc9a36cea053821a0ff05b504e6430dbde730324",
+      "digest": "v2",
       "size": 543,
       "tags": [
         "analysis"
@@ -2898,7 +3098,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/microservice-scaffold",
-      "sha256": "e0d796aa3351ebb2893356b9985b276562ad2d2ab20a9807dfae04855422b645",
+      "sha256": "7dabbdde15e58ff5b94ec8c1a9044c55223e13085853d5d5fa07121d51c73ac4",
+      "digest": "v2",
       "size": 476,
       "tags": [
         "generation"
@@ -2912,7 +3113,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/migration-script",
-      "sha256": "7e7ac17b0f6cbc37729173ab67b493d91554e451c5df5048fa86671e25d2062f",
+      "sha256": "9dc28f654609aa14a6cecb68386d618bff6b363d472e812e7e7de12d35ef6833",
+      "digest": "v2",
       "size": 437,
       "tags": [
         "generation"
@@ -2926,7 +3128,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/ml-pipeline",
-      "sha256": "7553dedded290d691694bd5f2e01498b9bb7f4208d34e46ea8f8ee1985b7a821",
+      "sha256": "a17ab6a64ca25dfe6a8b4877c49cfe879fadac9ce23abd594be7a31b7c1e0611",
+      "digest": "v2",
       "size": 469,
       "tags": [
         "data-ai"
@@ -2940,7 +3143,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/monorepo-scaffold",
-      "sha256": "63398ab941e76c623e804707235a00fb64a53371294320fee7ea8955639edb23",
+      "sha256": "878ee52349cfdcd37738ecd4c2ef002145825694d5690b3466bc35f6fd4d68a2",
+      "digest": "v2",
       "size": 468,
       "tags": [
         "generation"
@@ -2954,7 +3158,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/mutation-test",
-      "sha256": "9633207266c1e5a7c5d40e14c46f64ff1de9aed1a5bfd2d74e62fba9453254e2",
+      "sha256": "82c8d4c69d6ba20893eadad7dab3690eed27be06f8b09ed50e9ec161e7789a66",
+      "digest": "v2",
       "size": 466,
       "tags": [
         "testing"
@@ -2968,7 +3173,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/naming-review",
-      "sha256": "05c251cea23894de287486afd308c3aa338595b2bbfe677e2f48205f878e5195",
+      "sha256": "2dcc1d061fdd436926b9d603636616983014f1478b4298b1f1467f0f5e79e818",
+      "digest": "v2",
       "size": 393,
       "tags": [
         "quality"
@@ -2982,7 +3188,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/nextjs-app-router",
-      "sha256": "9f88eb3a7fca8b9a72ed3dbbb089f422598511d089c65b09bd9fa13351f4ef9e",
+      "sha256": "f814a7bc985da5b27707c6a061c398fafe4a05ea2737e4b67d91df8275282300",
+      "digest": "v2",
       "size": 544,
       "tags": [
         "frontend"
@@ -2996,7 +3203,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/nginx-config",
-      "sha256": "a8933d1836c56458b68bed3cd976001c563ccf53fa9fadcc463147693377cf95",
+      "sha256": "eed6fbed97b5581b3927cd76834aef193ab339a4a53c08c4ee3d4c2f3b870750",
+      "digest": "v2",
       "size": 437,
       "tags": [
         "devops"
@@ -3010,7 +3218,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/oauth-integration",
-      "sha256": "c85d90eaddefdbeafe9bb86f7fed46ea61148d913e3753bc959f614c3fec6371",
+      "sha256": "bbb0691393340ed3bc3cf65ef443ac79fa5135a7eca855b791cb1a48ca063328",
+      "digest": "v2",
       "size": 483,
       "tags": [
         "integrations"
@@ -3024,7 +3233,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/observability-stack",
-      "sha256": "3f8c3852fd98563d4daa956a69e8c96462522ef699a9f15e7ccf31e97156c8a8",
+      "sha256": "600d2fdd08ecea435dccc87b61dbaecd0a129dab15cc0f8261a39aa173971491",
+      "digest": "v2",
       "size": 483,
       "tags": [
         "devops"
@@ -3038,7 +3248,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/og-image-generator",
-      "sha256": "7bed426bd158302bc203bb4c86d33a725912b59fe75722d4a04e15e73beae4be",
+      "sha256": "4e43de8ea86bcd40d351f6e5fd92e80bd3d69605771b37fd442ac79c8f88133a",
+      "digest": "v2",
       "size": 477,
       "tags": [
         "media"
@@ -3052,7 +3263,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/pdf-generator",
-      "sha256": "ebfa8228e0bdcd13ce368fb2974d9fccfda2306c1668c6b56c00101a4a58bcc6",
+      "sha256": "14cd61a8908492dbd45e6bc8477b6f48e354627129796ba9af2848eb5174791b",
+      "digest": "v2",
       "size": 460,
       "tags": [
         "media"
@@ -3066,7 +3278,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/performance-profile",
-      "sha256": "567c80c47282d9803a7057f8d0cee045e472f6bf34d5b6f74412fcbe981e6ea5",
+      "sha256": "28e5e6248a64f085cda167b67fe9f4419d1821cb88448ba1e0b0abb49cfca70d",
+      "digest": "v2",
       "size": 477,
       "tags": [
         "analysis"
@@ -3080,7 +3293,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/plugin-architecture",
-      "sha256": "b3c5086af77fae1ad7c7da9f87a562e99000b74db528906dcd000f23f662139d",
+      "sha256": "c3dd66bf601ed3bf925ec25419e48b23ce40ba592f8ab9833ea5a8b2a598b4b0",
+      "digest": "v2",
       "size": 501,
       "tags": [
         "advanced"
@@ -3094,7 +3308,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/property-test",
-      "sha256": "2ff0996fae1203ab9b28885c692850d3a2abac3ea9bffa0e2fd5764d1720f77c",
+      "sha256": "22cbc633bee42ec820e9bf7d45a6947620c62cf36e0fe79ba68219ad90fe4475",
+      "digest": "v2",
       "size": 502,
       "tags": [
         "testing"
@@ -3108,7 +3323,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/rate-limiter-advanced",
-      "sha256": "35e9fecce95b66f23dd39df732a58af1a66123c1607921983c6d5957829a0664",
+      "sha256": "41af16c08d498d58dc7b6e5455b534a86886e6430008c764d1e60bee95b7c722",
+      "digest": "v2",
       "size": 527,
       "tags": [
         "advanced"
@@ -3122,7 +3338,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/react-best-practices",
-      "sha256": "6b951c3987429485811024b63105f003ad4de464c86974efd59c4a3bf1bc13b4",
+      "sha256": "2897a7b720415e1da4c553d4eb8bb22d76d9e5c94690ab9fc0a9f93266773f8c",
+      "digest": "v2",
       "size": 653,
       "tags": [
         "frontend"
@@ -3136,7 +3353,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/react-native-component",
-      "sha256": "95c6cc8c9b07009c3486bc6344ec211d48d7fe50adbb34b397fbdb06e91e8405",
+      "sha256": "4eabf5db4d714aa0bd5a7f6f651b62812a849d6669682508a69650263786778a",
+      "digest": "v2",
       "size": 467,
       "tags": [
         "mobile"
@@ -3150,7 +3368,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/remotion-video",
-      "sha256": "d3dc7a1f4fb24ff9c735675e08d1b43dd01478ff819efe801b00e29ac6951532",
+      "sha256": "c7632ea6d3818f7f657e18b299bd50153697fbe3d4ab090cea98da80f82748ba",
+      "digest": "v2",
       "size": 511,
       "tags": [
         "frontend"
@@ -3164,7 +3383,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/risk-metrics",
-      "sha256": "d6884235746f3aece4c0605698aef6b555a05cac75ce1486f6bfe91365bc3cbd",
+      "sha256": "60d8bdca320fdd602eb0af74ef2d6be2aefc9f42d1ef186955614c50a468bd77",
+      "digest": "v2",
       "size": 464,
       "tags": [
         "data-ai"
@@ -3178,7 +3398,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/saga-pattern",
-      "sha256": "7f6940ac82ee5de4eeebc1da7d343d7ce81d189a2361a2d7c261ef85bb31da0f",
+      "sha256": "061f432849c84a08050d2cf56739390d5092ed223a558a50285a0e6c335c43eb",
+      "digest": "v2",
       "size": 493,
       "tags": [
         "advanced"
@@ -3192,7 +3413,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/sanitize-input",
-      "sha256": "3aa475875892fabbc95e732b7fb01e8f4988f9f8976a43f51df6516dd75ed037",
+      "sha256": "3c02a84e95143acc16a6687bf66c6d4bb2908c41a72d74f507fc8aec86fed1ad",
+      "digest": "v2",
       "size": 381,
       "tags": [
         "security"
@@ -3206,7 +3428,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/secret-scanner",
-      "sha256": "f41dbacb2d44677ff6aa890b6ec873fa4327de80aa337da6a7d40f8f3454e5bb",
+      "sha256": "c178db8c1ca9b600178f2eaaf5012d71c5cc92b188246f1688c1d24c3374e89a",
+      "digest": "v2",
       "size": 386,
       "tags": [
         "security"
@@ -3220,7 +3443,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/security-audit",
-      "sha256": "eab2c1cce041071ff01493a5f324723027063acd522005c3bb83e1720b8e2307",
+      "sha256": "dac59f305328d80c4d1ca0870d35b002e2b246d31f406491c63d485968da4a39",
+      "digest": "v2",
       "size": 489,
       "tags": [
         "analysis"
@@ -3234,7 +3458,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/self-reflection",
-      "sha256": "7558a7d838226826a855155d3fa68cc29d8ea8e6f83464ea45b3d0de7f45e5ea",
+      "sha256": "3b6430aca88319c2af2c3d1571b7f8f26b3e8cf6d2d4c6cfe6c242f5d5d4e2b3",
+      "digest": "v2",
       "size": 383,
       "tags": [
         "reasoning"
@@ -3248,7 +3473,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/semgrep-scan",
-      "sha256": "0201495d67c4f9875129bd8a19e9527ad60d4e73f3c86f118d269b5b71170c9a",
+      "sha256": "33632ed6bcb160991748c4497879b27416fb8921bfeee4256c06dfec30f72c41",
+      "digest": "v2",
       "size": 455,
       "tags": [
         "security"
@@ -3262,7 +3488,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/seo-copywriting",
-      "sha256": "64fcb79c98ea7162a4597a6024425c31991affc0c9d9d76ad039357a810a0db1",
+      "sha256": "3aef5e28771b60ebaa5354a0a2bb54bd1e6efd647c109da9b5f36af4e3e637a1",
+      "digest": "v2",
       "size": 455,
       "tags": [
         "business"
@@ -3276,7 +3503,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/simplify-code",
-      "sha256": "cf16661aa27552c00dba97d1a3e74339d03f1f1ed8b13bd824329126a9d97496",
+      "sha256": "f842e7a7abec7e89a3cd44061a1b08fb438c0269ac263048c584206ffce9eba9",
+      "digest": "v2",
       "size": 479,
       "tags": [
         "refactoring"
@@ -3290,7 +3518,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/sql-optimization",
-      "sha256": "a93bbd255ac98af8ac2166a365779c553ef356c1ca1bbdca63684bee27129997",
+      "sha256": "5d21548556b5605f2e162b9a551e91bb563b1c611eca059e7ed6b9bedc36a804",
+      "digest": "v2",
       "size": 464,
       "tags": [
         "data-ai"
@@ -3304,7 +3533,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/stackoverflow",
-      "sha256": "2ec5fbcebf3d1998bdf9911606297fb7ff4c9270220b70cd71860387471dd76d",
+      "sha256": "e84bed6c698a2a2e2c47a0204074358c9967b443a035de4331d58d32089b2fef",
+      "digest": "v2",
       "size": 313,
       "tags": [
         "web-research"
@@ -3318,7 +3548,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/stripe-integration",
-      "sha256": "e933e6e0b59ba7ae4408785bff0f2321db8b926ade0d4a8b93ac0ac92d5fc825",
+      "sha256": "2cf7d685746bc90cb8ab7f479c47b16bdd0171508d6a7047ba4f359c77c6f0cb",
+      "digest": "v2",
       "size": 514,
       "tags": [
         "integrations"
@@ -3332,7 +3563,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/superpowers-planning",
-      "sha256": "d4b0480473620c1819aec31c303550eb12a8f9cf2b7ad5b4914752de4e9ee6dc",
+      "sha256": "722d0d0b2a493cafea2d512c318d7a6d5ed0f2a8026524268013c26d3d07b970",
+      "digest": "v2",
       "size": 529,
       "tags": [
         "reasoning"
@@ -3346,7 +3578,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/supply-chain-audit",
-      "sha256": "0e9f2124c92b8012f9b9679d723bf27beaaa5476c3071623adffb368aa82b7f9",
+      "sha256": "75c1c422f2a2cd6bbb6aa2c1aff08048d0638f605c1aa4bbff18cc5c99775d46",
+      "digest": "v2",
       "size": 508,
       "tags": [
         "security"
@@ -3360,7 +3593,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/terraform-module",
-      "sha256": "73b603c48d84fc1700f7137bf0882bcf4540849609fd5a8bb9d4bd06ec4ae984",
+      "sha256": "392ddb5b5db4ba76b7cf079c947dce9d43aeb18178d28a1cb40b97a03207676f",
+      "digest": "v2",
       "size": 461,
       "tags": [
         "devops"
@@ -3374,7 +3608,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/test-generator",
-      "sha256": "8e7154fce3ec0ab939913c942a22f6426c348470adf89d108909f5bf5e7e3be2",
+      "sha256": "b4cd6b6a1659b0bf6f4e18446b57a29af86a583b9e543265f92b03a83c6f7675",
+      "digest": "v2",
       "size": 447,
       "tags": [
         "generation"
@@ -3388,7 +3623,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/trail-of-bits-security",
-      "sha256": "2e51df607979a12356fd44afb0ece6f81978cdf4ad156d764800560123c87c8a",
+      "sha256": "7133e91ef72726b09e93d6a789a5d761e836296f9743c2bc6c72ad04a1ea33d8",
+      "digest": "v2",
       "size": 563,
       "tags": [
         "analysis"
@@ -3402,7 +3638,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/tree-of-thought",
-      "sha256": "512539bcd6f597a4770170eeab339cf6d2464596e2b2322b8dd4c8c5de7aa344",
+      "sha256": "2cb01673752a33ef38de95f575a97044bf7bfb64a60cfce421d5a16ffae148ab",
+      "digest": "v2",
       "size": 342,
       "tags": [
         "reasoning"
@@ -3416,7 +3653,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/type-check",
-      "sha256": "0fa6d51cffed734e2d2695b99fc2fe5cf0681a391ad17574bf9abfaee43d545e",
+      "sha256": "59a9e1d1aec703989121bd8ebc7ec2fa975d03fc56821561670cd303eb8fb4c2",
+      "digest": "v2",
       "size": 319,
       "tags": [
         "quality"
@@ -3430,7 +3668,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/unit-test-gen",
-      "sha256": "d9babea7f3e0c112ccd0b08cc7beb2fcc4809ecedaaf06a563414ce889d3e147",
+      "sha256": "84bceec3ef2ad7dc4ce544960e4fcd138d92b35b2683991e8217fc532430680a",
+      "digest": "v2",
       "size": 460,
       "tags": [
         "testing"
@@ -3444,7 +3683,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/vector-search",
-      "sha256": "dffec782af00be7acdf0f1bca42c3523c5e19663d67047d25723223a7aa61dc3",
+      "sha256": "c9225facdaa219b565685914bfd17d56d6f317e3887b53caf5951844ab12c00f",
+      "digest": "v2",
       "size": 488,
       "tags": [
         "data-ai"
@@ -3458,7 +3698,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/wcag-accessibility",
-      "sha256": "ea416c02b96a8d63abc764c20fa24fc57bcb7e2c93e187f215f2f5e92e063861",
+      "sha256": "a0c0538c822890d022ff3fc770fb09e1f094ffe48056e4d7ba15d20bc160636e",
+      "digest": "v2",
       "size": 568,
       "tags": [
         "frontend"
@@ -3472,7 +3713,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/web-search",
-      "sha256": "decbb65888f3a12256d98714c643a1013300b4c6550be8f9a17bc712b27edde6",
+      "sha256": "c315bb743cafba99e15e03dadf862ea92d17755014aa0983ab118db4bb795a6a",
+      "digest": "v2",
       "size": 303,
       "tags": [
         "web-research"
@@ -3486,7 +3728,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/web-typography",
-      "sha256": "f3a021105db40faca9e128bf647724f75319254a82484d156a6b372254522af6",
+      "sha256": "615b3d597aa86d76afa52479ce175466042e05e89632dea56b5cc0da4dc9bb23",
+      "digest": "v2",
       "size": 525,
       "tags": [
         "frontend"
@@ -3500,7 +3743,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/webapp-testing",
-      "sha256": "0a76bdd03bff82ffdffdebeeda0424f75237094f78da5e09b7f1704b6088360f",
+      "sha256": "9820908b7faa1b510da65330d35c8e123f44db4a1c5d7a70457c07dac6e01cb8",
+      "digest": "v2",
       "size": 503,
       "tags": [
         "web-research"
@@ -3514,7 +3758,8 @@
       "version": "1.0.0",
       "engine": ">=0.1.0",
       "path": "skills/webhook-handler",
-      "sha256": "7e558e387f3abdb133b78138694a119a5055fa63ccebf64d1e57562dca491acb",
+      "sha256": "04441b68d68b3af2079bce09664eef1f75ca4eccb0efdd912f44d3a6d48478e5",
+      "digest": "v2",
       "size": 484,
       "tags": [
         "integrations"
@@ -3523,5 +3768,5 @@
       "title": "Webhook Handler"
     }
   ],
-  "signature": "MGsgEnuj_HAMmBOmC4BhBnTOR2szqPhXjP-DNP_latew2daK1c5KtboxayWncu-BS2RgdQ2og6h-fK8RFMTFAw"
+  "signature": "Ugs677kyJ5ZOUAO0tsexQwPX2wtPgsp0y1mkw4CY1MoWtofK3OfySX9t6rkL0f4S8eoIFYh4zz3OhQpleJdCDg"
 }

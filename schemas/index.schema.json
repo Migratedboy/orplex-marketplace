@@ -4,9 +4,14 @@
   "title": "Orplex marketplace index",
   "type": "object",
   "required": ["schemaVersion", "generatedAt", "items", "signature"],
+    "seq": { "type": "integer", "minimum": 1 },
+    "expiresAt": { "type": "string" },
+    "keyId": { "type": "string" },
+    "revoked": { "type": "array", "items": { "type": "string" } },
+    "keys": { "type": "array", "items": { "type": "object", "required": ["keyId", "publicKey"] } },
   "additionalProperties": true,
   "properties": {
-    "schemaVersion": { "const": 1 },
+    "schemaVersion": { "enum": [1, 2] },
     "generatedAt": { "type": "string", "format": "date-time" },
     "minAppVersion": { "type": ["string", "null"] },
     "counts": {
@@ -37,6 +42,7 @@
         "version": { "type": "string" },
         "engine": { "type": ["string", "null"], "description": "Semver range of consuming app/sdk." },
         "path": { "type": "string", "description": "Directory inside this repo, e.g. skills/add-types." },
+        "digest": { "enum": ["v1", "v2"] },
         "sha256": {
           "type": "string",
           "pattern": "^[a-f0-9]{64}$",

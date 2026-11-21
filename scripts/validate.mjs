@@ -24,9 +24,13 @@ const canonicalJson = (value) => {
   return `{${keys.map((k) => `${JSON.stringify(k)}:${canonicalJson(value[k])}`).join(",")}}`;
 };
 
-const digest = (files) => {
+const digest = (files, version = "v2") => {
   const names = Object.keys(files).sort();
-  return crypto.createHash("sha256").update(names.map((n) => `${n}\n${files[n]}`).join("\n")).digest("hex");
+  if (version === "v1") {
+    return crypto.createHash("sha256").update(names.map((n) => `${n}\n${files[n]}`).join("\n")).digest("hex");
+  }
+  const perFile = (name, content) => crypto.createHash("sha256").update(`${name}\u0000${content}`).digest("hex");
+  return crypto.createHash("sha256").update(names.map((n) => perFile(n, files[n])).join("\n")).digest("hex");
 };
 
 const readFiles = (dir, base = dir, out = {}) => {
@@ -45,7 +49,12 @@ if (!fs.existsSync(indexPath)) {
 } else {
   const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
 
-  if (index.schemaVersion !== 1) fail(`schemaVersion must be 1, got ${index.schemaVersion}`);
+  if (![1, 2].includes(index.schemaVersion)) fail(`schemaVersion must be 1 or 2, got ${index.schemaVersion}`);
+  if (index.schemaVersion >= 2) {
+    if (!Number.isFinite(index.seq) || index.seq <= 0) fail("schemaVersion 2 requires a positive seq");
+    if (!index.expiresAt || Number.isNaN(Date.parse(index.expiresAt))) fail("schemaVersion 2 requires an ISO expiresAt");
+    if (!index.keyId) fail("schemaVersion 2 requires a keyId");
+  }
   if (!Array.isArray(index.items)) fail("items must be an array");
   if (!index.signature) fail("index is not signed");
   if (!index.generatedAt || Number.isNaN(Date.parse(index.generatedAt))) fail("generatedAt must be an ISO date");
@@ -81,7 +90,7 @@ if (!fs.existsSync(indexPath)) {
     }
     const files = readFiles(abs);
     if (Object.keys(files).length === 0) fail(`${where}: item directory is empty`);
-    const actual = digest(files);
+    const actual = digest(files, item.digest === "v1" ? "v1" : "v2");
     if (actual !== item.sha256) fail(`${where}: digest mismatch (index ${item.sha256.slice(0, 12)}…, files ${actual.slice(0, 12)}…)`);
     if (typeof item.size === "number") {
       const size = Object.values(files).reduce((n, c) => n + Buffer.byteLength(c), 0);
