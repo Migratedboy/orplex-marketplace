@@ -5,6 +5,7 @@ import json
 import re
 import sys
 from collections import Counter
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -13,6 +14,36 @@ from jsonschema import Draft202012Validator, FormatChecker
 ROOT = Path(__file__).resolve().parents[1]
 GROUP = {'skill': 'skills', 'mcp': 'mcp', 'plugin': 'plugins'}
 ID = re.compile(r'[a-z0-9][a-z0-9._-]{0,79}')
+SCHEME = re.compile(r'^[A-Za-z][A-Za-z0-9+.-]*:')
+RFC3339 = re.compile(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$')
+
+
+def valid_date_time(value):
+    if not isinstance(value, str) or not RFC3339.fullmatch(value):
+        return False
+    try:
+        datetime.fromisoformat(value.replace('Z', '+00:00'))
+        return True
+    except ValueError:
+        return False
+
+
+def valid_uri(value):
+    if not isinstance(value, str) or not SCHEME.match(value) or any(c.isspace() for c in value):
+        return False
+    try:
+        parts = urlsplit(value)
+        parts.port
+    except ValueError:
+        return False
+    return bool(parts.netloc or parts.path)
+
+
+# FormatChecker skips optional third-party format packages when they are absent.
+# Register the two formats this catalog uses with stdlib-only checks instead.
+FORMAT_CHECKER = FormatChecker()
+FORMAT_CHECKER.checks('date-time')(valid_date_time)
+FORMAT_CHECKER.checks('uri')(valid_uri)
 
 
 def load(path):
@@ -50,18 +81,26 @@ def markdown(text):
 
 def audit(root, schema_dir=None):
     root = Path(root).resolve()
+
     def safe(path):
         p = root / path
         if p.resolve() != p or not p.resolve().is_relative_to(root):
             raise ValueError('unsafe catalog path')
         return p
-    schemas = {k: Draft202012Validator(load((schema_dir or ROOT / 'schemas') / (k + '.schema.json')), format_checker=FormatChecker()) for k in ('index', 'mcp', 'plugin')}
+
+    schema_root = Path(schema_dir) if schema_dir else ROOT / 'schemas'
+    schemas = {
+        k: Draft202012Validator(load(schema_root / (k + '.schema.json')), format_checker=FORMAT_CHECKER)
+        for k in ('index', 'mcp', 'plugin')
+    }
     hard, review, rows = set(), set(), []
+
     def schema(kind, item, data):
-        for e in schemas[kind].iter_errors(data):
+        for error in schemas[kind].iter_errors(data):
             # Never include values in logs (invalid data can contain credentials).
-            hard.add((item, 'schema:' + str(e.validator) + ':' + '/'.join(map(str, e.absolute_schema_path))))
-    idx, bundle = [load(safe('catalog/' + n + '.json')) for n in ('index', 'bundle')]
+            hard.add((item, 'schema:' + str(error.validator) + ':' + '/'.join(map(str, error.absolute_schema_path))))
+
+    idx, bundle = [load(safe('catalog/' + name + '.json')) for name in ('index', 'bundle')]
     schema('index', 'index', idx)
     indexed = {(x['kind'], x['id']): x for x in idx['items']}
     if len(indexed) != len(idx['items']):
@@ -76,84 +115,94 @@ def audit(root, schema_dir=None):
             hard.add((kind, 'id-set-mismatch'))
         if any(c.get(kind) != len(ids) for c in (idx['counts'], bundle['counts'])):
             hard.add((kind, 'count-mismatch'))
-        for e in entries:
-            id_ = e[key]
+        for entry in entries:
+            id_ = entry[key]
             if not isinstance(id_, str) or not ID.fullmatch(id_):
-                hard.add((kind, 'invalid-id')); continue
+                hard.add((kind, 'invalid-id'))
+                continue
             tag = f'{kind}/{id_}'
-            x = indexed.get((kind, id_))
-            if not x:
+            item = indexed.get((kind, id_))
+            if not item:
                 continue
             folder = f'{group}/{id_}'
-            if x['path'] != folder:
+            if item['path'] != folder:
                 hard.add((tag, 'index-path'))
-            if x.get('title') != e.get('name') or x.get('description') != e.get('description'):
+            if item.get('title') != entry.get('name') or item.get('description') != entry.get('description'):
                 hard.add((tag, 'index-display-drift'))
             source = safe(folder)
             if any(p.is_symlink() or (p.is_file() and p.suffix.lower() not in {'.json', '.md', '.png'}) for p in source.rglob('*')):
                 hard.add((tag, 'unexpected-file'))
-            row = {'item': tag, 'category': e.get('category'), 'transport': [], 'auth': None, 'access': 'not-reviewed'}
+            row = {'item': tag, 'category': entry.get('category'), 'transport': [], 'auth': None, 'access': 'not-reviewed'}
             if kind == 'skill':
                 meta, body = markdown(safe(folder + '/SKILL.md').read_text(encoding='utf-8'))
-                if not body or body != e['promptPrefix'] or any(meta.get(a) != e.get(b) for a,b in [('title','name'),('category','category'),('description','description')]):
+                if not body or body != entry['promptPrefix'] or any(meta.get(a) != entry.get(b) for a, b in [('title', 'name'), ('category', 'category'), ('description', 'description')]):
                     hard.add((tag, 'skill-bundle-drift'))
             elif kind == 'plugin':
-                p = load(safe(folder + '/plugin.json')); schema(kind, tag, p)
-                if any(p.get(f) != e.get(f) for f in ('slug','hooks','mcp','description','version')) or x['version'] != p['version']:
+                plugin = load(safe(folder + '/plugin.json'))
+                schema(kind, tag, plugin)
+                if any(plugin.get(f) != entry.get(f) for f in ('slug', 'hooks', 'mcp', 'description', 'version')) or item['version'] != plugin['version']:
                     hard.add((tag, 'plugin-bundle-drift'))
                 expected = []
-                for ref in p['skills']:
+                for ref in plugin['skills']:
                     if not re.fullmatch(r'skills/[A-Za-z0-9._-]+\.md', ref['path']):
-                        hard.add((tag, 'skill-path')); continue
+                        hard.add((tag, 'skill-path'))
+                        continue
                     meta, body = markdown(safe(folder + '/' + ref['path']).read_text(encoding='utf-8'))
                     expected.append({'name': ref['name'], 'title': meta.get('title') or ref['name'], 'body': body})
                     if not body:
                         hard.add((tag, 'empty-plugin-skill'))
-                if expected != e['skills'] or len(expected) != x.get('skillCount'):
+                if expected != entry['skills'] or len(expected) != item.get('skillCount'):
                     hard.add((tag, 'plugin-skill-drift'))
-                if any(('mcp', dep) not in indexed for dep in p.get('mcp', {})):
+                if any(('mcp', dep) not in indexed for dep in plugin.get('mcp', {})):
                     hard.add((tag, 'unknown-mcp-reference'))
             else:
-                m = load(safe(folder + '/manifest.json')); schema(kind, tag, m)
-                if m != e or m.get('auth') != x.get('auth') or m.get('version') != x['version']:
+                manifest = load(safe(folder + '/manifest.json'))
+                schema(kind, tag, manifest)
+                if manifest != entry or manifest.get('auth') != item.get('auth') or manifest.get('version') != item['version']:
                     hard.add((tag, 'manifest-bundle-drift'))
-                row.update(auth=m.get('auth'), transport=[t for t in ('remote','stdio') if t in m])
-                if not m.get('docsUrl'):
+                row.update(auth=manifest.get('auth'), transport=[t for t in ('remote', 'stdio') if t in manifest])
+                if not manifest.get('docsUrl'):
                     review.add((tag, 'missing-docs'))
-                if 'stdio' in m and pinned(m['stdio']) is not True:
+                if 'stdio' in manifest and pinned(manifest['stdio']) is not True:
                     review.add((tag, 'review-local-package-pin'))
-                if 'remote' in m:
-                    u = urlsplit(m['remote']['url'])
-                    if u.scheme != 'https' or not u.hostname or u.username is not None or u.password is not None:
+                if 'remote' in manifest:
+                    url = urlsplit(manifest['remote']['url'])
+                    if url.scheme != 'https' or not url.hostname or url.username is not None or url.password is not None:
                         hard.add((tag, 'invalid-remote-origin'))
-                if len({v['name'] for v in m.get('stdio', {}).get('env', [])}) != len(m.get('stdio', {}).get('env', [])):
+                if len({v['name'] for v in manifest.get('stdio', {}).get('env', [])}) != len(manifest.get('stdio', {}).get('env', [])):
                     hard.add((tag, 'duplicate-env-name'))
             rows.append(row)
     return sorted(hard), sorted(review), rows
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--root', type=Path, default=ROOT)
-    ap.add_argument('--against', type=Path, help='Fail newly introduced documentation or package-pin warnings versus this checkout')
-    ap.add_argument('--json', action='store_true')
-    ap.add_argument('--list', action='store_true', help='List matching entries; no external connections')
-    ap.add_argument('--kind', choices=GROUP); ap.add_argument('--category'); ap.add_argument('--auth'); ap.add_argument('--transport', choices=('stdio','remote'))
-    args = ap.parse_args()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root', type=Path, default=ROOT)
+    parser.add_argument('--against', type=Path, help='Fail newly introduced documentation or package-pin warnings versus this checkout')
+    parser.add_argument('--json', action='store_true')
+    parser.add_argument('--list', action='store_true', help='List matching entries; no external connections')
+    parser.add_argument('--kind', choices=GROUP)
+    parser.add_argument('--category')
+    parser.add_argument('--auth')
+    parser.add_argument('--transport', choices=('stdio', 'remote'))
+    args = parser.parse_args()
     hard, review, rows = audit(args.root)
     new = sorted(set(review) - set(audit(args.against)[1])) if args.against else []
-    selected = [r for r in rows if (not args.kind or r['item'].startswith(args.kind+'/')) and (not args.category or r['category']==args.category) and (not args.auth or r['auth']==args.auth) and (not args.transport or args.transport in r['transport'])]
-    report = {'scanned':len(rows), 'errors':hard, 'review':review, 'newWarnings':new}
+    selected = [r for r in rows if (not args.kind or r['item'].startswith(args.kind + '/')) and (not args.category or r['category'] == args.category) and (not args.auth or r['auth'] == args.auth) and (not args.transport or args.transport in r['transport'])]
+    report = {'scanned': len(rows), 'errors': hard, 'review': review, 'newWarnings': new}
     if args.list:
         report['listings'] = selected
     if args.json:
         print(json.dumps(report, indent=2))
     else:
         print(f'{len(rows)} entries; {len(hard)} errors; {len(review)} review findings; {len(new)} new warnings')
-        for code, count in sorted(Counter(v for _, v in review).items()): print(f'{code}: {count}')
-        for entry, code in hard + new: print(entry, code)
+        for code, count in sorted(Counter(v for _, v in review).items()):
+            print(f'{code}: {count}')
+        for entry, code in hard + new:
+            print(entry, code)
         if args.list:
-            for row in selected: print(json.dumps(row))
+            for row in selected:
+                print(json.dumps(row))
     return int(bool(hard or new))
 
 
