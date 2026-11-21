@@ -15,9 +15,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Prepare schema checker (test runner only)
-        run: |
-          sudo apt-get -qq update
-          sudo apt-get install -y --no-install-recommends python3-jsonschema python3-rfc3339-validator python3-rfc3987
+        run: sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends python3-jsonschema
       - name: Check contracts and source-to-bundle parity
         run: /usr/bin/python3 -m unittest discover -s tests -p 'test_*.py' -v
       - name: Audit the catalog and prevent new review debt
